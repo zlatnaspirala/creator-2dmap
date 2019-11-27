@@ -1,7 +1,8 @@
 #!/usr/bin/python3
+from map import myMap
 import tkinter
 import json
-from tkinter import messagebox
+from tkinter import messagebox, BOTH
 from functools import partial
 
 ###############################################################################
@@ -10,14 +11,42 @@ from functools import partial
 window = tkinter.Tk()
 window.title("GUI tools Nikola Lukic")
 
+f1 = tkinter.Frame(window, background="blue")
+f2 = tkinter.Frame(window, background="pink")
+
+# f1.pack(side="left", fill="both", expand=True)
+# f2.pack(side="right", fill="both", expand=True)
+
+# Define myMap object
+MyDefaultMap = myMap("MyDefaultMap")
+
+# View UI tool
+widthPlus = tkinter.Button(window, text="+", fg="red", bg="black")
+widthPlus.place(x=480, y=1, height=25, width=25, in_=window)
+
+widthMinus = tkinter.Button(window, text="-", fg="red", bg="black")
+widthMinus.place(x=460, y=1, height=25, width=25, in_=window)
+#startButton.bind("<Button 1>", partial(getOrigin))
+
+labelWidth = tkinter.Label(window, text="W:100")
+labelWidth.place(x=500, y=0, width=99, height=20, in_=window)
+# labelWidth.pack()
+
+labelHeight = tkinter.Label(window, text="H:50")
+labelHeight.place(x=600, y=0, width=99, height=20, in_=window)
+# labelHeight.pack()
+
+########################################
+
+# button = tkinter.Button(window, text="click me!")
+# button.place(x=500, y=0, in_=window)
+
+########################################
+
 # Collect mouse data [x,y]
 def collectMouseEventData(event):
     print("clicked at", event.x, event.y)
-
-# Quic terminate event
-def terminate_app():
-    if messagebox.askokcancel("Quit", "Do you really wish to quit?"):
-        window.destroy()
+    appCoordinate.configure(text="x:" + str(event.x) + " y:" + str(event.y))
 
 window.bind("<Button-1>", collectMouseEventData)
 
@@ -26,9 +55,43 @@ screen_width = window.winfo_screenwidth()
 screen_height = window.winfo_screenheight()
 window.geometry(str(screen_width) + "x" + str(screen_height))
 
+###############################################################################
+# Menu Events
+###############################################################################
+root_menu = tkinter.Menu(window)
+window.config(menu=root_menu)
+
+def myEvent():
+    print("Menu tab pressed...")
+
+def menuEventClearMap():
+    print("<Clear map>")
+
+# Quic terminate event
+def terminate_app():
+    if messagebox.askokcancel("Quit", "Do you really wish to quit?"):
+        window.destroy()
+
+# creating sub menus in the root menu
+# it intializes a new su menu in the root menu
+file_menu = tkinter.Menu(root_menu)
+# it creates the name of the sub menu
+root_menu.add_cascade(label="File", menu=file_menu)
+# it adds a option to the sub menu 'command' parameter is used to do some action
+file_menu.add_command(label="Clear map", command=menuEventClearMap)
+file_menu.add_command(label="Open files", command=myEvent)
+file_menu.add_separator()  # it adds a line after the 'Open files' option
+file_menu.add_command(label="Exit", command=terminate_app)
+
+# creting another sub menu
+edit_menu = tkinter.Menu(root_menu)
+root_menu.add_cascade(label="Edit", menu=myEvent)
+edit_menu.add_command(label="Undo", command=myEvent)
+edit_menu.add_command(label="Redo", command=myEvent)
+
 # GUI Labels
-appCoordinate = tkinter.Label(window, text="x y")
-appCoordinate.place(x=screen_width-200, y=0, height=30, width=150)
+appCoordinate = tkinter.Label(window, text="Coordinator")
+appCoordinate.place(x=screen_width-150, y=0, height=30, width=150)
 appCoordinate.pack()
 
 # Canvas
@@ -52,29 +115,15 @@ for x in range(0, screen_width, 10):
 # you 'delete' all
 # canvas.delete(tkinter.ALL)
 
+###############################################################################
+# Exit application
+###############################################################################
 
-def getOrigin(event):
-    global x0, y0
-    x0 = event.x
-    y0 = event.y
-    print("getOrigin: ", x0, y0)
-    # startButton.bind("<Button 1>", getextentx)
-
-startButton = tkinter.Button(window,
-                            text="START",
-                            fg="red",
-                            bg="black")
-startButton.pack()
-startButton.place(x=50, y=50, height=30, width=200)
-startButton.bind("<Button 1>", partial(getOrigin))
-
-window.bind("<Button 2>", getOrigin)
-
-quitButton = tkinter.Button(window,
-                   text="QUIT",
-                   fg="red",
-                   command=terminate_app)
-quitButton.pack()
-quitButton.place(x=50, y=0, height=30, width=200)
+# quitButton = tkinter.Button(window,
+#                   text="QUIT",
+#                   fg="red",
+#                   command=terminate_app)
+# quitButton.pack()
+# quitButton.place(x=50, y=0, height=30, width=200)
 
 window.mainloop()
