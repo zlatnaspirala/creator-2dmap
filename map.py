@@ -10,5 +10,4 @@ class myMap:
     print("New element added to the current map: " + self.name)
 
   def clear(self):
-    pass
-    # self.map.
+    self.map.clear()
