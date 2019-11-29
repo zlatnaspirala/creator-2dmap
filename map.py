@@ -3,6 +3,7 @@ class myMap:
   def __init__(self, name):
     self.name = name
     self.map = []
+    self.clipboardElementMemo = 0
 
   def add(self, x):
     self.map.append(x)
@@ -11,3 +12,6 @@ class myMap:
 
   def clear(self):
     self.map.clear()
+
+  def removeLast(self):
+    self.clipboardElementMemo = self.map.pop()
