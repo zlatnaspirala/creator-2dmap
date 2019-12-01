@@ -1,6 +1,6 @@
 
 class StaticGrounds:
-  def __init__(self, x, y, w, h, tex):
+  def __init__(self, x, y, w, h, tex, tilesX, tilesY):
     self.x = x
     self.y = y
     self.w = w
@@ -8,3 +8,5 @@ class StaticGrounds:
     self.x2 = self.w + self.x
     self.y2 = self.h + self.y
     self.texture = tex
+    self.tilesX = tilesX
+    self.tilesY = tilesY

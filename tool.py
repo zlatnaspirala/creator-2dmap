@@ -21,9 +21,18 @@ from PIL import ImageTk, Image
 window = tkinter.Tk()
 window.title("GUI tool creator-2dmap for vtge")
 
-defaultTexture = ImageTk.PhotoImage(Image.open("resource/nik.jpg"))
-panel = tkinter.Label(window, image=defaultTexture)
-panel.pack(side="bottom", fill="both", expand="yes")
+defaultTexture = "./imgs/grounds/texx.png"
+# virtual path
+# defaultTextureTool = ImageTk.PhotoImage(file='resource/texx.png')
+# anchor="nw"
+img = Image.open(r"resource/texx.png")
+img.resize((100,22), Image.ANTIALIAS)
+defaultTextureTool = ImageTk.PhotoImage(img)
+
+
+# ImageTk.PhotoImage(Image.open("resource/nik.jpg"))
+# panel = tkinter.Label(window, image=defaultTexture)
+# panel.pack(side="bottom", fill="both", expand="yes")
 
 # Setup dimension for window
 screen_width = window.winfo_screenwidth()
@@ -96,7 +105,9 @@ def collectMouseEventData(event):
                                event.y,
                                initValues.ELEMENT_WIDTH,
                                initValues.ELEMENT_HEIGHT,
-                               defaultTexture)
+                               defaultTexture,
+                               initValues.tilesX,
+                               initValues.tilesY)
     MyDefaultMap.add(localModel)
     drawMap()
 
@@ -127,12 +138,13 @@ def menuEventClearMap():
 data = []
 
 def menuEventSaveMap():
-  print("Map saved.")
   print(MyDefaultMap.map)
+  MyDefaultMap.prepareForExport()
+  json_string = json.dumps(MyDefaultMap.exportMap)
   print(os.getcwd(), os.path.abspath(__file__))
-  with open("map2d.json", "w") as write_file:
-    json.dump(MyDefaultMap.map, write_file)
-
+  with open("map2d.json", "w", newline='\r\n') as write_file:
+    json.dump(json.loads(json_string), write_file , indent=2)
+    print("Map saved.")
 
 # Quic terminate event
 def terminate_app():
@@ -185,9 +197,11 @@ def drawMap():
       line1 = canvas.create_line(0, x, screen_width, x, fill="blue")
       line2 = canvas.create_line(x, 0, x, screen_width, fill="red")
 
-  for element in MyDefaultMap.map:
-    canvas.create_rectangle(element.x, element.y,
-                            element.x2, element.y2, fill="blue")
+    for element in MyDefaultMap.map:
+      canvas.create_rectangle(element.x, element.y,
+                              element.x2, element.y2, fill="blue")
+      # ttt = canvas.create_image(element.x, element.y, anchor="nw", image=defaultTextureTool, height = 20, width = 200)
+      # canvas.itemconfig(ttt, image=defaultTextureTool)
 
 ###############################################################################
 # Files operation && map model
