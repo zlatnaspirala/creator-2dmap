@@ -42,9 +42,10 @@ window.geometry(str(screen_width) + "x" + str(screen_height))
 initValues = InitialData()
 MyDefaultMap = myMap("MyDefaultMap")
 
-topFrame = tkinter.Frame(window, background=initValues.topFrameBackgroundColor,
-                         height=screen_height, width=110)
-#topFrame.place(x=0, y=0, width=screen_width, height=100)
+topFrame = tkinter.Frame(window,
+                         background=initValues.topFrameBackgroundColor,
+                         height=screen_height,
+                         width=110)
 topFrame.pack(side="left", in_=window)
 
 varLabelTextW = StringVar()
@@ -56,7 +57,7 @@ varLabelTextH.set("height:20")
 # View UI tool
 # setup width
 def wplus():
-  initValues.ELEMENT_WIDTH = initValues.ELEMENT_WIDTH + 10
+  initValues.ELEMENT_WIDTH = initValues.ELEMENT_WIDTH + initValues.incDecWidth
   varLabelTextW.set("width:"+ str(initValues.ELEMENT_WIDTH))
 
 widthPlus = tkinter.Button(
@@ -64,7 +65,7 @@ widthPlus = tkinter.Button(
 widthPlus.place(x=0, y=20, height=25, width=50, in_=topFrame)
 
 def wminus():
-  initValues.ELEMENT_WIDTH = initValues.ELEMENT_WIDTH - 10
+  initValues.ELEMENT_WIDTH = initValues.ELEMENT_WIDTH - initValues.incDecWidth
   varLabelTextW.set("Width:" + str(initValues.ELEMENT_WIDTH))
 
 widthMinus = tkinter.Button(
@@ -79,20 +80,33 @@ labelHeight = tkinter.Label(window, textvariable=varLabelTextH)
 labelHeight.place(x=0, y=45, width=100, height=20, in_=topFrame)
 
 def hplus():
-  initValues.ELEMENT_HEIGHT = initValues.ELEMENT_HEIGHT + 10
-  varLabelTextH.set("height:" + str(initValues.ELEMENT_HEIGHT))
+  initValues.ELEMENT_HEIGHT = initValues.ELEMENT_HEIGHT + initValues.incDecHeight
+  varLabelTextH.set("Height:" + str(initValues.ELEMENT_HEIGHT))
 
 heightPlus = tkinter.Button(
     window, text="+", fg="red", bg="black", command=hplus)
 heightPlus.place(x=0, y=63, height=25, width=50, in_=topFrame)
 
 def hminus():
-  initValues.ELEMENT_HEIGHT = initValues.ELEMENT_HEIGHT - 10
-  varLabelTextH.set("height:" + str(initValues.ELEMENT_HEIGHT))
+  initValues.ELEMENT_HEIGHT = initValues.ELEMENT_HEIGHT - initValues.incDecHeight
+  varLabelTextH.set("Height:" + str(initValues.ELEMENT_HEIGHT))
 
 heightMinus = tkinter.Button(
     window, text="-", fg="red", bg="black", command=hminus)
 heightMinus.place(x=50, y=63, height=25, width=50, in_=topFrame)
+
+# Add new element method
+def addNewElements(loadedMap):
+  for element in loadedMap:
+    localModel = StaticGrounds(element['x'],
+                               element['y'],
+                               element['w'],
+                               element['h'],
+                               element['tex'],
+                               element['tiles']['tilesX'],
+                               element['tiles']['tilesY'])
+    MyDefaultMap.add(localModel)
+  drawMap()
 
 # Collect mouse & other data [x,y,w,h,tex]
 def collectMouseEventData(event):
@@ -150,11 +164,11 @@ def menuEventLoadMap():
     rawString = loadedMap.read()
     rawString = rawString.replace('[', '{ "root" : [')
     rawString = rawString.replace("]", "]}")
-    # test = json.load(f)
-    # json_data = json.loads(loadedMap)
-    print(">>>rawString>>" + rawString)
     json_data = json.loads(rawString)
-    print("JSON:::" + json_data['root'][0]["tex"])
+    json_data = json_data['root']
+    print("JSON:::" + json_data[0]["tex"])
+    addNewElements(json_data)
+
 
 # Quic terminate event
 def terminate_app():

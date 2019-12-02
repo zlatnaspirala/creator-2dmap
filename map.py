@@ -8,12 +8,21 @@ class myMap:
 
   def add(self, x):
     self.map.append(x)
-    print("New element", x)
     print("New element added to the current map: " + self.name)
 
   def prepareForExport(self):
     for element in self.map:
-      myObject = { "x": element.x, "y": element.y, "w": element.w, "h": element.h, "tex": element.texture, "tiles": { "tilesX": element.tilesX, "tilesY": element.tilesY } }
+      myObject = { "x": str(element.x),
+                   "y": str(element.y),
+                   "w": str(element.w),
+                   "h": str(element.h),
+                   "tex": element.texture,
+                   "tiles":
+                     {
+                       "tilesX": str(element.tilesX),
+                       "tilesY": str(element.tilesY)
+                     }
+                  }
       self.exportMap.append(myObject)
 
   def clear(self):
