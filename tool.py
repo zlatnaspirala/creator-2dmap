@@ -40,7 +40,7 @@ window.geometry(str(screen_width) + "x" + str(screen_height))
 
 # Define myMap object and instance initial data object
 initValues = InitialData()
-MyDefaultMap = myMap("MyDefaultMap")
+MyDefaultMap = myMap("MyDefaultMap", initValues)
 
 topFrame = tkinter.Frame(window,
                          background=initValues.topFrameBackgroundColor,
