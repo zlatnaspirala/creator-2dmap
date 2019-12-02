@@ -18,6 +18,7 @@ class myMap:
 
   def clear(self):
     self.map.clear()
+    self.exportMap.clear()
 
   def removeLast(self):
     self.clipboardElementMemo = self.map.pop()

@@ -25,10 +25,9 @@ defaultTexture = "./imgs/grounds/texx.png"
 # virtual path
 # defaultTextureTool = ImageTk.PhotoImage(file='resource/texx.png')
 # anchor="nw"
-img = Image.open(r"resource/texx.png")
-img.resize((100,22), Image.ANTIALIAS)
-defaultTextureTool = ImageTk.PhotoImage(img)
-
+# img = Image.open("resource/texx.png")
+# img.resize((100,22), Image.ANTIALIAS)
+# defaultTextureTool = ImageTk.PhotoImage(img)
 
 # ImageTk.PhotoImage(Image.open("resource/nik.jpg"))
 # panel = tkinter.Label(window, image=defaultTexture)
@@ -146,6 +145,17 @@ def menuEventSaveMap():
     json.dump(json.loads(json_string), write_file , indent=2)
     print("Map saved.")
 
+def menuEventLoadMap():
+  with open('map2d.json', 'r') as loadedMap:
+    rawString = loadedMap.read()
+    rawString = rawString.replace('[', '{ "root" : [')
+    rawString = rawString.replace("]", "]}")
+    # test = json.load(f)
+    # json_data = json.loads(loadedMap)
+    print(">>>rawString>>" + rawString)
+    json_data = json.loads(rawString)
+    print("JSON:::" + json_data['root'][0]["tex"])
+
 # Quic terminate event
 def terminate_app():
   if messagebox.askokcancel("Quit", "Do you really wish to quit?"):
@@ -155,8 +165,10 @@ def terminate_app():
 file_menu = tkinter.Menu(root_menu)
 # it creates the name of the sub menu
 root_menu.add_cascade(label="File", menu=file_menu)
-file_menu.add_command(label="Clear map", command=menuEventClearMap)
+file_menu.add_command(label="Load map", command=menuEventLoadMap)
 file_menu.add_command(label="Save map", command=menuEventSaveMap)
+file_menu.add_separator()
+file_menu.add_command(label="Clear map", command=menuEventClearMap)
 file_menu.add_separator()
 file_menu.add_command(label="Exit", command=terminate_app)
 # sub menu
@@ -180,9 +192,7 @@ canvas = tkinter.Canvas(
   )
 canvas.place(x=100, y=20, width=screen_width - 120, height=screen_height-130)
 print("Screen size: ", screen_width , screen_height, sep="-")
-
 # canvas.delete(line1)
-# you 'delete' all
 # canvas.delete(tkinter.ALL)
 
 ###############################################################################
@@ -190,23 +200,20 @@ print("Screen size: ", screen_width , screen_height, sep="-")
 ###############################################################################
 def drawMap():
   print("Draw Map")
-
   if initValues.canvasGridVisible == True:
     # Grid for canvas
     for x in range(0, screen_width, 100):
-      line1 = canvas.create_line(0, x, screen_width, x, fill="blue")
+      line1 = canvas.create_line(0, x, screen_width, x, fill="orange")
       line2 = canvas.create_line(x, 0, x, screen_width, fill="red")
 
-    for element in MyDefaultMap.map:
-      canvas.create_rectangle(element.x, element.y,
-                              element.x2, element.y2, fill="blue")
+  for element in MyDefaultMap.map:
+    canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="blue")
       # ttt = canvas.create_image(element.x, element.y, anchor="nw", image=defaultTextureTool, height = 20, width = 200)
-      # canvas.itemconfig(ttt, image=defaultTextureTool)
+      # canvas.itemconfig(ttt, image=defaultTextureTool) ?
 
 ###############################################################################
 # Files operation && map model
 ###############################################################################
-
 
 #command = 'echo "$(pwd)"'
 #process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
