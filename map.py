@@ -12,6 +12,21 @@ class myMap:
     self.map.append(x)
     print("New element added to the current map: " + self.name)
 
+  def prepareForSave(self):
+    for element in self.map:
+      myObject = { "x": str(element.x),
+                   "y": str(element.y),
+                   "w": str(element.w),
+                   "h": str(element.h),
+                   "tex": element.texture,
+                   "tiles":
+                     {
+                       "tilesX": str(element.tilesX),
+                       "tilesY": str(element.tilesY)
+                     }
+                  }
+      self.exportMap.append(myObject)
+
   def prepareForExport(self):
     for element in self.map:
       myObject = { "x": str(element.x *  self.initValues.exportScale),
@@ -25,11 +40,12 @@ class myMap:
                        "tilesY": str(element.tilesY)
                      }
                   }
-      self.exportMap.append(myObject)
+      self.exportMap2.append(myObject)
 
   def clear(self):
     self.map.clear()
     self.exportMap.clear()
+    self.exportMap2.clear()
 
   def removeLast(self):
     self.clipboardElementMemo = self.map.pop()

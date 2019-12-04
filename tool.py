@@ -152,21 +152,29 @@ data = []
 
 def menuEventSaveMap():
   print(MyDefaultMap.map)
-  MyDefaultMap.prepareForExport()
+  MyDefaultMap.prepareForSave()
   json_string = json.dumps(MyDefaultMap.exportMap)
   print(os.getcwd(), os.path.abspath(__file__))
-  with open("map2d.json", "w", newline='\r\n') as write_file:
+  with open("map2d.creator", "w", newline='\r\n') as write_file:
+    json.dump(json.loads(json_string), write_file , indent=2)
+    print("Map saved.")
+
+def menuEventExportMap():
+  print(MyDefaultMap.map)
+  MyDefaultMap.prepareForExport()
+  json_string = json.dumps(MyDefaultMap.exportMap2)
+  print(os.getcwd(), os.path.abspath(__file__))
+  with open("map2d.ppack", "w", newline='\r\n') as write_file:
     json.dump(json.loads(json_string), write_file , indent=2)
     print("Map saved.")
 
 def menuEventLoadMap():
-  with open('map2d.json', 'r') as loadedMap:
+  with open('map2d.creator', 'r') as loadedMap:
     rawString = loadedMap.read()
     rawString = rawString.replace('[', '{ "root" : [')
     rawString = rawString.replace("]", "]}")
     json_data = json.loads(rawString)
     json_data = json_data['root']
-    print("JSON:::" + json_data[0]["tex"])
     addNewElements(json_data)
 
 
@@ -181,6 +189,7 @@ file_menu = tkinter.Menu(root_menu)
 root_menu.add_cascade(label="File", menu=file_menu)
 file_menu.add_command(label="Load map", command=menuEventLoadMap)
 file_menu.add_command(label="Save map", command=menuEventSaveMap)
+file_menu.add_command(label="Export map", command=menuEventExportMap)
 file_menu.add_separator()
 file_menu.add_command(label="Clear map", command=menuEventClearMap)
 file_menu.add_separator()
