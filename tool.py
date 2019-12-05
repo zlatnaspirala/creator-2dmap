@@ -14,6 +14,7 @@ import subprocess
 import json
 import PIL
 from PIL import ImageTk, Image
+from common.stickler import Stickler
 
 ###############################################################################
 # Define window object, Map instance, general screen w/h
@@ -41,6 +42,7 @@ window.geometry(str(screen_width) + "x" + str(screen_height))
 # Define myMap object and instance initial data object
 initValues = InitialData()
 MyDefaultMap = myMap("MyDefaultMap", initValues)
+editorStickler = Stickler(initValues.stickler)
 
 topFrame = tkinter.Frame(window,
                          background=initValues.topFrameBackgroundColor,
@@ -112,10 +114,15 @@ def addNewElements(loadedMap):
 def collectMouseEventData(event):
   if event.y > 20 and event.x > 100:
     print("clicked at", event.x, event.y)
+    x = event.x
+    y = event.y
     local = "x:" + str(event.x) + ", y:" + str(event.y)
     appCoordinate.configure(text=local)
-    localModel = StaticGrounds(event.x,
-                               event.y,
+    if initValues.stickler["enabled"] == True:
+      x = editorStickler.recalculateX(x)
+      print("Enabled !!")
+    localModel = StaticGrounds(x,
+                               y,
                                initValues.ELEMENT_WIDTH,
                                initValues.ELEMENT_HEIGHT,
                                defaultTexture,
@@ -213,7 +220,7 @@ canvas = tkinter.Canvas(
     height=screen_height - 110,
     background=initValues.windowBackgroundColor
   )
-canvas.place(x=100, y=20, width=screen_width - 120, height=screen_height-130)
+canvas.place(x=100, y=20, width=screen_width - 120, height=screen_height - 130)
 print("Screen size: ", screen_width , screen_height, sep="-")
 # canvas.delete(line1)
 # canvas.delete(tkinter.ALL)
@@ -225,7 +232,7 @@ def drawMap():
   print("Draw Map")
   if initValues.canvasGridVisible == True:
     # Grid for canvas
-    for x in range(0, screen_width, 100):
+    for x in range(100, screen_width, 100):
       line1 = canvas.create_line(0, x, screen_width, x, fill="orange")
       line2 = canvas.create_line(x, 0, x, screen_width, fill="red")
 

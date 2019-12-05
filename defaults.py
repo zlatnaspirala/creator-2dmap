@@ -1,7 +1,10 @@
 
 class InitialData:
   def __init__(self):
-    self.exportInOneLine = false;
+    self.exportInOneLine = False # next feature
+    self.stickler = {}
+    self.stickler["enabled"] = True
+    self.stickler["mod"] = 50
     self.exportScale = 5
     self.ELEMENT_WIDTH=20
     self.ELEMENT_HEIGHT=20
