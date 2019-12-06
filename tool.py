@@ -42,7 +42,7 @@ window.geometry(str(screen_width) + "x" + str(screen_height))
 # Define myMap object and instance initial data object
 initValues = InitialData()
 MyDefaultMap = myMap("MyDefaultMap", initValues)
-editorStickler = Stickler(initValues.stickler)
+editorStickler = Stickler(initValues.stickler, initValues.gridWidth)
 
 topFrame = tkinter.Frame(window,
                          background=initValues.topFrameBackgroundColor,
@@ -118,9 +118,15 @@ def collectMouseEventData(event):
     y = event.y
     local = "x:" + str(event.x) + ", y:" + str(event.y)
     appCoordinate.configure(text=local)
-    if initValues.stickler["enabled"] == True:
+
+    if initValues.stickler["enabledX"] == True:
       x = editorStickler.recalculateX(x)
-      print("Enabled !!")
+      print("Enabled X stickler.")
+
+    if initValues.stickler["enabledY"] == True:
+      y = editorStickler.recalculateX(y)
+      print(" Y ")
+
     localModel = StaticGrounds(x,
                                y,
                                initValues.ELEMENT_WIDTH,
@@ -194,6 +200,17 @@ def showAbout():
     https://github.com/zlatnaspirala/creator-2dmap
   """)
 
+def showGrid():
+  print("showGrid")
+  if initValues.canvasGridVisible == True:
+    initValues.canvasGridVisible = not initValues.canvasGridVisible
+    options_menu.entryconfigure(1, label="Show Grid's")
+    drawMap()
+  else:
+    initValues.canvasGridVisible = not initValues.canvasGridVisible
+    options_menu.entryconfigure(1, label="Hide Grid's")
+    drawMap()
+
 # Quic terminate event
 def terminate_app():
   if messagebox.askokcancel("Quit", "Do you really wish to quit?"):
@@ -215,9 +232,21 @@ edit_menu = tkinter.Menu(root_menu)
 root_menu.add_cascade(label="Edit", menu=edit_menu)
 edit_menu.add_command(label="Undo last added", command=undoRemoveLast)
 edit_menu.add_command(label="Redo last added", command=myEvent)
+
+# Options menu
+options_names = {
+  "showGrid": "Show Grid"
+}
+options_menu = tkinter.Menu(root_menu)
+root_menu.add_cascade(label="Options", menu=options_menu)
+options_menu.add_command(label=options_names["showGrid"], command=showGrid)
+stickler_menu = tkinter.Menu(options_menu)
+options_menu.add_cascade(label="Sticklers", menu=stickler_menu)
+stickler_menu.add_command(label="Disable stick by X", command=initValues.setSticklerEnabledX)
+
 # about
-about_menu = tkinter.Menu(label="About" menu=root_menu)
-root_menu.add_cascade(about_menu)
+about_menu = tkinter.Menu(root_menu)
+root_menu.add_cascade(label="About", menu=about_menu)
 about_menu.add_command(label="creator-map2d", command=showAbout)
 
 # GUI Labels
@@ -242,9 +271,10 @@ print("Screen size: ", screen_width , screen_height, sep="-")
 # Re Draw map element's
 ###############################################################################
 def drawMap():
-  print("Draw Map")
+  print("Draw Map initValues.canvasGridVisible", initValues.canvasGridVisible)
+  canvas.delete("all")
   if initValues.canvasGridVisible == True:
-    # Grid for canvas
+    print("Draw Map GRID")
     for x in range(100, screen_width, initValues.gridWidth):
       line1 = canvas.create_line(0, x, screen_width, x, fill="orange")
       line2 = canvas.create_line(x, 0, x, screen_width, fill="red")

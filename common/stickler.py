@@ -2,9 +2,14 @@
 import array
 
 class Stickler:
-  def __init__(self, initValue):
+
+  def __init__(self, initValue, initGrid):
     self.mod = initValue["mod"]
+    self.gridWidth = initGrid
     print(self.mod)
+
+  def setMargin(self, newMargin):
+    self.mod = newMargin
 
   def recalculateX(self, x):
 
@@ -12,12 +17,11 @@ class Stickler:
     localSample = []
     LocalSampleValue = []
 
-    for locGrid in range(100, 2000, 100):
+    for locGrid in range(100, 2000, self.gridWidth):
       # print(x)
       # sample
       localSample.append(abs(locGrid - x))
       LocalSampleValue.append(locGrid)
-      print(localSample[0])
 
     res_min = min(float(sub) for sub in localSample)
 
@@ -27,9 +31,9 @@ class Stickler:
       fixPoint = LocalSampleValue[lookAT]
       print("FP ", fixPoint)
       x = fixPoint
-
+    print("outcall x", x)
     return x
 
-  def recalculateY(y):
+  def recalculateY(self, y):
     print("recal y")
     return y

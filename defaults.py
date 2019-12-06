@@ -3,8 +3,9 @@ class InitialData:
   def __init__(self):
     self.exportInOneLine = False # next feature
     self.stickler = {}
-    self.stickler["enabled"] = True
-    self.stickler["mod"] = 10
+    self.stickler["enabledX"] = True
+    self.stickler["enabledY"] = True
+    self.stickler["mod"] = 30
     self.gridWidth = 50
     self.exportScale = 5
     self.ELEMENT_WIDTH=20
@@ -18,3 +19,6 @@ class InitialData:
     self.tilesY = 1
   def redefine():
     print("Redefine init values...")
+  def setSticklerEnabledX(self):
+    self.stickler["enabledX"] = not self.stickler["enabledX"]
+    print("stickler[enabledX]: ", self.stickler["enabledX"])
