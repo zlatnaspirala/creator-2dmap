@@ -4,7 +4,8 @@ class InitialData:
     self.exportInOneLine = False # next feature
     self.stickler = {}
     self.stickler["enabled"] = True
-    self.stickler["mod"] = 50
+    self.stickler["mod"] = 10
+    self.gridWidth = 50
     self.exportScale = 5
     self.ELEMENT_WIDTH=20
     self.ELEMENT_HEIGHT=20

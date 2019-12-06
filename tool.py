@@ -112,7 +112,7 @@ def addNewElements(loadedMap):
 
 # Collect mouse & other data [x,y,w,h,tex]
 def collectMouseEventData(event):
-  if event.y > 20 and event.x > 100:
+  if event.y > 50 and event.x > 50:
     print("clicked at", event.x, event.y)
     x = event.x
     y = event.y
@@ -184,6 +184,15 @@ def menuEventLoadMap():
     json_data = json_data['root']
     addNewElements(json_data)
 
+# About
+def showAbout():
+  messagebox.showinfo("About", """
+    Original source project `creator-2dmap`
+    created by Nikola Lukic zlatnaspirala@gmail.com
+    LICENCE:
+    GNU LESSER GENERAL PUBLIC LICENSE Version 3
+    https://github.com/zlatnaspirala/creator-2dmap
+  """)
 
 # Quic terminate event
 def terminate_app():
@@ -206,6 +215,10 @@ edit_menu = tkinter.Menu(root_menu)
 root_menu.add_cascade(label="Edit", menu=edit_menu)
 edit_menu.add_command(label="Undo last added", command=undoRemoveLast)
 edit_menu.add_command(label="Redo last added", command=myEvent)
+# about
+about_menu = tkinter.Menu(label="About" menu=root_menu)
+root_menu.add_cascade(about_menu)
+about_menu.add_command(label="creator-map2d", command=showAbout)
 
 # GUI Labels
 appCoordinate = tkinter.Label(window, text="Coordinator")
@@ -232,7 +245,7 @@ def drawMap():
   print("Draw Map")
   if initValues.canvasGridVisible == True:
     # Grid for canvas
-    for x in range(100, screen_width, 100):
+    for x in range(100, screen_width, initValues.gridWidth):
       line1 = canvas.create_line(0, x, screen_width, x, fill="orange")
       line2 = canvas.create_line(x, 0, x, screen_width, fill="red")
 
@@ -240,6 +253,8 @@ def drawMap():
     canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="blue")
       # ttt = canvas.create_image(element.x, element.y, anchor="nw", image=defaultTextureTool, height = 20, width = 200)
       # canvas.itemconfig(ttt, image=defaultTextureTool) ?
+
+drawMap()
 
 ###############################################################################
 # Files operation && map model
