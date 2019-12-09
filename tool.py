@@ -42,7 +42,7 @@ window.geometry(str(screen_width) + "x" + str(screen_height))
 # Define myMap object and instance initial data object
 initValues = InitialData()
 MyDefaultMap = myMap("MyDefaultMap", initValues)
-editorStickler = Stickler(initValues.stickler, initValues.gridWidth)
+editorStickler = Stickler(initValues)
 
 topFrame = tkinter.Frame(window,
                          background=initValues.topFrameBackgroundColor,
@@ -193,10 +193,10 @@ def menuEventLoadMap():
 # About
 def showAbout():
   messagebox.showinfo("About", """
-    Original source project `creator-2dmap`
-    created by Nikola Lukic zlatnaspirala@gmail.com
-    LICENCE:
-    GNU LESSER GENERAL PUBLIC LICENSE Version 3
+    Original source project `creator-2dmap` ver 0.1 \n
+    created by Nikola Lukic zlatnaspirala@gmail.com \n
+    LICENCE: \n
+    GNU LESSER GENERAL PUBLIC LICENSE Version 3 \n
     https://github.com/zlatnaspirala/creator-2dmap
   """)
 
@@ -234,15 +234,36 @@ edit_menu.add_command(label="Undo last added", command=undoRemoveLast)
 edit_menu.add_command(label="Redo last added", command=myEvent)
 
 # Options menu
-options_names = {
-  "showGrid": "Show Grid"
-}
+options_names = {}
+options_names["showGrid"] = "Show Grid"
+options_names["DSticklerX"] = "Disable stick by X"
+options_names["DSticklerY"] = "Disable stick by Y"
+
+def DSticklerX():
+  if options_names["DSticklerX"] == "Enable stick by X":
+    options_names["DSticklerX"] = "Disable stick by X"
+  else:
+    options_names["DSticklerX"] = "Enable stick by X"
+
+  initValues.setSticklerEnabledX()
+  stickler_menu.entryconfigure(1, label=options_names["DSticklerX"])
+
+def DSticklerY():
+  if options_names["DSticklerY"] == "Enable stick by Y":
+    options_names["DSticklerY"] = "Disable stick by Y"
+  else:
+    options_names["DSticklerY"] = "Enable stick by Y"
+
+  initValues.setSticklerEnabledY()
+  stickler_menu.entryconfigure(2, label=options_names["DSticklerY"])
+
 options_menu = tkinter.Menu(root_menu)
 root_menu.add_cascade(label="Options", menu=options_menu)
 options_menu.add_command(label=options_names["showGrid"], command=showGrid)
 stickler_menu = tkinter.Menu(options_menu)
 options_menu.add_cascade(label="Sticklers", menu=stickler_menu)
-stickler_menu.add_command(label="Disable stick by X", command=initValues.setSticklerEnabledX)
+stickler_menu.add_command(label=options_names["DSticklerX"], command=DSticklerX)
+stickler_menu.add_command(label=options_names["DSticklerY"], command=DSticklerY)
 
 # about
 about_menu = tkinter.Menu(root_menu)

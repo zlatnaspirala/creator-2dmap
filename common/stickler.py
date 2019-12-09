@@ -3,9 +3,10 @@ import array
 
 class Stickler:
 
-  def __init__(self, initValue, initGrid):
-    self.mod = initValue["mod"]
-    self.gridWidth = initGrid
+  def __init__(self, initValue):
+    self.initValue = initValue
+    self.mod = initValue.stickler["mod"]
+    self.gridWidth = initValue.gridWidth
     print(self.mod)
 
   def setMargin(self, newMargin):
@@ -16,6 +17,9 @@ class Stickler:
     print("recal", x)
     localSample = []
     LocalSampleValue = []
+
+    # just default
+    localRightOrLeft = "right"
 
     for locGrid in range(100, 2000, self.gridWidth):
       # print(x)
@@ -28,9 +32,14 @@ class Stickler:
     if res_min < self.mod:
       lookAT = localSample.index(res_min)
       print("min ", res_min)
-      fixPoint = LocalSampleValue[lookAT]
-      print("FP ", fixPoint)
-      x = fixPoint
+      if LocalSampleValue[lookAT] - x > 0:
+        fixPoint = LocalSampleValue[lookAT] - self.initValue.ELEMENT_WIDTH
+        x = fixPoint
+        print("LEFT")
+      else:
+        fixPoint = LocalSampleValue[lookAT]
+        print("FP ", fixPoint)
+        x = fixPoint
     print("outcall x", x)
     return x
 

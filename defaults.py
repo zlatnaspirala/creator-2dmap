@@ -22,3 +22,6 @@ class InitialData:
   def setSticklerEnabledX(self):
     self.stickler["enabledX"] = not self.stickler["enabledX"]
     print("stickler[enabledX]: ", self.stickler["enabledX"])
+  def setSticklerEnabledY(self):
+    self.stickler["enabledY"] = not self.stickler["enabledY"]
+    print("stickler[enabledY]: ", self.stickler["enabledY"])
