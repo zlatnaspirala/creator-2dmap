@@ -4,3 +4,5 @@ common/__pycache__/stickler.cpython-38.pyc
 *.pyc
 *.pyc
 map2d.ppack
+*.pyc
+__pycache__/defaults.cpython-38.pyc

@@ -2,12 +2,14 @@
 class InitialData:
   def __init__(self):
     self.exportInOneLine = False # next feature
+    self.absolutePacksPathEnabled = True
+    self.absolutePacksPath = "E:\\web_server\\xampp\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\scripts\\packs\\"
     self.stickler = {}
     self.stickler["enabledX"] = True
     self.stickler["enabledY"] = True
     self.stickler["mod"] = 30
     self.gridWidth = 50
-    self.exportScale = 3
+    self.exportScale = 10
     self.ELEMENT_WIDTH=20
     self.ELEMENT_HEIGHT=20
     self.incDecWidth = 10
@@ -17,8 +19,9 @@ class InitialData:
     self.canvasGridVisible = True
     self.tilesX = 5
     self.tilesY = 1
-  def redefine():
-    print("Redefine init values...")
+  def redefineExportScale(self, newExportScale):
+    self.exportScale = newExportScale
+    print("Redefine init value for exportScale = ", newExportScale)
   def setSticklerEnabledX(self):
     self.stickler["enabledX"] = not self.stickler["enabledX"]
     print("stickler[enabledX]: ", self.stickler["enabledX"])

@@ -29,10 +29,10 @@ class myMap:
 
   def prepareForExport(self):
     for element in self.map:
-      myObject = { "x": element.x *  self.initValues.exportScale,
-                   "y": element.y *  self.initValues.exportScale,
-                   "w": element.w *  self.initValues.exportScale,
-                   "h": element.h *  self.initValues.exportScale,
+      myObject = { "x": element.x * self.initValues.exportScale,
+                   "y": element.y * self.initValues.exportScale,
+                   "w": element.w * self.initValues.exportScale,
+                   "h": element.h * self.initValues.exportScale,
                    "tex": element.texture,
                    "tiles":
                      {

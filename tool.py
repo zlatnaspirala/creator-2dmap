@@ -112,7 +112,7 @@ def addNewElements(loadedMap):
 
 # Collect mouse & other data [x,y,w,h,tex]
 def collectMouseEventData(event):
-  if event.y > 50 and event.x > 50:
+  if event.y > 0 and event.x > 50:
     print("clicked at", event.x, event.y)
     x = event.x
     y = event.y
@@ -177,7 +177,14 @@ def menuEventExportMap():
   MyDefaultMap.prepareForExport()
   json_string = json.dumps(MyDefaultMap.exportMap2)
   print(os.getcwd(), os.path.abspath(__file__))
-  with open("map2d.ppack", "w", newline='\r\n') as write_file:
+  exportPathName = "map2d.ts"
+  # absolutePacksPath
+  if initValues.absolutePacksPathEnabled == True:
+    exportPathName = initValues.absolutePacksPath + exportPathName
+    print("Save export intro absolute path.")
+  with open(str(exportPathName), "w", newline='\r\n') as write_file:
+    json_string = json_string.replace("[", "let grounds_generated = [")
+    json_string = json_string.replace("]", "]; export default grounds_generated;")
     write_file.write(json_string)
     # json.dump(json.loads(json_string), write_file , indent=2)
     print("Map saved.")
