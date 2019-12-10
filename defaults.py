@@ -7,7 +7,7 @@ class InitialData:
     self.stickler["enabledY"] = True
     self.stickler["mod"] = 30
     self.gridWidth = 50
-    self.exportScale = 5
+    self.exportScale = 3
     self.ELEMENT_WIDTH=20
     self.ELEMENT_HEIGHT=20
     self.incDecWidth = 10

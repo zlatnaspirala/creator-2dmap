@@ -22,7 +22,7 @@ from common.stickler import Stickler
 window = tkinter.Tk()
 window.title("GUI tool creator-2dmap for vtge")
 
-defaultTexture = "./imgs/grounds/texx.png"
+defaultTexture = "imgs/texx.png"
 # virtual path
 # defaultTextureTool = ImageTk.PhotoImage(file='resource/texx.png')
 # anchor="nw"
@@ -178,7 +178,8 @@ def menuEventExportMap():
   json_string = json.dumps(MyDefaultMap.exportMap2)
   print(os.getcwd(), os.path.abspath(__file__))
   with open("map2d.ppack", "w", newline='\r\n') as write_file:
-    json.dump(json.loads(json_string), write_file , indent=2)
+    write_file.write(json_string)
+    # json.dump(json.loads(json_string), write_file , indent=2)
     print("Map saved.")
 
 def menuEventLoadMap():

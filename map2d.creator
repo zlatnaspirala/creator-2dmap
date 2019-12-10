@@ -1,318 +1,21 @@
 [
   {
-    "x": "530.0",
-    "y": "300.0",
-    "w": "20.0",
+    "x": "100.0",
+    "y": "100.0",
+    "w": "400.0",
     "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
+    "tex": "imgs/texx.png",
     "tiles": {
       "tilesX": "5.0",
       "tilesY": "1.0"
     }
   },
   {
-    "x": "930.0",
-    "y": "530.0",
-    "w": "20.0",
+    "x": "100.0",
+    "y": "250.0",
+    "w": "400.0",
     "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "980.0",
-    "y": "500.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "980.0",
-    "y": "530.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "1030.0",
-    "y": "530.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "1030.0",
-    "y": "500.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "780.0",
-    "y": "630.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "780.0",
-    "y": "600.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "800.0",
-    "y": "630.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "800.0",
-    "y": "600.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "750.0",
-    "y": "550.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "800.0",
-    "y": "550.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "830.0",
-    "y": "550.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "830.0",
-    "y": "580.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "800.0",
-    "y": "580.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "600.0",
-    "y": "730.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "600.0",
-    "y": "700.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "600.0",
-    "y": "650.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "600.0",
-    "y": "580.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "600.0",
-    "y": "530.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "600.0",
-    "y": "500.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "600.0",
-    "y": "480.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "600.0",
-    "y": "450.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "600.0",
-    "y": "430.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "630.0",
-    "y": "430.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "630.0",
-    "y": "400.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "600.0",
-    "y": "400.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "600.0",
-    "y": "380.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "600.0",
-    "y": "630.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
+    "tex": "imgs/texx.png",
     "tiles": {
       "tilesX": "5.0",
       "tilesY": "1.0"
@@ -320,120 +23,98 @@
   },
   {
     "x": "550.0",
-    "y": "600.0",
-    "w": "20.0",
+    "y": "200.0",
+    "w": "400.0",
     "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
+    "tex": "imgs/texx.png",
     "tiles": {
       "tilesX": "5.0",
       "tilesY": "1.0"
     }
   },
   {
-    "x": "500.0",
-    "y": "700.0",
-    "w": "20.0",
+    "x": "550.0",
+    "y": "-250.0",
+    "w": "400.0",
     "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
+    "tex": "imgs/texx.png",
     "tiles": {
       "tilesX": "5.0",
       "tilesY": "1.0"
     }
   },
   {
-    "x": "500.0",
-    "y": "730.0",
-    "w": "20.0",
+    "x": "550.0",
+    "y": "-250.0",
+    "w": "400.0",
     "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
+    "tex": "imgs/texx.png",
     "tiles": {
       "tilesX": "5.0",
       "tilesY": "1.0"
     }
   },
   {
-    "x": "480.0",
-    "y": "730.0",
-    "w": "20.0",
+    "x": "550.0",
+    "y": "-250.0",
+    "w": "400.0",
     "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
+    "tex": "imgs/texx.png",
     "tiles": {
       "tilesX": "5.0",
       "tilesY": "1.0"
     }
   },
   {
-    "x": "100.0",
-    "y": "300.0",
-    "w": "20.0",
+    "x": "550.0",
+    "y": "-250.0",
+    "w": "400.0",
     "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
+    "tex": "imgs/texx.png",
     "tiles": {
       "tilesX": "5.0",
       "tilesY": "1.0"
     }
   },
   {
-    "x": "100.0",
-    "y": "330.0",
-    "w": "20.0",
+    "x": "550.0",
+    "y": "-250.0",
+    "w": "400.0",
     "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
+    "tex": "imgs/texx.png",
     "tiles": {
       "tilesX": "5.0",
       "tilesY": "1.0"
     }
   },
   {
-    "x": "100.0",
-    "y": "330.0",
-    "w": "20.0",
+    "x": "550.0",
+    "y": "100.0",
+    "w": "400.0",
     "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
+    "tex": "imgs/texx.png",
     "tiles": {
       "tilesX": "5.0",
       "tilesY": "1.0"
     }
   },
   {
-    "x": "130.0",
-    "y": "300.0",
-    "w": "20.0",
+    "x": "550.0",
+    "y": "-250.0",
+    "w": "400.0",
     "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
+    "tex": "imgs/texx.png",
     "tiles": {
       "tilesX": "5.0",
       "tilesY": "1.0"
     }
   },
   {
-    "x": "130.0",
-    "y": "330.0",
-    "w": "20.0",
+    "x": "550.0",
+    "y": "-250.0",
+    "w": "400.0",
     "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "100.0",
-    "y": "250.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "130.0",
-    "y": "250.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
+    "tex": "imgs/texx.png",
     "tiles": {
       "tilesX": "5.0",
       "tilesY": "1.0"
@@ -441,10 +122,10 @@
   },
   {
     "x": "200.0",
-    "y": "300.0",
-    "w": "20.0",
+    "y": "-250.0",
+    "w": "400.0",
     "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
+    "tex": "imgs/texx.png",
     "tiles": {
       "tilesX": "5.0",
       "tilesY": "1.0"
@@ -452,54 +133,10 @@
   },
   {
     "x": "200.0",
-    "y": "330.0",
-    "w": "20.0",
+    "y": "-250.0",
+    "w": "400.0",
     "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "150.0",
-    "y": "400.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "100.0",
-    "y": "400.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "130.0",
-    "y": "400.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    }
-  },
-  {
-    "x": "180.0",
-    "y": "400.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
+    "tex": "imgs/texx.png",
     "tiles": {
       "tilesX": "5.0",
       "tilesY": "1.0"
@@ -507,10 +144,87 @@
   },
   {
     "x": "200.0",
-    "y": "400.0",
-    "w": "20.0",
+    "y": "-250.0",
+    "w": "400.0",
     "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
+    "tex": "imgs/texx.png",
+    "tiles": {
+      "tilesX": "5.0",
+      "tilesY": "1.0"
+    }
+  },
+  {
+    "x": "200.0",
+    "y": "-250.0",
+    "w": "400.0",
+    "h": "20.0",
+    "tex": "imgs/texx.png",
+    "tiles": {
+      "tilesX": "5.0",
+      "tilesY": "1.0"
+    }
+  },
+  {
+    "x": "550.0",
+    "y": "-250.0",
+    "w": "400.0",
+    "h": "20.0",
+    "tex": "imgs/texx.png",
+    "tiles": {
+      "tilesX": "5.0",
+      "tilesY": "1.0"
+    }
+  },
+  {
+    "x": "550.0",
+    "y": "-250.0",
+    "w": "400.0",
+    "h": "20.0",
+    "tex": "imgs/texx.png",
+    "tiles": {
+      "tilesX": "5.0",
+      "tilesY": "1.0"
+    }
+  },
+  {
+    "x": "200.0",
+    "y": "-250.0",
+    "w": "400.0",
+    "h": "20.0",
+    "tex": "imgs/texx.png",
+    "tiles": {
+      "tilesX": "5.0",
+      "tilesY": "1.0"
+    }
+  },
+  {
+    "x": "200.0",
+    "y": "-250.0",
+    "w": "400.0",
+    "h": "20.0",
+    "tex": "imgs/texx.png",
+    "tiles": {
+      "tilesX": "5.0",
+      "tilesY": "1.0"
+    }
+  },
+  {
+    "x": "600.0",
+    "y": "-250.0",
+    "w": "400.0",
+    "h": "20.0",
+    "tex": "imgs/texx.png",
+    "tiles": {
+      "tilesX": "5.0",
+      "tilesY": "1.0"
+    }
+  },
+  {
+    "x": "600.0",
+    "y": "-250.0",
+    "w": "400.0",
+    "h": "20.0",
+    "tex": "imgs/texx.png",
     "tiles": {
       "tilesX": "5.0",
       "tilesY": "1.0"
@@ -518,10 +232,43 @@
   },
   {
     "x": "250.0",
-    "y": "430.0",
-    "w": "20.0",
+    "y": "-250.0",
+    "w": "400.0",
     "h": "20.0",
-    "tex": "./imgs/grounds/texx.png",
+    "tex": "imgs/texx.png",
+    "tiles": {
+      "tilesX": "5.0",
+      "tilesY": "1.0"
+    }
+  },
+  {
+    "x": "250.0",
+    "y": "-250.0",
+    "w": "400.0",
+    "h": "20.0",
+    "tex": "imgs/texx.png",
+    "tiles": {
+      "tilesX": "5.0",
+      "tilesY": "1.0"
+    }
+  },
+  {
+    "x": "600.0",
+    "y": "150.0",
+    "w": "400.0",
+    "h": "20.0",
+    "tex": "imgs/texx.png",
+    "tiles": {
+      "tilesX": "5.0",
+      "tilesY": "1.0"
+    }
+  },
+  {
+    "x": "800.0",
+    "y": "250.0",
+    "w": "400.0",
+    "h": "20.0",
+    "tex": "imgs/texx.png",
     "tiles": {
       "tilesX": "5.0",
       "tilesY": "1.0"
