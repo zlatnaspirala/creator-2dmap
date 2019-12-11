@@ -43,6 +43,35 @@ class Stickler:
     print("outcall x", x)
     return x
 
-  def recalculateY(self, y):
+  # It is just called `x`
+  def recalculateY(self, x):
     print("recal y")
-    return y
+    print("recal", x)
+    localSample = []
+    LocalSampleValue = []
+
+    # just default
+    localRightOrLeft = "right"
+
+    for locGrid in range(100, 2000, self.gridWidth):
+      # print(x)
+      # sample
+      localSample.append(abs(locGrid - x))
+      LocalSampleValue.append(locGrid)
+
+    res_min = min(float(sub) for sub in localSample)
+
+    if res_min < self.mod:
+      lookAT = localSample.index(res_min)
+      print("min ", res_min)
+      if LocalSampleValue[lookAT] - x > 0:
+        fixPoint = LocalSampleValue[lookAT] - self.initValue.ELEMENT_HEIGHT
+        x = fixPoint
+        print("top")
+      else:
+        fixPoint = LocalSampleValue[lookAT]
+        print("fpoint:", fixPoint)
+        x = fixPoint
+    print("outcall y", x)
+    return x
+
