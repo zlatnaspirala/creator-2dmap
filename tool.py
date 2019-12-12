@@ -154,20 +154,51 @@ tileYMinus = tkinter.Button(window, text="-", command=tileYminus)
 tileYMinus.place(x=50, y=155, height=25, width=50, in_=topFrame)
 
 ###############################################################################
+# Left box - ExportScale
+###############################################################################
+# for tilesY
+
+varLabelTextexportScale = StringVar()
+varLabelTextexportScale.set("exportScale:" + str(initValues.exportScale))
+
+labelExportScale = tkinter.Label(window, textvariable=varLabelTextexportScale)
+labelExportScale.place(x=0, y=230, width=100, height=20, in_=topFrame)
+
+def exportScaleplus():
+  initValues.exportScale = initValues.exportScale + 1
+  varLabelTextexportScale.set("exportScale:" + str(initValues.exportScale))
+
+exportScalePlus = tkinter.Button(window, text="+", command=exportScaleplus)
+exportScalePlus.place(x=0, y=255, height=25, width=50, in_=topFrame)
+
+def exportScaleminus():
+  if initValues.exportScale > 1:
+    initValues.exportScale = initValues.exportScale - 1
+    varLabelTextexportScale.set("exportScale:" + str(initValues.exportScale))
+
+exportScaleMinus = tkinter.Button(window, text="-", command=exportScaleminus)
+exportScaleMinus.place(x=50, y=255, height=25, width=50, in_=topFrame)
+
+
+###############################################################################
 # Left box - Rotate values
 ###############################################################################
-varLabelRotatedValues = StringVar()
-varLabelRotatedValues.set("Rotated values:" + str(initValues.rotateValues))
 
 def rotatedValuesMethod():
-  print("Rotated values")
+  print("Rotate values")
   localH = initValues.ELEMENT_HEIGHT
   initValues.ELEMENT_HEIGHT = initValues.ELEMENT_WIDTH
   initValues.ELEMENT_WIDTH = localH
+  varLabelTextW.set("Width:" + str(initValues.ELEMENT_WIDTH))
+  varLabelTextH.set("Height:" + str(initValues.ELEMENT_HEIGHT))
+  localT = initValues.tilesX
+  initValues.tilesX = initValues.tilesY
+  initValues.tilesY = localT
+  varLabelTextTileX.set("tileX:" + str(initValues.tilesX))
+  varLabelTextTileY.set("tileY:" + str(initValues.tilesY))
 
-rotatedValuesControl = tkinter.Button(window, textvariable=varLabelRotatedValues, command=tileYminus)
+rotatedValuesControl = tkinter.Button(window, text="Rotate values", command=rotatedValuesMethod)
 rotatedValuesControl.place(x=0, y=180, height=25, width=100, in_=topFrame)
-
 
 
 # Add new element method
