@@ -6,6 +6,9 @@
    Download from :
    https://github.com/zlatnaspirala/visual-ts-game-engine
 
+ You need to change `self.absolutePacksPath` from defaults.py config file.
+ For example platforme pack folder path.
+
  Used tech Python3 and Tk library.
 
  Licence :

@@ -17,7 +17,7 @@ class InitialData:
     self.windowBackgroundColor = "#000000"
     self.topFrameBackgroundColor = "#010233"
     self.canvasGridVisible = True
-    self.tilesX = 5
+    self.tilesX = 1
     self.tilesY = 1
     self.rotateValues = False
   def redefineExportScale(self, newExportScale):
