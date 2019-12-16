@@ -5,10 +5,11 @@
 import os
 from map import myMap
 from models.ground import StaticGrounds
+from models.collectitems import CollectingItems
 from defaults import InitialData
 import tkinter
 import json
-from tkinter import BOTH, StringVar, messagebox
+from tkinter import BOTH, StringVar, messagebox, ttk
 from functools import partial
 import subprocess
 import json
@@ -23,6 +24,10 @@ window = tkinter.Tk()
 window.title("GUI tool creator-2dmap for vtge")
 
 defaultTexture = "imgs/texx.png"
+
+# Global currentInsertType = "grounds" | "collectItems"
+INSERT_TYPE = "grounds"
+
 # virtual path
 # defaultTextureTool = ImageTk.PhotoImage(file='resource/texx.png')
 # anchor="nw"
@@ -200,6 +205,18 @@ def rotatedValuesMethod():
 rotatedValuesControl = tkinter.Button(window, text="Rotate values", command=rotatedValuesMethod)
 rotatedValuesControl.place(x=0, y=180, height=25, width=100, in_=topFrame)
 
+######################################################
+# left box INSERTTYPE
+######################################################
+
+varLabelInsertBox = StringVar()
+varLabelInsertBox.set("SELECT")
+insertBox = ttk.Combobox(window, font="none 12 bold", width=100, textvariable=varLabelInsertBox)
+# insertBox.grid(row=0, column=1, sticky="wesn")
+insertBox['values'] = [x for x in ["ground", "collectItem"]]
+insertBox.current(0)
+insertBox.place(x=0, y=290, height=25, width=100, in_=topFrame)
+print(insertBox.get())
 
 # Add new element method
 def addNewElements(loadedMap):
@@ -231,13 +248,26 @@ def collectMouseEventData(event):
       y = editorStickler.recalculateY(y)
       print(" Y ")
 
-    localModel = StaticGrounds(x,
-                               y,
-                               initValues.ELEMENT_WIDTH,
-                               initValues.ELEMENT_HEIGHT,
-                               defaultTexture,
-                               initValues.tilesX,
-                               initValues.tilesY)
+    localModel = 0
+    if insertBox.get() == "ground":
+      localModel = StaticGrounds(x,
+                                y,
+                                initValues.ELEMENT_WIDTH,
+                                initValues.ELEMENT_HEIGHT,
+                                defaultTexture,
+                                initValues.tilesX,
+                                initValues.tilesY)
+    elif insertBox.get() == "collectItem":
+      localModel = CollectingItems(
+                                x,
+                                y,
+                                initValues.ELEMENT_WIDTH,
+                                initValues.ELEMENT_HEIGHT,
+                                defaultTexture,
+                                initValues.tilesX,
+                                initValues.tilesY,
+                                "AI test",
+                                10)
     MyDefaultMap.add(localModel)
     drawMap()
 

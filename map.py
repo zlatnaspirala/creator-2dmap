@@ -14,17 +14,22 @@ class myMap:
 
   def prepareForSave(self):
     for element in self.map:
-      myObject = { "x": str(element.x),
-                   "y": str(element.y),
-                   "w": str(element.w),
-                   "h": str(element.h),
-                   "tex": element.texture,
-                   "tiles":
-                     {
-                       "tilesX": str(element.tilesX),
-                       "tilesY": str(element.tilesY)
-                     }
-                  }
+      myObject = {  "x": str(element.x),
+                    "y": str(element.y),
+                    "w": str(element.w),
+                    "h": str(element.h),
+                    "tex": element.texture,
+                    "tiles":
+                      {
+                        "tilesX": str(element.tilesX),
+                        "tilesY": str(element.tilesY)
+                      }
+                 }
+      if hasattr(element, 'colectionLabel'):
+        myObject["colectionLabel"] = element.colectionLabel
+        myObject["points"] = element.points
+        print("It is a collection item ...")
+
       self.exportMap.append(myObject)
 
   def prepareForExport(self):
@@ -40,6 +45,10 @@ class myMap:
                        "tilesY": element.tilesY
                      }
                   }
+      if hasattr(element, 'colectionLabel'):
+        myObject["colectionLabel"] = element.colectionLabel
+        myObject["points"] = element.points
+        print("It is a collection item ...")
       self.exportMap2.append(myObject)
 
   def clear(self):
