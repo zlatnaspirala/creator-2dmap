@@ -23,7 +23,9 @@ from common.stickler import Stickler
 window = tkinter.Tk()
 window.title("GUI tool creator-2dmap for vtge")
 
-defaultTexture = "imgs/texx.png"
+# Write here final build / dist folder path.
+defaultTexture = "imgs/floor2.png"
+defaultCollectItemTexture = "imgs/texx.png"
 
 # Global currentInsertType = "grounds" | "collectItems"
 INSERT_TYPE = "grounds"
@@ -233,7 +235,7 @@ def addNewElements(loadedMap):
 
 # Collect mouse & other data [x,y,w,h,tex]
 def collectMouseEventData(event):
-  if event.y > 0 and event.x > 70:
+  if event.y > 0 and event.x > 100:
     print("clicked at", event.x, event.y)
     x = event.x
     y = event.y
@@ -315,8 +317,8 @@ def menuEventExportMap():
     exportPathName = initValues.absolutePacksPath + exportPathName
     print("Save export intro absolute path.")
   with open(str(exportPathName), "w", newline='\r\n', ) as write_file:
-    json_string = json_string.replace("[", "let grounds_generated = [")
-    json_string = json_string.replace("]", "]; export default grounds_generated;")
+    json_string = json_string.replace("[", "let generatedMap = [")
+    json_string = json_string.replace("]", "]; export default generatedMap;")
     if initValues.exportInOneLine == False:
       json_string = json_string.replace("," , ", \n ")
     write_file.write(json_string)
