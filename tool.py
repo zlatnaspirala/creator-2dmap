@@ -1,7 +1,14 @@
 #!/usr/bin/python3
-###############################################################################
-# Imports
-###############################################################################
+#################################################################################
+#
+#  creator2dmap is python3 application for creating visuat-ts game engine 2d maps
+#  LICENCE: GNU LESSER GENERAL PUBLIC LICENSE Version 3
+#  https://github.com/zlatnaspirala/creator-2dmap
+#  Code style ~camel
+#
+#  Imports
+#################################################################################
+
 import os
 from map import myMap
 from models.ground import StaticGrounds
@@ -12,7 +19,6 @@ import json
 from tkinter import BOTH, StringVar, messagebox, ttk
 from functools import partial
 import subprocess
-import json
 import PIL
 from PIL import ImageTk, Image
 from common.stickler import Stickler
@@ -20,30 +26,22 @@ from common.stickler import Stickler
 ###############################################################################
 # Define window object, Map instance, general screen w/h
 ###############################################################################
+
 window = tkinter.Tk()
-window.title("GUI tool creator-2dmap for vtge")
+window.title("GUI tool creator-2dmap for visual-ts game engine")
 
 # Write here final build / dist folder path.
+# This vars used intro real gameplay source
 defaultTexture = "imgs/floor2.png"
-defaultCollectItemTexture = "imgs/texx.png"
+defaultCollectItemTexture = "imgs/bitcoin.png"
 
 # Global currentInsertType = "grounds" | "collectItems"
 INSERT_TYPE = "grounds"
 
-# virtual path
-# defaultTextureTool = ImageTk.PhotoImage(file='resource/texx.png')
-# anchor="nw"
-# img = Image.open("resource/texx.png")
-# img.resize((100,22), Image.ANTIALIAS)
-# defaultTextureTool = ImageTk.PhotoImage(img)
-
-# ImageTk.PhotoImage(Image.open("resource/nik.jpg"))
-# panel = tkinter.Label(window, image=defaultTexture)
-# panel.pack(side="bottom", fill="both", expand="yes")
-
 ###############################################################################
 # Setup dimension for window
 ###############################################################################
+
 screen_width = window.winfo_screenwidth()
 screen_height = window.winfo_screenheight()
 window.geometry(str(screen_width) + "x" + str(screen_height))
@@ -51,6 +49,7 @@ window.geometry(str(screen_width) + "x" + str(screen_height))
 ###############################################################################
 # Define myMap object and instance initial data object
 ###############################################################################
+
 initValues = InitialData()
 MyDefaultMap = myMap("MyDefaultMap", initValues)
 editorStickler = Stickler(initValues)
@@ -64,29 +63,33 @@ topFrame.pack(side="left", in_=window)
 ###############################################################################
 # UI left box - Width Height
 ###############################################################################
+
 # Width & Height
 varLabelTextW = StringVar()
 varLabelTextW.set("width:20")
-
 varLabelTextH = StringVar()
 varLabelTextH.set("height:20")
 
-# View UI tool
-# setup width
+# View UI tool setup width
 def wplus():
   initValues.ELEMENT_WIDTH = initValues.ELEMENT_WIDTH + initValues.incDecWidth
   varLabelTextW.set("width:"+ str(initValues.ELEMENT_WIDTH))
+  if initValues.autoTile == 1:
+    tileXplus()
 
 widthPlus = tkinter.Button(
-    window, text="+", fg="red", bg="black", command=wplus)
+    window, text="+", command=wplus)
 widthPlus.place(x=0, y=20, height=25, width=50, in_=topFrame)
 
 def wminus():
-  initValues.ELEMENT_WIDTH = initValues.ELEMENT_WIDTH - initValues.incDecWidth
-  varLabelTextW.set("Width:" + str(initValues.ELEMENT_WIDTH))
+  if initValues.ELEMENT_WIDTH > 20:
+    initValues.ELEMENT_WIDTH = initValues.ELEMENT_WIDTH - initValues.incDecWidth
+    varLabelTextW.set("Width:" + str(initValues.ELEMENT_WIDTH))
+    if initValues.autoTile == 1:
+      tileXminus()
 
 widthMinus = tkinter.Button(
-    window, text="-", fg="red", bg="black", command=wminus)
+    window, text="-", command=wminus)
 widthMinus.place(x=50, y=20, height=25, width=50, in_=topFrame)
 
 labelWidth = tkinter.Label(window, textvariable=varLabelTextW)
@@ -99,30 +102,34 @@ labelHeight.place(x=0, y=45, width=100, height=20, in_=topFrame)
 def hplus():
   initValues.ELEMENT_HEIGHT = initValues.ELEMENT_HEIGHT + initValues.incDecHeight
   varLabelTextH.set("Height:" + str(initValues.ELEMENT_HEIGHT))
+  if initValues.autoTile == 1:
+    tileYplus()
 
 heightPlus = tkinter.Button(
     window, text="+", fg="red", bg="black", command=hplus)
 heightPlus.place(x=0, y=63, height=25, width=50, in_=topFrame)
 
 def hminus():
-  initValues.ELEMENT_HEIGHT = initValues.ELEMENT_HEIGHT - initValues.incDecHeight
-  varLabelTextH.set("Height:" + str(initValues.ELEMENT_HEIGHT))
+  if initValues.ELEMENT_HEIGHT > 20:
+    initValues.ELEMENT_HEIGHT = initValues.ELEMENT_HEIGHT - initValues.incDecHeight
+    varLabelTextH.set("Height:" + str(initValues.ELEMENT_HEIGHT))
+    if initValues.autoTile == 1:
+      tileYminus()
 
-heightMinus = tkinter.Button(
-    window, text="-", fg="red", bg="black", command=hminus)
+heightMinus = tkinter.Button(window, text="-", fg="red", bg="black", command=hminus)
 heightMinus.place(x=50, y=63, height=25, width=50, in_=topFrame)
 
 ###############################################################################
 # Left box - tiles
 ###############################################################################
+
 varLabelTextTileX = StringVar()
 varLabelTextTileX.set("tileX:" + str(initValues.tilesX))
 
 varLabelTextTileY = StringVar()
 varLabelTextTileY.set("tileY:" + str(initValues.tilesY))
 
-# View UI tool
-# For tilesX
+# View UI tool for tilesX
 def tileXplus():
   initValues.tilesX = initValues.tilesX + 1
   varLabelTextTileX.set("tileX:"+ str(initValues.tilesX))
@@ -133,7 +140,7 @@ tileXPlus_.place(x=0, y=110, height=25, width=50, in_=topFrame)
 def tileXminus():
   if initValues.tilesX > 1:
     initValues.tilesX = initValues.tilesX - 1
-  varLabelTextTileX.set("tileX:" + str(initValues.tilesX))
+    varLabelTextTileX.set("tileX:" + str(initValues.tilesX))
 
 tileXMinus_ = tkinter.Button(window, text="-", command=tileXminus)
 tileXMinus_.place(x=50, y=110, height=25, width=50, in_=topFrame)
@@ -155,7 +162,7 @@ tileYPlus.place(x=0, y=155, height=25, width=50, in_=topFrame)
 def tileYminus():
   if initValues.tilesY > 1:
     initValues.tilesY = initValues.tilesY - 1
-  varLabelTextTileY.set("tileY:" + str(initValues.tilesY))
+    varLabelTextTileY.set("tileY:" + str(initValues.tilesY))
 
 tileYMinus = tkinter.Button(window, text="-", command=tileYminus)
 tileYMinus.place(x=50, y=155, height=25, width=50, in_=topFrame)
@@ -163,13 +170,13 @@ tileYMinus.place(x=50, y=155, height=25, width=50, in_=topFrame)
 ###############################################################################
 # Left box - ExportScale
 ###############################################################################
-# for tilesY
 
+# for tilesY
 varLabelTextexportScale = StringVar()
 varLabelTextexportScale.set("exportScale:" + str(initValues.exportScale))
 
 labelExportScale = tkinter.Label(window, textvariable=varLabelTextexportScale)
-labelExportScale.place(x=0, y=230, width=100, height=20, in_=topFrame)
+labelExportScale.place(x=0, y=235, width=100, height=20, in_=topFrame)
 
 def exportScaleplus():
   initValues.exportScale = initValues.exportScale + 1
@@ -186,13 +193,12 @@ def exportScaleminus():
 exportScaleMinus = tkinter.Button(window, text="-", command=exportScaleminus)
 exportScaleMinus.place(x=50, y=255, height=25, width=50, in_=topFrame)
 
-
 ###############################################################################
 # Left box - Rotate values
 ###############################################################################
 
 def rotatedValuesMethod():
-  print("Rotate values")
+  print("Rotate values.")
   localH = initValues.ELEMENT_HEIGHT
   initValues.ELEMENT_HEIGHT = initValues.ELEMENT_WIDTH
   initValues.ELEMENT_WIDTH = localH
@@ -205,7 +211,7 @@ def rotatedValuesMethod():
   varLabelTextTileY.set("tileY:" + str(initValues.tilesY))
 
 rotatedValuesControl = tkinter.Button(window, text="Rotate values", command=rotatedValuesMethod)
-rotatedValuesControl.place(x=0, y=180, height=25, width=100, in_=topFrame)
+rotatedValuesControl.place(x=0, y=207, height=25, width=100, in_=topFrame)
 
 ######################################################
 # left box INSERTTYPE
@@ -220,7 +226,23 @@ insertBox.current(0)
 insertBox.place(x=0, y=290, height=25, width=100, in_=topFrame)
 print(insertBox.get())
 
+#######################################################################
+# autoTiles CheckBox
+#######################################################################
+
+varAutoTile = tkinter.IntVar()
+
+def autoTileChanged():
+  print(varAutoTile.get())
+  initValues.autoTile = varAutoTile.get()
+
+autoTiles = tkinter.Checkbutton(window, text="Autotiles", variable=varAutoTile, command=autoTileChanged)
+autoTiles.place(x=0, y=180, height=25, width=100, in_=topFrame)
+
+#######################################################################
 # Add new element method
+#######################################################################
+
 def addNewElements(loadedMap):
   for element in loadedMap:
     localModel = StaticGrounds(element['x'],
@@ -278,6 +300,7 @@ window.bind("<Button-1>", collectMouseEventData)
 ###############################################################################
 # Menu Events
 ###############################################################################
+
 root_menu = tkinter.Menu(window)
 window.config(menu=root_menu)
 
@@ -296,6 +319,12 @@ def menuEventClearMap():
     canvas.delete("all")
     drawMap()
     print("Clear map")
+
+def menuEventClearMapForce():
+  MyDefaultMap.clear()
+  canvas.delete("all")
+  drawMap()
+  print("Clear map")
 
 def menuEventSaveMap():
   print(MyDefaultMap.map)
@@ -337,7 +366,7 @@ def menuEventLoadMap():
 # About
 def showAbout():
   messagebox.showinfo("About", """
-    Original source project `creator-2dmap` ver 0.1 \n
+    Original source project `creator-2dmap` ver 0.2 \n
     2019/2020 Copyright Nikola Lukic \n
     created by Nikola Lukic zlatnaspirala@gmail.com \n \n
     LICENCE: \n
@@ -372,7 +401,10 @@ file_menu.add_separator()
 file_menu.add_command(label="Clear map", command=menuEventClearMap)
 file_menu.add_separator()
 file_menu.add_command(label="Exit", command=terminate_app)
-# sub menu
+file_menu.add_separator()
+file_menu.add_command(label="Force clear map", command=menuEventClearMapForce)
+
+# sub menu EDIT
 edit_menu = tkinter.Menu(root_menu)
 root_menu.add_cascade(label="Edit", menu=edit_menu)
 edit_menu.add_command(label="Undo last added", command=undoRemoveLast)
@@ -421,7 +453,10 @@ appCoordinate = tkinter.Label(window, text="Coordinator")
 appCoordinate.place(x=screen_width-150, y=0, height=30, width=150)
 # appCoordinate.pack()
 
+################################################################################
 # Canvas element
+################################################################################
+
 canvas = tkinter.Canvas(
     window,
     width=screen_width - 110,
@@ -430,12 +465,20 @@ canvas = tkinter.Canvas(
   )
 canvas.place(x=100, y=20, width=screen_width - 115, height=screen_height - 130)
 print("Screen size: ", screen_width , screen_height, sep="-")
+
 # canvas.delete(line1)
 # canvas.delete(tkinter.ALL)
 
 ###############################################################################
 # Re Draw map element's
 ###############################################################################
+
+# Symbolic img param
+img = Image.open("resource/floor2.png")
+defaultTextureGrounds= ImageTk.PhotoImage(img)
+imgItems = Image.open("resource/bitcoin.png").resize((20,20), Image.ANTIALIAS)
+defaultTextureItems = ImageTk.PhotoImage(imgItems)
+
 def drawMap():
   print("Clear canvas.")
   canvas.delete("all")
@@ -447,15 +490,31 @@ def drawMap():
 
   for element in MyDefaultMap.map:
     canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="blue")
-    # ttt = canvas.create_image(element.x, element.y, anchor="nw", image=defaultTextureTool, height = 20, width = 200)
-    # canvas.itemconfig(ttt, image=defaultTextureTool) ?
+    # error on 'infly img creation with resize' ?!
+    #imgG = Image.open("resource/floor2.png").resize((int(element.w),int(element.h)), Image.ANTIALIAS)
+    #defaultTextureGrounds1= ImageTk.PhotoImage(imgG)
+    #element.tiles.tilesX
+    if element.tilesX == 0:
+      canvasImgElement = canvas.create_image(element.x, element.y, anchor="nw", image=defaultTextureGrounds)
+
+    for i in range(int(element.tilesX)):
+      canvasImgElement = canvas.create_image(element.x + i * 20 , element.y, anchor="nw", image=defaultTextureGrounds)
+      for y in range(int(element.tilesY)):
+        canvasImgElement = canvas.create_image(element.x  + i * 20, element.y + y * 20, anchor="nw", image=defaultTextureGrounds)
+
+    if hasattr(element, 'colectionLabel'):
+      canvasImgElement = canvas.create_image(element.x, element.y, anchor="nw", image=defaultTextureItems)
+      print("Draw collection item.")
+
+###############################################################################
+# initial draw
+###############################################################################
 
 drawMap()
 
 ###############################################################################
 # Files operation test
 ###############################################################################
-
 #command = 'echo "$(pwd)"'
 #process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
 #output, error = process.communicate()

@@ -17,6 +17,7 @@ class InitialData:
     self.windowBackgroundColor = "#000000"
     self.topFrameBackgroundColor = "#010233"
     self.canvasGridVisible = True
+    self.autoTile = 0
     self.tilesX = 1
     self.tilesY = 1
     self.rotateValues = False
