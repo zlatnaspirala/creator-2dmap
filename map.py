@@ -33,6 +33,7 @@ class myMap:
       self.exportMap.append(myObject)
 
   def prepareForExport(self):
+    self.exportMap2.clear()
     for element in self.map:
       myObject = { "x": element.x * self.initValues.exportScale,
                    "y": element.y * self.initValues.exportScale,
