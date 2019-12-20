@@ -3,7 +3,7 @@ class InitialData:
   def __init__(self):
     self.exportInOneLine = False
     self.absolutePacksPathEnabled = True
-    self.absolutePacksPath = "E:\\web_server\\xampp\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\scripts\\packs\\"
+    self.absolutePacksPath = "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\scripts\\packs\\"
     self.stickler = {}
     self.stickler["enabledX"] = True
     self.stickler["enabledY"] = True
@@ -17,7 +17,7 @@ class InitialData:
     self.windowBackgroundColor = "#000000"
     self.topFrameBackgroundColor = "#010233"
     self.canvasGridVisible = True
-    self.autoTile = 0
+    self.autoTile = 1
     self.tilesX = 1
     self.tilesY = 1
     self.rotateValues = False

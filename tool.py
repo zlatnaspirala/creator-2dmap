@@ -217,11 +217,22 @@ rotatedValuesControl.place(x=0, y=207, height=25, width=100, in_=topFrame)
 # left box INSERTTYPE
 ######################################################
 
+def on_field_change(index, value, op):
+  print("combobox updated to ", varLabelInsertBox.get())
+  if varLabelInsertBox.get() == "collectItem":
+    print("Setup input vars fot item strict.")
+    resetInputValuesToMin()
+
 varLabelInsertBox = StringVar()
-varLabelInsertBox.set("SELECT")
-insertBox = ttk.Combobox(window, font="none 12 bold", width=100, textvariable=varLabelInsertBox)
-# insertBox.grid(row=0, column=1, sticky="wesn")
-insertBox['values'] = [x for x in ["ground", "collectItem"]]
+varLabelInsertBox.set(" ")
+varLabelInsertBox.trace('w',on_field_change)
+insertBox = ttk.Combobox(window,
+                         font="none 12 bold",
+                         width=100,
+                         textvariable=varLabelInsertBox,
+                         values=["ground", "collectItem"])
+
+# insertBox['values'] = [x for x in ["ground", "collectItem"]]
 insertBox.current(0)
 insertBox.place(x=0, y=290, height=25, width=100, in_=topFrame)
 print(insertBox.get())
@@ -230,14 +241,29 @@ print(insertBox.get())
 # autoTiles CheckBox
 #######################################################################
 
-varAutoTile = tkinter.IntVar()
-
+varAutoTile = tkinter.IntVar(value=1)
 def autoTileChanged():
-  print(varAutoTile.get())
+  print(" >>>>>>>>>>>>" + str( varAutoTile.get() ) )
   initValues.autoTile = varAutoTile.get()
 
 autoTiles = tkinter.Checkbutton(window, text="Autotiles", variable=varAutoTile, command=autoTileChanged)
 autoTiles.place(x=0, y=180, height=25, width=100, in_=topFrame)
+
+#######################################################################
+# Reset to minimum Minimum predefinited value (harccode) is 20 for
+# w and h and 1 for tiles.
+#######################################################################
+
+def resetInputValuesToMin():
+  initValues.ELEMENT_WIDTH = 20
+  varLabelTextW.set("Width:" + str(20))
+  initValues.ELEMENT_HEIGHT = 20
+  varLabelTextH.set("Height:" + str(20))
+  initValues.tilesX = 1
+  varLabelTextTileX.set("tileX:" + str(1))
+  initValues.tilesY = 1
+  varLabelTextTileY.set("tileY:" + str(1))
+
 
 #######################################################################
 # Add new element method
@@ -408,8 +434,9 @@ file_menu.add_command(label="Force clear map", command=menuEventClearMapForce)
 edit_menu = tkinter.Menu(root_menu)
 root_menu.add_cascade(label="Edit", menu=edit_menu)
 edit_menu.add_command(label="Undo last added", command=undoRemoveLast)
-edit_menu.add_command(label="Redo last added", command=myEvent)
-
+edit_menu.add_command(label="Redo last added", command=myEvent) # NOT DONE !
+file_menu.add_separator()
+edit_menu.add_command(label="Reset input", command=resetInputValuesToMin)
 # Options menu
 options_names = {}
 options_names["showGrid"] = "Show Grid"
