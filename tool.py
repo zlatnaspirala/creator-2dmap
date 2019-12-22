@@ -232,6 +232,16 @@ def on_field_change(index, value, op):
   if varLabelInsertBox.get() == "collectItem":
     print("Setup input vars fot item strict.")
     resetInputValuesToMin()
+    resListbox.delete(0,tkinter.END)
+    RESOURCE_INDENTITY.clear()
+    refresrList()
+    getImagesFrom(initValues.relativeTexCollectItemsPath)
+  elif (varLabelInsertBox.get() == "ground"):
+    resListbox.delete(0,tkinter.END)
+    RESOURCE_INDENTITY.clear()
+    refresrList()
+    getImagesFrom(initValues.relativeTexGroundsPath)
+
 
 varLabelInsertBox = StringVar()
 varLabelInsertBox.set(" ")
@@ -260,7 +270,7 @@ autoTiles = tkinter.Checkbutton(window, text="Autotiles", variable=varAutoTile, 
 autoTiles.place(x=0, y=180, height=25, width=100, in_=topFrame)
 
 ######################################################
-# left box INSERTTYPE
+# left box subPuth - Show all
 ######################################################
 
 varAutoSubPath = tkinter.IntVar(value=0)
@@ -293,6 +303,7 @@ def selectedImageChanged(what):
   previewImg.image = defaultTextureItems
   previewImg.place(x=0, y=0)
   resourcePreview.after(4000, hideResPreview)
+  #
 
 def hideResPreview():
   resourcePreview.place_forget()
