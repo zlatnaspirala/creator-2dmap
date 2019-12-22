@@ -22,6 +22,7 @@ import subprocess
 import PIL
 from PIL import ImageTk, Image
 from common.stickler import Stickler
+import time
 
 ###############################################################################
 # Define window object, Map instance, general screen w/h
@@ -32,11 +33,12 @@ window.title("GUI tool creator-2dmap for visual-ts game engine")
 
 # Write here final build / dist folder path.
 # This vars used intro real gameplay source
-defaultTexture = "imgs/floor2.png"
+defaultTexture = "imgs/elementGlass019.png"
 defaultCollectItemTexture = "imgs/bitcoin.png"
 
 # Global currentInsertType = "grounds" | "collectItems"
 INSERT_TYPE = "grounds"
+RESOURCE_INDENTITY = []
 
 ###############################################################################
 # Setup dimension for window
@@ -48,6 +50,7 @@ window.geometry(str(screen_width) + "x" + str(screen_height))
 
 ###############################################################################
 # Define myMap object and instance initial data object
+# Also defined frames box's.
 ###############################################################################
 
 initValues = InitialData()
@@ -55,10 +58,17 @@ MyDefaultMap = myMap("MyDefaultMap", initValues)
 editorStickler = Stickler(initValues)
 
 topFrame = tkinter.Frame(window,
-                         background=initValues.topFrameBackgroundColor,
+                         background=initValues.topFrameBColor,
                          height=screen_height,
                          width=110)
 topFrame.pack(side="left", in_=window)
+
+resourcePreview = tkinter.Frame(window,
+                         background=initValues.resourcePreviewFrameBColor,
+                         height=200,
+                         width=200)
+
+resourcePreview.place(x=100, y=screen_height - 400, in_=window)
 
 ###############################################################################
 # UI left box - Width Height
@@ -106,7 +116,7 @@ def hplus():
     tileYplus()
 
 heightPlus = tkinter.Button(
-    window, text="+", fg="red", bg="black", command=hplus)
+    window, text="+", command=hplus)
 heightPlus.place(x=0, y=63, height=25, width=50, in_=topFrame)
 
 def hminus():
@@ -116,7 +126,7 @@ def hminus():
     if initValues.autoTile == 1:
       tileYminus()
 
-heightMinus = tkinter.Button(window, text="-", fg="red", bg="black", command=hminus)
+heightMinus = tkinter.Button(window, text="-", command=hminus)
 heightMinus.place(x=50, y=63, height=25, width=50, in_=topFrame)
 
 ###############################################################################
@@ -249,6 +259,107 @@ def autoTileChanged():
 autoTiles = tkinter.Checkbutton(window, text="Autotiles", variable=varAutoTile, command=autoTileChanged)
 autoTiles.place(x=0, y=180, height=25, width=100, in_=topFrame)
 
+######################################################
+# left box INSERTTYPE
+######################################################
+
+varAutoSubPath = tkinter.IntVar(value=0)
+def autoSubPathChanged():
+  print(" Show all images " + str( varAutoSubPath.get() ) )
+  initValues.includeAllImages = varAutoSubPath.get()
+  resListbox.delete(0,tkinter.END)
+  RESOURCE_INDENTITY.clear()
+  refresrList()
+
+autoSubPath = tkinter.Checkbutton(window, text="Show all", variable=varAutoSubPath, command=autoSubPathChanged)
+autoSubPath.place(x=0, y=310, height=25, width=100, in_=topFrame)
+
+#######################################################################
+# Resource - image list
+# Path is relatiove but autoconfigured from absolute map path.
+# Keep visual-ts-game-engine project folder structure.
+#######################################################################
+
+def selectedImageChanged(what):
+  # resourcePreview
+  resourcePreview.place(x=100, y=screen_height - 400, in_=window)
+  localw = what.widget
+  index = int(localw.curselection()[0])
+  value = localw.get(index)
+  print("GET DATA : ", RESOURCE_INDENTITY[index])
+  localImgItems = Image.open(RESOURCE_INDENTITY[index]).resize((200,200), Image.ANTIALIAS)
+  defaultTextureItems = ImageTk.PhotoImage(localImgItems)
+  previewImg = tkinter.Label(resourcePreview, image=defaultTextureItems)
+  previewImg.image = defaultTextureItems
+  previewImg.place(x=0, y=0)
+  resourcePreview.after(4000, hideResPreview)
+
+def hideResPreview():
+  resourcePreview.place_forget()
+
+# time.sleep(3)
+resourcePreview.place_forget()
+
+labelRes = tkinter.Label(topFrame, text="Textures list:")
+labelRes.place(x=0, y=340, height=25, width=100, in_=topFrame)
+
+resListbox = tkinter.Listbox(window)
+resListbox.place(x=0, y=345, height=150, width=100, in_=topFrame)
+resListbox.bind('<<ListboxSelect>>', selectedImageChanged)
+
+scrollbar = tkinter.Scrollbar(resListbox, orient="vertical")
+scrollbar.config(command=resListbox.yview)
+scrollbar.place(in_=resListbox, x=90)
+
+resListbox.config(yscrollcommand=scrollbar.set)
+
+# src\examples\platformer\imgs\collect-items
+
+# Res path
+def getImagesFromImgsRoot():
+  resourceTexPath = initValues.absolutePacksPath + initValues.relativeTexturesPath
+  for entry in os.scandir(resourceTexPath):
+    localC = 1
+    if entry.is_file():
+      localFullPath = resourceTexPath + entry.name
+      RESOURCE_INDENTITY.insert(len(RESOURCE_INDENTITY) + 1, localFullPath)
+      resListbox.insert(len(RESOURCE_INDENTITY), entry.name)
+      localC = localC + 1
+      # print(entry.name)
+
+def getImagesFrom(subPath):
+  resourceTexPath = initValues.absolutePacksPath + initValues.relativeTexturesPath + subPath
+  for entry in os.scandir(resourceTexPath):
+    if entry.is_file():
+      # collect all imgs data
+      localFullPath = resourceTexPath + entry.name
+      # print ("LEN ", len(RESOURCE_INDENTITY), " and path is : " , localFullPath)
+      RESOURCE_INDENTITY.insert(len(RESOURCE_INDENTITY), localFullPath)
+      resListbox.insert(len(RESOURCE_INDENTITY), entry.name)
+      # print("From subPath: " + entry.name)
+
+def refresrList():
+  if initValues.includeAllImages == 1:
+    # from root imgs
+    getImagesFromImgsRoot()
+    # self.relativeTexGroundsPath = "\\src\\examples\\platformer\\imgs\\grounds\\"
+    # self.relativeTexCollectItemsPath = "\\src\\examples\\platformer\\imgs\\collect-items\\"
+    getImagesFrom(initValues.relativeTexGroundsPath)
+    getImagesFrom(initValues.relativeTexCollectItemsPath)
+  else:
+    print(insertBox.get())
+    if insertBox.get() == "ground":
+      getImagesFrom(initValues.relativeTexGroundsPath)
+    elif insertBox.get() == "collectItem":
+      getImagesFrom(initValues.relativeTexCollectItemsPath)
+
+refresrList()
+
+#    im = Image.open(jpeg)
+#    im.thumbnail((96, 170), Image.ANTIALIAS)
+#    photo = ImageTk.PhotoImage(im)
+#    label = tk.Label(root, image=photo)
+
 #######################################################################
 # Reset to minimum Minimum predefinited value (harccode) is 20 for
 # w and h and 1 for tiles.
@@ -283,7 +394,7 @@ def addNewElements(loadedMap):
 
 # Collect mouse & other data [x,y,w,h,tex]
 def collectMouseEventData(event):
-  if event.y > 0 and event.x > 100:
+  if event.y > 0 and event.x > 50:
     print("clicked at", event.x, event.y)
     x = event.x
     y = event.y
@@ -321,7 +432,7 @@ def collectMouseEventData(event):
     MyDefaultMap.add(localModel)
     drawMap()
 
-window.bind("<Button-1>", collectMouseEventData)
+# window.bind("<Button-1>", collectMouseEventData)
 
 ###############################################################################
 # Menu Events
@@ -369,7 +480,7 @@ def menuEventExportMap():
   exportPathName = "map2d.ts"
   # absolutePacksPath
   if initValues.absolutePacksPathEnabled == True:
-    exportPathName = initValues.absolutePacksPath + exportPathName
+    exportPathName = initValues.absolutePacksPath + initValues.relativeMapPath + exportPathName
     print("Save export intro absolute path.")
   with open(str(exportPathName), "w", newline='\r\n', ) as write_file:
     json_string = json_string.replace("[", "let generatedMap = [")
@@ -393,11 +504,11 @@ def menuEventLoadMap():
 def showAbout():
   messagebox.showinfo("About", """
     Original source project `creator-2dmap` ver 0.2 \n
-    2019/2020 Copyright Nikola Lukic \n
+    2019/2020 Copyright Nikola Lukic                \n
     created by Nikola Lukic zlatnaspirala@gmail.com \n \n
-    LICENCE: \n
-    GNU LESSER GENERAL PUBLIC LICENSE Version 3 \n
-    https://github.com/zlatnaspirala/creator-2dmap \n
+    LICENCE:                                        \n
+    GNU LESSER GENERAL PUBLIC LICENSE Version 3     \n
+    https://github.com/zlatnaspirala/creator-2dmap  \n
   """)
 
 def showGrid():
@@ -493,6 +604,7 @@ canvas = tkinter.Canvas(
 canvas.place(x=100, y=20, width=screen_width - 115, height=screen_height - 130)
 print("Screen size: ", screen_width , screen_height, sep="-")
 
+canvas.bind("<Button-1>", collectMouseEventData)
 # canvas.delete(line1)
 # canvas.delete(tkinter.ALL)
 
@@ -547,4 +659,8 @@ drawMap()
 #output, error = process.communicate()
 #print("Output", output)
 
+# Fix layout
+resourcePreview.lift()
+
+# Running
 window.mainloop()
