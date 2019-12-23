@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 #################################################################################
-#
 #  creator2dmap is python3 application for creating visuat-ts game engine 2d maps
 #  LICENCE: GNU LESSER GENERAL PUBLIC LICENSE Version 3
 #  https://github.com/zlatnaspirala/creator-2dmap
 #  Code style ~camel
-#
+#  Version: 0.2
 #  Imports
 #################################################################################
 
@@ -39,6 +38,7 @@ defaultCollectItemTexture = "imgs/bitcoin.png"
 # Global currentInsertType = "grounds" | "collectItems"
 INSERT_TYPE = "grounds"
 RESOURCE_INDENTITY = []
+RESOURCE_IMAGES_OBJ = []
 
 ###############################################################################
 # Setup dimension for window
@@ -290,6 +290,18 @@ autoSubPath.place(x=0, y=310, height=25, width=100, in_=topFrame)
 # Keep visual-ts-game-engine project folder structure.
 #######################################################################
 
+# make it global , DEFAULT VALUES
+localImgItems = Image.open(initValues.absolutePacksPath +
+  initValues.relativeTexturesPath +
+  initValues.relativeTexGroundsPath + 'choco.png').resize((initValues.ELEMENT_WIDTH, initValues.ELEMENT_HEIGHT), Image.ANTIALIAS)
+
+defaultTextureItems = ImageTk.PhotoImage(localImgItems)
+previewImg = tkinter.Label(resourcePreview, image=defaultTextureItems)
+previewImg.image = defaultTextureItems
+
+# GLOBAL
+selectedTex = "" # initValues.absolutePacksPath + initValues.relativeTexturesPath + initValues.relativeTexGroundsPath + 'choco.png'
+
 def selectedImageChanged(what):
   # resourcePreview
   resourcePreview.place(x=100, y=screen_height - 400, in_=window)
@@ -299,7 +311,10 @@ def selectedImageChanged(what):
   print("GET DATA : ", RESOURCE_INDENTITY[index])
   localImgItems = Image.open(RESOURCE_INDENTITY[index]).resize((200,200), Image.ANTIALIAS)
   defaultTextureItems = ImageTk.PhotoImage(localImgItems)
+  global selectedTex
+  selectedTex = RESOURCE_INDENTITY[index]
   previewImg = tkinter.Label(resourcePreview, image=defaultTextureItems)
+  # config
   previewImg.image = defaultTextureItems
   previewImg.place(x=0, y=0)
   resourcePreview.after(4000, hideResPreview)
@@ -348,11 +363,18 @@ def getImagesFrom(subPath):
       RESOURCE_INDENTITY.insert(len(RESOURCE_INDENTITY), localFullPath)
       resListbox.insert(len(RESOURCE_INDENTITY), entry.name)
       # print("From subPath: " + entry.name)
+      localImgItems = Image.open(localFullPath).resize((initValues.ELEMENT_WIDTH, initValues.ELEMENT_HEIGHT), Image.ANTIALIAS)
+      cTextureItems = ImageTk.PhotoImage(localImgItems)
+      RESOURCE_IMAGES_OBJ.insert(len(RESOURCE_INDENTITY), cTextureItems)
+
+
 
 def refresrList():
   if initValues.includeAllImages == 1:
+
     # from root imgs
-    getImagesFromImgsRoot()
+    # getImagesFromImgsRoot()
+
     # self.relativeTexGroundsPath = "\\src\\examples\\platformer\\imgs\\grounds\\"
     # self.relativeTexCollectItemsPath = "\\src\\examples\\platformer\\imgs\\collect-items\\"
     getImagesFrom(initValues.relativeTexGroundsPath)
@@ -365,6 +387,8 @@ def refresrList():
       getImagesFrom(initValues.relativeTexCollectItemsPath)
 
 refresrList()
+
+selectedTex = RESOURCE_INDENTITY[0]
 
 #    im = Image.open(jpeg)
 #    im.thumbnail((96, 170), Image.ANTIALIAS)
@@ -400,13 +424,14 @@ def addNewElements(loadedMap):
                                element['tex'],
                                element['tiles']['tilesX'],
                                element['tiles']['tilesY'])
-    MyDefaultMap.add(localModel)
+    print(element['pythonImgPath'])
+    MyDefaultMap.add(localModel, element['pythonImgPath'])
   drawMap()
 
 # Collect mouse & other data [x,y,w,h,tex]
 def collectMouseEventData(event):
   if event.y > 0 and event.x > 50:
-    print("clicked at", event.x, event.y)
+    # print("clicked at", event.x, event.y)
     x = event.x
     y = event.y
     local = "x:" + str(event.x) + ", y:" + str(event.y)
@@ -414,19 +439,24 @@ def collectMouseEventData(event):
 
     if initValues.stickler["enabledX"] == True:
       x = editorStickler.recalculateX(x)
-      print("Enabled X stickler.")
+      # print("Enabled X stickler.")
 
     if initValues.stickler["enabledY"] == True:
       y = editorStickler.recalculateY(y)
-      print(" Y ")
+      # print(" Y ")
 
     localModel = 0
+    #RESOURCE_INDENTITY
+    filename = selectedTex.split('\\')
+    print(filename)
+    filename = "./imgs/" + filename[len(filename) -1]
+
     if insertBox.get() == "ground":
       localModel = StaticGrounds(x,
                                 y,
                                 initValues.ELEMENT_WIDTH,
                                 initValues.ELEMENT_HEIGHT,
-                                defaultTexture,
+                                filename,
                                 initValues.tilesX,
                                 initValues.tilesY)
     elif insertBox.get() == "collectItem":
@@ -440,7 +470,7 @@ def collectMouseEventData(event):
                                 initValues.tilesY,
                                 "AI test",
                                 10)
-    MyDefaultMap.add(localModel)
+    MyDefaultMap.add(localModel, selectedTex)
     drawMap()
 
 # window.bind("<Button-1>", collectMouseEventData)
@@ -629,6 +659,10 @@ defaultTextureGrounds= ImageTk.PhotoImage(img)
 imgItems = Image.open("resource/bitcoin.png").resize((20,20), Image.ANTIALIAS)
 defaultTextureItems = ImageTk.PhotoImage(imgItems)
 
+imgs = []
+defaultTexture_ = []
+canvasImgElement = []
+
 def drawMap():
   print("Clear canvas.")
   canvas.delete("all")
@@ -638,22 +672,32 @@ def drawMap():
       line1 = canvas.create_line(0, x, screen_width, x, fill="orange")
       line2 = canvas.create_line(x, 0, x, screen_width, fill="red")
 
-  for element in MyDefaultMap.map:
+  for (element, texpath) in zip(MyDefaultMap.map, MyDefaultMap.pythonImageObjectMemory):
+    #if texpath == "":
+    #  print("CATCH")
+    #  global defaultTextureItems
+    #  dTex = defaultTextureItems
+    # else:
+    test = RESOURCE_INDENTITY.index(texpath)
+    dTex = RESOURCE_IMAGES_OBJ[test]
     canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="blue")
     # error on 'infly img creation with resize' ?!
-    #imgG = Image.open("resource/floor2.png").resize((int(element.w),int(element.h)), Image.ANTIALIAS)
-    #defaultTextureGrounds1= ImageTk.PhotoImage(imgG)
-    #element.tiles.tilesX
+    # Fixed with preload buffered all tex images.
+    # Best for now
+
+    print(texpath + "<<<<<")
+
+
     if element.tilesX == 0:
-      canvasImgElement = canvas.create_image(element.x, element.y, anchor="nw", image=defaultTextureGrounds)
-
+      draws = canvas.create_image(element.x, element.y, anchor="nw", image=dTex)
+      canvasImgElement.append(draws)
     for i in range(int(element.tilesX)):
-      canvasImgElement = canvas.create_image(element.x + i * 20 , element.y, anchor="nw", image=defaultTextureGrounds)
+      draws = canvas.create_image(element.x + i * 20 , element.y, anchor="nw", image=dTex)
+      canvasImgElement.append(draws)
       for y in range(int(element.tilesY)):
-        canvasImgElement = canvas.create_image(element.x  + i * 20, element.y + y * 20, anchor="nw", image=defaultTextureGrounds)
-
+        canvasImgElement.append(canvas.create_image(element.x  + i * 20, element.y + y * 20, anchor="nw", image=dTex))
     if hasattr(element, 'colectionLabel'):
-      canvasImgElement = canvas.create_image(element.x, element.y, anchor="nw", image=defaultTextureItems)
+      canvasImgElement.append(canvas.create_image(element.x, element.y, anchor="nw", image=dTex))
       print("Draw collection item.")
 
 ###############################################################################

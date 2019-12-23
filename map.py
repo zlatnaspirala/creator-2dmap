@@ -1,3 +1,5 @@
+import PIL
+from PIL import ImageTk, Image
 
 class myMap:
   def __init__(self, name, initValues_instance):
@@ -7,13 +9,15 @@ class myMap:
     self.exportMap = []
     self.exportMap2 = []
     self.clipboardElementMemo = 0
+    self.pythonImageObjectMemory = []
 
-  def add(self, x):
+  def add(self, x, pythonImgAbsPath):
     self.map.append(x)
-    print("New element added to the current map: " + self.name)
+    self.pythonImageObjectMemory.append(pythonImgAbsPath)
+    print("New element added to the current map also created image: " + self.name)
 
   def prepareForSave(self):
-    for element in self.map:
+    for (element,pythonImageObjectMemo) in zip(self.map, self.pythonImageObjectMemory):
       myObject = {  "x": str(element.x),
                     "y": str(element.y),
                     "w": str(element.w),
@@ -23,7 +27,8 @@ class myMap:
                       {
                         "tilesX": str(element.tilesX),
                         "tilesY": str(element.tilesY)
-                      }
+                      },
+                    "pythonImgPath": pythonImageObjectMemo
                  }
       if hasattr(element, 'colectionLabel'):
         myObject["colectionLabel"] = element.colectionLabel
@@ -54,6 +59,7 @@ class myMap:
 
   def clear(self):
     self.map.clear()
+    self.pythonImageObjectMemory.clear()
     self.exportMap.clear()
     self.exportMap2.clear()
 
