@@ -1,50 +1,122 @@
 [
   {
-    "x": "350.0",
+    "x": "430.0",
+    "y": "330.0",
+    "w": "20.0",
+    "h": "20.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "630.0",
     "y": "230.0",
     "w": "20.0",
     "h": "20.0",
-    "tex": "./imgs/boxAlt.png",
+    "tex": "require('../../imgs/grounds/castleCliffLeft.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleCliffLeft.png"
   },
   {
-    "x": "400.0",
+    "x": "580.0",
     "y": "300.0",
     "w": "20.0",
     "h": "20.0",
-    "tex": "./imgs/boxAlt.png",
+    "tex": "require('../../imgs/collect-items/bitcoin-out.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\bitcoin-out.png",
+    "colectionLabel": "AI test",
+    "points": 10
+  },
+  {
+    "x": "500.0",
+    "y": "380.0",
+    "w": "20.0",
+    "h": "20.0",
+    "tex": "require('../../imgs/collect-items/bitcoin-out.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\bitcoin-out.png",
+    "colectionLabel": "AI test",
+    "points": 10
+  },
+  {
+    "x": "600.0",
+    "y": "380.0",
+    "w": "20.0",
+    "h": "20.0",
+    "tex": "require('../../imgs/collect-items/coin-1.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\coin-1.png",
+    "colectionLabel": "AI test",
+    "points": 10
+  },
+  {
+    "x": "480.0",
+    "y": "250.0",
+    "w": "20.0",
+    "h": "20.0",
+    "tex": "require('../../imgs/collect-items/hudKey_blue_empty.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\hudKey_blue_empty.png",
+    "colectionLabel": "AI test",
+    "points": 10
+  },
+  {
+    "x": "430.0",
+    "y": "430.0",
+    "w": "20.0",
+    "h": "20.0",
+    "tex": "require('../../imgs/collect-items/hudKey_green_empty.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\hudKey_green_empty.png",
+    "colectionLabel": "AI test",
+    "points": 10
+  },
+  {
+    "x": "500.0",
+    "y": "480.0",
+    "w": "20.0",
+    "h": "20.0",
+    "tex": "require('../../imgs/collect-items/hudKey_red_empty.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\hudKey_red_empty.png",
+    "colectionLabel": "AI test",
+    "points": 10
+  },
+  {
+    "x": "200.0",
+    "y": "350.0",
+    "w": "20.0",
+    "h": "20.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
     "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
-  },
-  {
-    "x": "350.0",
-    "y": "380.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/castleCliffLeft.png",
-    "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleCliffLeft.png"
-  },
-  {
-    "x": "450.0",
-    "y": "450.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "./imgs/castleCliffLeft.png",
-    "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleCliffLeft.png"
   }
 ]

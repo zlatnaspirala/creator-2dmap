@@ -38,6 +38,7 @@ defaultCollectItemTexture = "imgs/bitcoin.png"
 # Global currentInsertType = "grounds" | "collectItems"
 INSERT_TYPE = "grounds"
 RESOURCE_INDENTITY = []
+RESOURCE_INDENTITY_READONLY = []
 RESOURCE_IMAGES_OBJ = []
 
 ###############################################################################
@@ -234,12 +235,14 @@ def on_field_change(index, value, op):
     resetInputValuesToMin()
     resListbox.delete(0,tkinter.END)
     RESOURCE_INDENTITY.clear()
-    refresrList()
+    #RESOURCE_IMAGES_OBJ.clear()
+    # refresrList()
     getImagesFrom(initValues.relativeTexCollectItemsPath)
   elif (varLabelInsertBox.get() == "ground"):
     resListbox.delete(0,tkinter.END)
     RESOURCE_INDENTITY.clear()
-    refresrList()
+    #RESOURCE_IMAGES_OBJ.clear()
+    # refresrList()
     getImagesFrom(initValues.relativeTexGroundsPath)
 
 
@@ -308,11 +311,15 @@ def selectedImageChanged(what):
   localw = what.widget
   index = int(localw.curselection()[0])
   value = localw.get(index)
+
+  # selection=widget.curselection()
+  #value = widget.get(selection[0])
+  print("GET V: ", RESOURCE_INDENTITY.index(value))
   print("GET DATA : ", RESOURCE_INDENTITY[index])
-  localImgItems = Image.open(RESOURCE_INDENTITY[index]).resize((200,200), Image.ANTIALIAS)
+  localImgItems = Image.open(value).resize((200,200), Image.ANTIALIAS)
   defaultTextureItems = ImageTk.PhotoImage(localImgItems)
   global selectedTex
-  selectedTex = RESOURCE_INDENTITY[index]
+  selectedTex = value
   previewImg = tkinter.Label(resourcePreview, image=defaultTextureItems)
   # config
   previewImg.image = defaultTextureItems
@@ -361,34 +368,35 @@ def getImagesFrom(subPath):
       localFullPath = resourceTexPath + entry.name
       # print ("LEN ", len(RESOURCE_INDENTITY), " and path is : " , localFullPath)
       RESOURCE_INDENTITY.insert(len(RESOURCE_INDENTITY), localFullPath)
-      resListbox.insert(len(RESOURCE_INDENTITY), entry.name)
-      # print("From subPath: " + entry.name)
+      # print("From subPath: " + entry.name) localFullPath
+      # resListbox.insert(len(RESOURCE_INDENTITY), entry.name)
+      resListbox.insert(len(RESOURCE_INDENTITY), localFullPath)
       localImgItems = Image.open(localFullPath).resize((initValues.ELEMENT_WIDTH, initValues.ELEMENT_HEIGHT), Image.ANTIALIAS)
       cTextureItems = ImageTk.PhotoImage(localImgItems)
       RESOURCE_IMAGES_OBJ.insert(len(RESOURCE_INDENTITY), cTextureItems)
-
+      RESOURCE_INDENTITY_READONLY.insert(len(RESOURCE_INDENTITY), localFullPath)
+      print("Loading ...")
 
 
 def refresrList():
-  if initValues.includeAllImages == 1:
-
+  if initValues.includeAllImages == 0:
     # from root imgs
     # getImagesFromImgsRoot()
-
     # self.relativeTexGroundsPath = "\\src\\examples\\platformer\\imgs\\grounds\\"
     # self.relativeTexCollectItemsPath = "\\src\\examples\\platformer\\imgs\\collect-items\\"
     getImagesFrom(initValues.relativeTexGroundsPath)
     getImagesFrom(initValues.relativeTexCollectItemsPath)
+    initValues.includeAllImages = 200
   else:
     print(insertBox.get())
     if insertBox.get() == "ground":
       getImagesFrom(initValues.relativeTexGroundsPath)
     elif insertBox.get() == "collectItem":
       getImagesFrom(initValues.relativeTexCollectItemsPath)
+  global selectedTex
+  selectedTex = RESOURCE_INDENTITY[0]
 
 refresrList()
-
-selectedTex = RESOURCE_INDENTITY[0]
 
 #    im = Image.open(jpeg)
 #    im.thumbnail((96, 170), Image.ANTIALIAS)
@@ -448,15 +456,13 @@ def collectMouseEventData(event):
     localModel = 0
     #RESOURCE_INDENTITY
     filename = selectedTex.split('\\')
-    print(filename)
-    filename = "./imgs/" + filename[len(filename) -1]
-
+    filenameStr = "require('../../imgs/" + filename[len(filename) -2] + "/" +  filename[len(filename) -1] + "')"
     if insertBox.get() == "ground":
       localModel = StaticGrounds(x,
                                 y,
                                 initValues.ELEMENT_WIDTH,
                                 initValues.ELEMENT_HEIGHT,
-                                filename,
+                                filenameStr,
                                 initValues.tilesX,
                                 initValues.tilesY)
     elif insertBox.get() == "collectItem":
@@ -465,7 +471,7 @@ def collectMouseEventData(event):
                                 y,
                                 initValues.ELEMENT_WIDTH,
                                 initValues.ELEMENT_HEIGHT,
-                                defaultTexture,
+                                filenameStr,
                                 initValues.tilesX,
                                 initValues.tilesY,
                                 "AI test",
@@ -526,6 +532,10 @@ def menuEventExportMap():
   with open(str(exportPathName), "w", newline='\r\n', ) as write_file:
     json_string = json_string.replace("[", "let generatedMap = [")
     json_string = json_string.replace("]", "]; export default generatedMap;")
+    # test escape
+    json_string = json_string.replace('"require', 'require')
+    json_string = json_string.replace(')"', ')')
+
     if initValues.exportInOneLine == False:
       json_string = json_string.replace("," , ", \n ")
     write_file.write(json_string)
@@ -678,15 +688,13 @@ def drawMap():
     #  global defaultTextureItems
     #  dTex = defaultTextureItems
     # else:
-    test = RESOURCE_INDENTITY.index(texpath)
-    dTex = RESOURCE_IMAGES_OBJ[test]
+    test3 = RESOURCE_INDENTITY_READONLY.index(texpath)
+    dTex = RESOURCE_IMAGES_OBJ[test3]
     canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="blue")
     # error on 'infly img creation with resize' ?!
     # Fixed with preload buffered all tex images.
     # Best for now
-
-    print(texpath + "<<<<<")
-
+    # print(texpath + "<<<<<")
 
     if element.tilesX == 0:
       draws = canvas.create_image(element.x, element.y, anchor="nw", image=dTex)
