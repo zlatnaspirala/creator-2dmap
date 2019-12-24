@@ -30,16 +30,12 @@ import time
 window = tkinter.Tk()
 window.title("GUI tool creator-2dmap for visual-ts game engine")
 
-# Write here final build / dist folder path.
-# This vars used intro real gameplay source
-defaultTexture = "imgs/elementGlass019.png"
-defaultCollectItemTexture = "imgs/bitcoin.png"
-
 # Global currentInsertType = "grounds" | "collectItems"
 INSERT_TYPE = "grounds"
 RESOURCE_INDENTITY = []
 RESOURCE_INDENTITY_READONLY = []
 RESOURCE_IMAGES_OBJ = []
+PREVENT_ADDING = 0
 
 ###############################################################################
 # Setup dimension for window
@@ -63,13 +59,14 @@ topFrame = tkinter.Frame(window,
                          height=screen_height,
                          width=110)
 topFrame.pack(side="left", in_=window)
+topFrame.lift()
 
 resourcePreview = tkinter.Frame(window,
                          background=initValues.resourcePreviewFrameBColor,
-                         height=200,
-                         width=200)
+                         height=100,
+                         width=100)
 
-resourcePreview.place(x=100, y=screen_height - 400, in_=window)
+resourcePreview.place(x=1, y=500, in_=topFrame)
 
 ###############################################################################
 # UI left box - Width Height
@@ -276,7 +273,7 @@ autoTiles.place(x=0, y=180, height=25, width=100, in_=topFrame)
 # left box subPuth - Show all
 ######################################################
 
-varAutoSubPath = tkinter.IntVar(value=0)
+varAutoSubPath = tkinter.IntVar(value=1)
 def autoSubPathChanged():
   print(" Show all images " + str( varAutoSubPath.get() ) )
   initValues.includeAllImages = varAutoSubPath.get()
@@ -306,17 +303,16 @@ previewImg.image = defaultTextureItems
 selectedTex = "" # initValues.absolutePacksPath + initValues.relativeTexturesPath + initValues.relativeTexGroundsPath + 'choco.png'
 
 def selectedImageChanged(what):
-  # resourcePreview
-  resourcePreview.place(x=100, y=screen_height - 400, in_=window)
   localw = what.widget
   index = int(localw.curselection()[0])
   value = localw.get(index)
-
+  global varSelLabelTex
+  varSelLabelTex.set(value)
   # selection=widget.curselection()
   #value = widget.get(selection[0])
   print("GET V: ", RESOURCE_INDENTITY.index(value))
   print("GET DATA : ", RESOURCE_INDENTITY[index])
-  localImgItems = Image.open(value).resize((200,200), Image.ANTIALIAS)
+  localImgItems = Image.open(value).resize((100,100), Image.ANTIALIAS)
   defaultTextureItems = ImageTk.PhotoImage(localImgItems)
   global selectedTex
   selectedTex = value
@@ -324,14 +320,12 @@ def selectedImageChanged(what):
   # config
   previewImg.image = defaultTextureItems
   previewImg.place(x=0, y=0)
-  resourcePreview.after(4000, hideResPreview)
-  #
+  # resourcePreview.after(4000, hideResPreview)
 
 def hideResPreview():
   resourcePreview.place_forget()
 
-# time.sleep(3)
-resourcePreview.place_forget()
+# resourcePreview.place_forget()
 
 labelRes = tkinter.Label(topFrame, text="Textures list:")
 labelRes.place(x=0, y=340, height=25, width=100, in_=topFrame)
@@ -342,7 +336,8 @@ resListbox.bind('<<ListboxSelect>>', selectedImageChanged)
 
 scrollbar = tkinter.Scrollbar(resListbox, orient="vertical")
 scrollbar.config(command=resListbox.yview)
-scrollbar.place(in_=resListbox, x=90)
+# scrollbar.place(in_=resListbox, x=80)
+scrollbar.pack(side=tkinter.RIGHT, fill = tkinter.Y)
 
 resListbox.config(yscrollcommand=scrollbar.set)
 
@@ -360,6 +355,8 @@ def getImagesFromImgsRoot():
       localC = localC + 1
       # print(entry.name)
 
+
+
 def getImagesFrom(subPath):
   resourceTexPath = initValues.absolutePacksPath + initValues.relativeTexturesPath + subPath
   for entry in os.scandir(resourceTexPath):
@@ -374,19 +371,22 @@ def getImagesFrom(subPath):
       localImgItems = Image.open(localFullPath).resize((initValues.ELEMENT_WIDTH, initValues.ELEMENT_HEIGHT), Image.ANTIALIAS)
       cTextureItems = ImageTk.PhotoImage(localImgItems)
       RESOURCE_IMAGES_OBJ.insert(len(RESOURCE_INDENTITY), cTextureItems)
-      RESOURCE_INDENTITY_READONLY.insert(len(RESOURCE_INDENTITY), localFullPath)
+      global PREVENT_ADDING
+      if PREVENT_ADDING == 0:
+        RESOURCE_INDENTITY_READONLY.insert(len(RESOURCE_INDENTITY), localFullPath)
       print("Loading ...")
 
 
+
 def refresrList():
-  if initValues.includeAllImages == 0:
+  if initValues.includeAllImages == 1:
     # from root imgs
     # getImagesFromImgsRoot()
     # self.relativeTexGroundsPath = "\\src\\examples\\platformer\\imgs\\grounds\\"
     # self.relativeTexCollectItemsPath = "\\src\\examples\\platformer\\imgs\\collect-items\\"
     getImagesFrom(initValues.relativeTexGroundsPath)
     getImagesFrom(initValues.relativeTexCollectItemsPath)
-    initValues.includeAllImages = 200
+
   else:
     print(insertBox.get())
     if insertBox.get() == "ground":
@@ -642,6 +642,12 @@ appCoordinate = tkinter.Label(window, text="Coordinator")
 appCoordinate.place(x=screen_width-150, y=0, height=30, width=150)
 # appCoordinate.pack()
 
+varSelLabelTex = StringVar()
+varSelLabelTex.set("Selected texture filename")
+selectedTexLabel = tkinter.Label(window, textvariable=varSelLabelTex, font=("Helvetica", 10))
+# appCoordinate.configure(background="#000000")
+selectedTexLabel.place(x=110, y=0, height=20, width=850)
+
 ################################################################################
 # Canvas element
 ################################################################################
@@ -656,6 +662,7 @@ canvas.place(x=100, y=20, width=screen_width - 115, height=screen_height - 130)
 print("Screen size: ", screen_width , screen_height, sep="-")
 
 canvas.bind("<Button-1>", collectMouseEventData)
+
 # canvas.delete(line1)
 # canvas.delete(tkinter.ALL)
 
@@ -688,8 +695,9 @@ def drawMap():
     #  global defaultTextureItems
     #  dTex = defaultTextureItems
     # else:
-    test3 = RESOURCE_INDENTITY_READONLY.index(texpath)
-    dTex = RESOURCE_IMAGES_OBJ[test3]
+    test2 = RESOURCE_INDENTITY_READONLY.index(texpath)
+    # test2 = RESOURCE_INDENTITY.index(texpath)
+    dTex = RESOURCE_IMAGES_OBJ[test2]
     canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="blue")
     # error on 'infly img creation with resize' ?!
     # Fixed with preload buffered all tex images.
@@ -724,6 +732,7 @@ drawMap()
 
 # Fix layout
 resourcePreview.lift()
+
 
 # Running
 window.mainloop()

@@ -8,7 +8,7 @@ class InitialData:
     self.relativeTexturesPath = "\\src\\examples\\platformer\\imgs\\"
     self.relativeTexGroundsPath = "grounds\\"
     self.relativeTexCollectItemsPath = "collect-items\\"
-    self.includeAllImages = 0
+    self.includeAllImages = 1
     self.stickler = {}
     self.stickler["enabledX"] = True
     self.stickler["enabledY"] = True
