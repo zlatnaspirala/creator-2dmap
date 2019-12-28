@@ -206,7 +206,7 @@ exportScaleMinus.place(x=50, y=255, height=25, width=50, in_=topFrame)
 ###############################################################################
 
 def rotatedValuesMethod():
-  print("Rotate values.")
+  # print("Rotate values.")
   localH = initValues.ELEMENT_HEIGHT
   initValues.ELEMENT_HEIGHT = initValues.ELEMENT_WIDTH
   initValues.ELEMENT_WIDTH = localH
@@ -225,21 +225,27 @@ rotatedValuesControl.place(x=0, y=207, height=25, width=100, in_=topFrame)
 # left box INSERTTYPE
 ######################################################
 
+varSelLabelTex = StringVar()
+varSelLabelTex.set("Selected texture filename")
+selectedTexLabel = tkinter.Label(window, textvariable=varSelLabelTex, font=("Helvetica", 10))
+# appCoordinate.configure(background="#000000")
+selectedTexLabel.place(x=110, y=0, height=20, width=850)
+
 def on_field_change(index, value, op):
-  print("combobox updated to ", varLabelInsertBox.get())
+  # print("combobox updated to ", varLabelInsertBox.get())
   if varLabelInsertBox.get() == "collectItem":
-    print("Setup input vars fot item strict.")
+    # print("Setup input vars fot item strict.")
     resetInputValuesToMin()
     resListbox.delete(0,tkinter.END)
     RESOURCE_INDENTITY.clear()
-    #RESOURCE_IMAGES_OBJ.clear()
-    # refresrList()
+    # RESOURCE_IMAGES_OBJ.clear()
+    #refresrList()
     getImagesFrom(initValues.relativeTexCollectItemsPath)
   elif (varLabelInsertBox.get() == "ground"):
     resListbox.delete(0,tkinter.END)
     RESOURCE_INDENTITY.clear()
-    #RESOURCE_IMAGES_OBJ.clear()
-    # refresrList()
+    # RESOURCE_IMAGES_OBJ.clear()
+    #refresrList()
     getImagesFrom(initValues.relativeTexGroundsPath)
 
 
@@ -255,7 +261,7 @@ insertBox = ttk.Combobox(window,
 # insertBox['values'] = [x for x in ["ground", "collectItem"]]
 insertBox.current(0)
 insertBox.place(x=0, y=290, height=25, width=100, in_=topFrame)
-print(insertBox.get())
+# print(insertBox.get())
 
 #######################################################################
 # autoTiles CheckBox
@@ -263,7 +269,7 @@ print(insertBox.get())
 
 varAutoTile = tkinter.IntVar(value=1)
 def autoTileChanged():
-  print(" >>>>>>>>>>>>" + str( varAutoTile.get() ) )
+  # print(" >>>>>>>>>>>>" + str( varAutoTile.get() ) )
   initValues.autoTile = varAutoTile.get()
 
 autoTiles = tkinter.Checkbutton(window, text="Autotiles", variable=varAutoTile, command=autoTileChanged)
@@ -275,7 +281,7 @@ autoTiles.place(x=0, y=180, height=25, width=100, in_=topFrame)
 
 varAutoSubPath = tkinter.IntVar(value=1)
 def autoSubPathChanged():
-  print(" Show all images " + str( varAutoSubPath.get() ) )
+  # print(" Show all images " + str( varAutoSubPath.get() ) )
   initValues.includeAllImages = varAutoSubPath.get()
   resListbox.delete(0,tkinter.END)
   RESOURCE_INDENTITY.clear()
@@ -302,16 +308,12 @@ previewImg.image = defaultTextureItems
 # GLOBAL
 selectedTex = "" # initValues.absolutePacksPath + initValues.relativeTexturesPath + initValues.relativeTexGroundsPath + 'choco.png'
 
-def selectedImageChanged(what):
-  localw = what.widget
-  index = int(localw.curselection()[0])
-  value = localw.get(index)
+def setCurTexture():
+  index = 0
+  value = resListbox.get(index)
   global varSelLabelTex
   varSelLabelTex.set(value)
-  # selection=widget.curselection()
-  #value = widget.get(selection[0])
-  print("GET V: ", RESOURCE_INDENTITY.index(value))
-  print("GET DATA : ", RESOURCE_INDENTITY[index])
+  # print("DEFAULT DATA: ", RESOURCE_INDENTITY[index])
   localImgItems = Image.open(value).resize((100,100), Image.ANTIALIAS)
   defaultTextureItems = ImageTk.PhotoImage(localImgItems)
   global selectedTex
@@ -320,7 +322,25 @@ def selectedImageChanged(what):
   # config
   previewImg.image = defaultTextureItems
   previewImg.place(x=0, y=0)
-  # resourcePreview.after(4000, hideResPreview)
+
+
+def selectedImageChanged(what):
+  localw = what.widget
+  index = int(localw.curselection()[0])
+  value = localw.get(index)
+  global varSelLabelTex
+  varSelLabelTex.set(value)
+  # selection=widget.curselection()
+  #value = widget.get(selection[0])
+  # print("GET V: ", RESOURCE_INDENTITY.index(value))
+  # print("GET DATA : ", RESOURCE_INDENTITY[index])
+  localImgItems = Image.open(value).resize((100,100), Image.ANTIALIAS)
+  defaultTextureItems = ImageTk.PhotoImage(localImgItems)
+  global selectedTex
+  selectedTex = value
+  previewImg = tkinter.Label(resourcePreview, image=defaultTextureItems)
+  previewImg.image = defaultTextureItems
+  previewImg.place(x=0, y=0)
 
 def hideResPreview():
   resourcePreview.place_forget()
@@ -363,10 +383,7 @@ def getImagesFrom(subPath):
     if entry.is_file():
       # collect all imgs data
       localFullPath = resourceTexPath + entry.name
-      # print ("LEN ", len(RESOURCE_INDENTITY), " and path is : " , localFullPath)
       RESOURCE_INDENTITY.insert(len(RESOURCE_INDENTITY), localFullPath)
-      # print("From subPath: " + entry.name) localFullPath
-      # resListbox.insert(len(RESOURCE_INDENTITY), entry.name)
       resListbox.insert(len(RESOURCE_INDENTITY), localFullPath)
       localImgItems = Image.open(localFullPath).resize((initValues.ELEMENT_WIDTH, initValues.ELEMENT_HEIGHT), Image.ANTIALIAS)
       cTextureItems = ImageTk.PhotoImage(localImgItems)
@@ -374,16 +391,13 @@ def getImagesFrom(subPath):
       global PREVENT_ADDING
       if PREVENT_ADDING == 0:
         RESOURCE_INDENTITY_READONLY.insert(len(RESOURCE_INDENTITY), localFullPath)
-      print("Loading ...")
-
+        # print("Res READ ONLY.") need to check for improve
+  print("Res list refreshed make first item selected...")
+  setCurTexture()
 
 
 def refresrList():
   if initValues.includeAllImages == 1:
-    # from root imgs
-    # getImagesFromImgsRoot()
-    # self.relativeTexGroundsPath = "\\src\\examples\\platformer\\imgs\\grounds\\"
-    # self.relativeTexCollectItemsPath = "\\src\\examples\\platformer\\imgs\\collect-items\\"
     getImagesFrom(initValues.relativeTexGroundsPath)
     getImagesFrom(initValues.relativeTexCollectItemsPath)
 
@@ -495,7 +509,7 @@ def undoRemoveLast():
   MyDefaultMap.removeLast()
   canvas.delete("all")
   drawMap()
-  print("undo")
+  # print("undo")
 
 def menuEventClearMap():
   if messagebox.askokcancel("Clear map", "Do you really wish to clear map?"):
@@ -511,10 +525,10 @@ def menuEventClearMapForce():
   print("Clear map")
 
 def menuEventSaveMap():
-  print(MyDefaultMap.map)
+  # print(MyDefaultMap.map)
   MyDefaultMap.prepareForSave()
   json_string = json.dumps(MyDefaultMap.exportMap)
-  print(os.getcwd(), os.path.abspath(__file__))
+  # print(os.getcwd(), os.path.abspath(__file__))
   with open("map2d.creator", "w", newline='\r\n') as write_file:
     json.dump(json.loads(json_string), write_file , indent=2)
     print("Map saved.")
@@ -595,8 +609,8 @@ file_menu.add_command(label="Force clear map", command=menuEventClearMapForce)
 # sub menu EDIT
 edit_menu = tkinter.Menu(root_menu)
 root_menu.add_cascade(label="Edit", menu=edit_menu)
-edit_menu.add_command(label="Undo last added", command=undoRemoveLast)
-edit_menu.add_command(label="Redo last added", command=myEvent) # NOT DONE !
+edit_menu.add_command(label="Relocate last added item", command=undoRemoveLast)
+# edit_menu.add_command(label="Redo last added", command=myEvent) # NOT DONE !
 file_menu.add_separator()
 edit_menu.add_command(label="Reset input", command=resetInputValuesToMin)
 # Options menu
@@ -641,12 +655,6 @@ appCoordinate = tkinter.Label(window, text="Coordinator")
 # appCoordinate.configure(background="#000000")
 appCoordinate.place(x=screen_width-150, y=0, height=30, width=150)
 # appCoordinate.pack()
-
-varSelLabelTex = StringVar()
-varSelLabelTex.set("Selected texture filename")
-selectedTexLabel = tkinter.Label(window, textvariable=varSelLabelTex, font=("Helvetica", 10))
-# appCoordinate.configure(background="#000000")
-selectedTexLabel.place(x=110, y=0, height=20, width=850)
 
 ################################################################################
 # Canvas element
@@ -714,7 +722,7 @@ def drawMap():
         canvasImgElement.append(canvas.create_image(element.x  + i * 20, element.y + y * 20, anchor="nw", image=dTex))
     if hasattr(element, 'colectionLabel'):
       canvasImgElement.append(canvas.create_image(element.x, element.y, anchor="nw", image=dTex))
-      print("Draw collection item.")
+      # print("Draw collection item.")
 
 ###############################################################################
 # initial draw

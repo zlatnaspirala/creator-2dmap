@@ -65,3 +65,7 @@ class myMap:
 
   def removeLast(self):
     self.clipboardElementMemo = self.map.pop()
+    self.pythonImageObjectMemory.pop()
+    self.exportMap.pop()
+    self.exportMap2.pop()
+
