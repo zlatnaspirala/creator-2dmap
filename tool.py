@@ -22,6 +22,7 @@ import PIL
 from PIL import ImageTk, Image
 from common.stickler import Stickler
 import time
+from tkinter import filedialog
 
 ###############################################################################
 # Define window object, Map instance, general screen w/h
@@ -392,7 +393,7 @@ def getImagesFrom(subPath):
       if PREVENT_ADDING == 0:
         RESOURCE_INDENTITY_READONLY.insert(len(RESOURCE_INDENTITY), localFullPath)
         # print("Res READ ONLY.") need to check for improve
-  print("Res list refreshed make first item selected...")
+  # print("Res list refreshed make first item selected...")
   setCurTexture()
 
 
@@ -533,6 +534,19 @@ def menuEventSaveMap():
     json.dump(json.loads(json_string), write_file , indent=2)
     print("Map saved.")
 
+def menuEventSaveAsMap():
+  MyDefaultMap.prepareForSave()
+  json_string = json.dumps(MyDefaultMap.exportMap)
+  f = filedialog.asksaveasfile(
+    mode='w',
+    initialdir = "saved-maps/",
+    defaultextension=".creator",
+    title="Save as your map")
+  if f is None:
+    return
+  f.write(json_string)
+  f.close()
+
 def menuEventExportMap():
   print(MyDefaultMap.map)
   MyDefaultMap.prepareForExport()
@@ -546,18 +560,30 @@ def menuEventExportMap():
   with open(str(exportPathName), "w", newline='\r\n', ) as write_file:
     json_string = json_string.replace("[", "let generatedMap = [")
     json_string = json_string.replace("]", "]; export default generatedMap;")
-    # test escape
     json_string = json_string.replace('"require', 'require')
     json_string = json_string.replace(')"', ')')
 
     if initValues.exportInOneLine == False:
       json_string = json_string.replace("," , ", \n ")
     write_file.write(json_string)
-    # json.dump(json.loads(json_string), write_file , indent=2)
     print("Map saved.")
 
 def menuEventLoadMap():
   with open('map2d.creator', 'r') as loadedMap:
+    rawString = loadedMap.read()
+    rawString = rawString.replace('[', '{ "root" : [')
+    rawString = rawString.replace("]", "]}")
+    json_data = json.loads(rawString)
+    json_data = json_data['root']
+    addNewElements(json_data)
+
+def menuEventLoadCustomMap():
+  filename = filedialog.askopenfilename(
+    initialdir="saved-maps/",
+    title="Select map",
+    filetypes=[("Visual ts game engine tool Creator-2dMap Filetype ", "creator")])
+  # print(filename)
+  with open(filename, 'r') as loadedMap:
     rawString = loadedMap.read()
     rawString = rawString.replace('[', '{ "root" : [')
     rawString = rawString.replace("]", "]}")
@@ -596,8 +622,12 @@ def terminate_app():
 file_menu = tkinter.Menu(root_menu)
 # it creates the name of the sub menu
 root_menu.add_cascade(label="File", menu=file_menu)
-file_menu.add_command(label="Load map", command=menuEventLoadMap)
-file_menu.add_command(label="Save map", command=menuEventSaveMap)
+file_menu.add_command(label="Load default map", command=menuEventLoadMap)
+file_menu.add_command(label="Save default map", command=menuEventSaveMap)
+file_menu.add_separator()
+file_menu.add_command(label="Load custom map", command=menuEventLoadCustomMap)
+file_menu.add_command(label="Save as", command=menuEventSaveAsMap)
+file_menu.add_separator()
 file_menu.add_command(label="Export map", command=menuEventExportMap)
 file_menu.add_separator()
 file_menu.add_command(label="Clear map", command=menuEventClearMap)

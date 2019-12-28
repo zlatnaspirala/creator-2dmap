@@ -14,7 +14,7 @@ class myMap:
   def add(self, x, pythonImgAbsPath):
     self.map.append(x)
     self.pythonImageObjectMemory.append(pythonImgAbsPath)
-    print("New element added to the current map also created image: " + self.name)
+    # print("New element added to the current map also created image: " + self.name)
 
   def prepareForSave(self):
     for (element,pythonImageObjectMemo) in zip(self.map, self.pythonImageObjectMemory):
