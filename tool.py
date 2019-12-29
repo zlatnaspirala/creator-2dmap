@@ -481,6 +481,7 @@ def collectMouseEventData(event):
                                 initValues.tilesX,
                                 initValues.tilesY)
     elif insertBox.get() == "collectItem":
+      # Hardcoded for now: collectItemPoint
       localModel = CollectingItems(
                                 x,
                                 y,
@@ -489,7 +490,7 @@ def collectMouseEventData(event):
                                 filenameStr,
                                 initValues.tilesX,
                                 initValues.tilesY,
-                                "AI test",
+                                "collectItemPoint",
                                 10)
     MyDefaultMap.add(localModel, selectedTex)
     drawMap()
