@@ -1,624 +1,3568 @@
 [
   {
-    "x": "150.0",
-    "y": "200.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
+    "x": "550.0",
+    "y": "250.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
   },
   {
-    "x": "200.0",
-    "y": "200.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
+    "x": "525.0",
+    "y": "225.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
   },
   {
-    "x": "250.0",
+    "x": "500.0",
     "y": "200.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
   },
   {
-    "x": "300.0",
-    "y": "200.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
+    "x": "475.0",
+    "y": "175.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "450.0",
+    "y": "150.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "425.0",
+    "y": "175.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "400.0",
+    "y": "200.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "375.0",
+    "y": "225.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
   },
   {
     "x": "350.0",
-    "y": "200.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
+    "y": "250.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "375.0",
+    "y": "275.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
   },
   {
     "x": "400.0",
     "y": "300.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "425.0",
+    "y": "325.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
   },
   {
     "x": "450.0",
-    "y": "300.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
+    "y": "350.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "475.0",
+    "y": "325.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
   },
   {
     "x": "500.0",
     "y": "300.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
   },
   {
-    "x": "550.0",
-    "y": "400.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
+    "x": "525.0",
+    "y": "275.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
-  },
-  {
-    "x": "600.0",
-    "y": "400.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
-    "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
-  },
-  {
-    "x": "600.0",
-    "y": "500.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
-    "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
-  },
-  {
-    "x": "550.0",
-    "y": "500.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
-    "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
   },
   {
     "x": "650.0",
-    "y": "100.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
+    "y": "350.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/castle.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castle.png"
+  },
+  {
+    "x": "625.0",
+    "y": "375.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/castle.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castle.png"
+  },
+  {
+    "x": "600.0",
+    "y": "400.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/castle.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castle.png"
+  },
+  {
+    "x": "625.0",
+    "y": "425.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/castle.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castle.png"
+  },
+  {
+    "x": "650.0",
+    "y": "450.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/castle.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castle.png"
+  },
+  {
+    "x": "675.0",
+    "y": "425.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/castle.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castle.png"
   },
   {
     "x": "700.0",
-    "y": "100.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
+    "y": "400.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/castle.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castle.png"
   },
   {
-    "x": "750.0",
-    "y": "100.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
+    "x": "675.0",
+    "y": "375.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/castle.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castle.png"
+  },
+  {
+    "x": "200.0",
+    "y": "550.0",
+    "w": "100.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "4.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "350.0",
+    "y": "550.0",
+    "w": "100.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "4.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "500.0",
+    "y": "550.0",
+    "w": "100.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "4.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "650.0",
+    "y": "550.0",
+    "w": "100.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "4.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
   },
   {
     "x": "800.0",
-    "y": "150.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
+    "y": "550.0",
+    "w": "100.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
     "tiles": {
-      "tilesX": "1.0",
+      "tilesX": "4.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
   },
   {
-    "x": "850.0",
-    "y": "200.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
+    "x": "800.0",
+    "y": "450.0",
+    "w": "100.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
     "tiles": {
-      "tilesX": "1.0",
+      "tilesX": "4.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
   },
   {
-    "x": "900.0",
+    "x": "800.0",
+    "y": "350.0",
+    "w": "100.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "4.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "650.0",
     "y": "250.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
+    "w": "100.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
     "tiles": {
-      "tilesX": "1.0",
+      "tilesX": "4.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
-  },
-  {
-    "x": "950.0",
-    "y": "300.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
-    "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
   },
   {
     "x": "1000.0",
     "y": "350.0",
     "w": "100.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
     "tiles": {
-      "tilesX": "5.0",
+      "tilesX": "4.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "1100.0",
+    "y": "450.0",
+    "w": "100.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "4.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "200.0",
+    "y": "575.0",
+    "w": "100.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/chocoCenter.png')",
+    "tiles": {
+      "tilesX": "4.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\chocoCenter.png"
+  },
+  {
+    "x": "350.0",
+    "y": "575.0",
+    "w": "100.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/chocoCenter.png')",
+    "tiles": {
+      "tilesX": "4.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\chocoCenter.png"
+  },
+  {
+    "x": "500.0",
+    "y": "575.0",
+    "w": "100.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/chocoCenter.png')",
+    "tiles": {
+      "tilesX": "4.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\chocoCenter.png"
   },
   {
     "x": "650.0",
-    "y": "550.0",
+    "y": "575.0",
     "w": "100.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/chocoCenter.png')",
     "tiles": {
-      "tilesX": "5.0",
+      "tilesX": "4.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\chocoCenter.png"
   },
   {
     "x": "800.0",
-    "y": "550.0",
+    "y": "575.0",
     "w": "100.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/chocoCenter.png')",
     "tiles": {
-      "tilesX": "5.0",
+      "tilesX": "4.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
-  },
-  {
-    "x": "950.0",
-    "y": "550.0",
-    "w": "100.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\chocoCenter.png"
   },
   {
     "x": "1100.0",
     "y": "550.0",
     "w": "100.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
-    "tiles": {
-      "tilesX": "5.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
-  },
-  {
-    "x": "700.0",
-    "y": "400.0",
-    "w": "160.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
-    "tiles": {
-      "tilesX": "8.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
-  },
-  {
-    "x": "1200.0",
-    "y": "150.0",
-    "w": "20.0",
-    "h": "160.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
-    "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "8.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
-  },
-  {
-    "x": "1200.0",
-    "y": "350.0",
-    "w": "20.0",
-    "h": "160.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
-    "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "8.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
-  },
-  {
-    "x": "1250.0",
-    "y": "150.0",
-    "w": "160.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
-    "tiles": {
-      "tilesX": "8.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
-  },
-  {
-    "x": "1250.0",
-    "y": "350.0",
-    "w": "160.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
-    "tiles": {
-      "tilesX": "8.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
-  },
-  {
-    "x": "1250.0",
-    "y": "550.0",
-    "w": "160.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
-    "tiles": {
-      "tilesX": "8.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
-  },
-  {
-    "x": "1250.0",
-    "y": "500.0",
-    "w": "160.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/grounds/castleMid.png')",
-    "tiles": {
-      "tilesX": "8.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castleMid.png"
-  },
-  {
-    "x": "650.0",
-    "y": "200.0",
-    "w": "120.0",
-    "h": "120.0",
+    "h": "25.0",
     "tex": "require('../../imgs/grounds/elementGlass047.png')",
     "tiles": {
-      "tilesX": "1.0",
+      "tilesX": "4.0",
       "tilesY": "1.0"
     },
     "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass047.png"
   },
   {
-    "x": "200.0",
-    "y": "150.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/collect-items/bitcoin-out.png')",
+    "x": "450.0",
+    "y": "325.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\bitcoin-out.png",
-    "colectionLabel": "collectItemPoint",
-    "points": 10
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
   },
   {
-    "x": "250.0",
-    "y": "150.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/collect-items/bitcoin-out.png')",
-    "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\bitcoin-out.png",
-    "colectionLabel": "collectItemPoint",
-    "points": 10
-  },
-  {
-    "x": "700.0",
-    "y": "48.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/collect-items/bitcoin-out.png')",
-    "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\bitcoin-out.png",
-    "colectionLabel": "collectItemPoint",
-    "points": 10
-  },
-  {
-    "x": "1050.0",
-    "y": "300.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/collect-items/bitcoin-out.png')",
-    "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\bitcoin-out.png",
-    "colectionLabel": "collectItemPoint",
-    "points": 10
-  },
-  {
-    "x": "1380.0",
-    "y": "230.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/collect-items/bitcoin-out.png')",
-    "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\bitcoin-out.png",
-    "colectionLabel": "collectItemPoint",
-    "points": 10
-  },
-  {
-    "x": "1330.0",
-    "y": "230.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/collect-items/bitcoin-out.png')",
-    "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\bitcoin-out.png",
-    "colectionLabel": "collectItemPoint",
-    "points": 10
-  },
-  {
-    "x": "1280.0",
-    "y": "230.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/collect-items/bitcoin-out.png')",
-    "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\bitcoin-out.png",
-    "colectionLabel": "collectItemPoint",
-    "points": 10
-  },
-  {
-    "x": "1280.0",
-    "y": "430.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/collect-items/bitcoin-out.png')",
-    "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\bitcoin-out.png",
-    "colectionLabel": "collectItemPoint",
-    "points": 10
-  },
-  {
-    "x": "1330.0",
-    "y": "430.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/collect-items/bitcoin-out.png')",
-    "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\bitcoin-out.png",
-    "colectionLabel": "collectItemPoint",
-    "points": 10
-  },
-  {
-    "x": "1380.0",
-    "y": "430.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/collect-items/bitcoin-out.png')",
-    "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\bitcoin-out.png",
-    "colectionLabel": "collectItemPoint",
-    "points": 10
-  },
-  {
-    "x": "950.0",
-    "y": "480.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/collect-items/bitcoin-out.png')",
-    "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\bitcoin-out.png",
-    "colectionLabel": "collectItemPoint",
-    "points": 10
-  },
-  {
-    "x": "500.0",
+    "x": "375.0",
     "y": "250.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/collect-items/coin-1.png')",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\coin-1.png",
-    "colectionLabel": "collectItemPoint",
-    "points": 10
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
   },
   {
-    "x": "700.0",
-    "y": "350.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/collect-items/coin-1.png')",
+    "x": "450.0",
+    "y": "175.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\coin-1.png",
-    "colectionLabel": "collectItemPoint",
-    "points": 10
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "525.0",
+    "y": "250.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "625.0",
+    "y": "400.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "650.0",
+    "y": "375.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "650.0",
+    "y": "425.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "675.0",
+    "y": "400.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "1075.0",
+    "y": "450.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
   },
   {
     "x": "1200.0",
-    "y": "100.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/collect-items/coin-1.png')",
+    "y": "450.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\coin-1.png",
-    "colectionLabel": "collectItemPoint",
-    "points": 10
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
   },
   {
-    "x": "830.0",
+    "x": "1100.0",
     "y": "350.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/collect-items/hudKey_green_empty.png')",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\hudKey_green_empty.png",
-    "colectionLabel": "collectItemPoint",
-    "points": 10
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
   },
   {
-    "x": "700.0",
-    "y": "500.0",
-    "w": "20.0",
-    "h": "20.0",
-    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "x": "975.0",
+    "y": "350.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
-    "colectionLabel": "collectItemPoint",
-    "points": 10
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "900.0",
+    "y": "350.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "775.0",
+    "y": "350.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "775.0",
+    "y": "450.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "900.0",
+    "y": "450.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "900.0",
+    "y": "550.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "775.0",
+    "y": "550.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "600.0",
+    "y": "550.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "625.0",
+    "y": "550.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "450.0",
+    "y": "550.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "475.0",
+    "y": "550.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "300.0",
+    "y": "550.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "325.0",
+    "y": "550.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "750.0",
+    "y": "550.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "925.0",
+    "y": "550.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
   },
   {
     "x": "950.0",
-    "y": "100.0",
-    "w": "100.0",
-    "h": "100.0",
-    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "y": "550.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/elementGlass051.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\elementGlass051.png"
+  },
+  {
+    "x": "400.0",
+    "y": "525.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tallShroom_brown.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tallShroom_brown.png"
+  },
+  {
+    "x": "550.0",
+    "y": "525.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tallShroom_brown.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tallShroom_brown.png"
+  },
+  {
+    "x": "1125.0",
+    "y": "425.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tallShroom_brown.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tallShroom_brown.png"
+  },
+  {
+    "x": "200.0",
+    "y": "525.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tallShroom_red.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tallShroom_red.png"
+  },
+  {
+    "x": "1200.0",
+    "y": "250.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1225.0",
+    "y": "250.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1250.0",
+    "y": "275.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1275.0",
+    "y": "275.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1300.0",
+    "y": "300.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1325.0",
+    "y": "300.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1350.0",
+    "y": "325.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1375.0",
+    "y": "325.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1400.0",
+    "y": "350.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1425.0",
+    "y": "350.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1450.0",
+    "y": "325.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1475.0",
+    "y": "325.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1500.0",
+    "y": "300.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1525.0",
+    "y": "300.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1550.0",
+    "y": "275.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1575.0",
+    "y": "250.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1600.0",
+    "y": "225.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1625.0",
+    "y": "225.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "100.0",
+    "y": "100.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "125.0",
+    "y": "100.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "150.0",
+    "y": "100.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "150.0",
+    "y": "125.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "150.0",
+    "y": "150.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "125.0",
+    "y": "150.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "100.0",
+    "y": "125.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "100.0",
+    "y": "150.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "100.0",
+    "y": "175.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "100.0",
+    "y": "200.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "600.0",
+    "y": "100.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "625.0",
+    "y": "125.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "650.0",
+    "y": "150.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "675.0",
+    "y": "125.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "700.0",
+    "y": "100.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "750.0",
+    "y": "100.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "750.0",
+    "y": "125.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "750.0",
+    "y": "150.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "825.0",
+    "y": "100.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "800.0",
+    "y": "100.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "800.0",
+    "y": "125.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "825.0",
+    "y": "150.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "800.0",
+    "y": "175.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "825.0",
+    "y": "175.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "875.0",
+    "y": "100.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "875.0",
+    "y": "125.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "875.0",
+    "y": "150.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "900.0",
+    "y": "150.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "925.0",
+    "y": "150.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "925.0",
+    "y": "125.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "925.0",
+    "y": "100.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "975.0",
+    "y": "100.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "975.0",
+    "y": "125.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "975.0",
+    "y": "150.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1000.0",
+    "y": "125.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "975.0",
+    "y": "75.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1000.0",
+    "y": "75.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1025.0",
+    "y": "75.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1025.0",
+    "y": "100.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1025.0",
+    "y": "125.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1025.0",
+    "y": "150.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1050.0",
+    "y": "100.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1050.0",
+    "y": "125.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1050.0",
+    "y": "150.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1100.0",
+    "y": "150.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1075.0",
+    "y": "150.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "900.0",
+    "y": "200.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "925.0",
+    "y": "200.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "975.0",
+    "y": "200.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "950.0",
+    "y": "200.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "925.0",
+    "y": "225.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "925.0",
+    "y": "250.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "925.0",
+    "y": "275.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1025.0",
+    "y": "200.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1000.0",
+    "y": "200.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "975.0",
+    "y": "225.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "975.0",
+    "y": "250.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1000.0",
+    "y": "250.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1025.0",
+    "y": "250.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1025.0",
+    "y": "275.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1025.0",
+    "y": "300.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1000.0",
+    "y": "300.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "975.0",
+    "y": "300.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "925.0",
+    "y": "300.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1050.0",
+    "y": "75.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1050.0",
+    "y": "44.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "375.0",
+    "y": "650.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "350.0",
+    "y": "650.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "325.0",
+    "y": "650.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "300.0",
+    "y": "650.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "300.0",
+    "y": "675.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "300.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "300.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "300.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "300.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "325.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "350.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "375.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "375.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "375.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "375.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "350.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "425.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "425.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "425.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "425.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "450.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "475.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "475.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "475.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "475.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "450.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "525.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "525.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "525.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "525.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "550.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "575.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "600.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "625.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "625.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "625.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "625.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "675.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "675.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "675.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "675.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "700.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "725.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "700.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "725.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "800.0",
+    "y": "650.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "800.0",
+    "y": "675.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "800.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "800.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "800.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "800.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "825.0",
+    "y": "650.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "850.0",
+    "y": "650.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "825.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "825.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "850.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "875.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "875.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "875.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "900.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "925.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "875.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "950.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "950.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "950.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "950.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "950.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1050.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1025.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1000.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1000.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1000.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1000.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1025.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1050.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1050.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1100.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1100.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1100.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1150.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1150.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1150.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1150.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1175.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1200.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1225.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1225.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1225.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1225.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1250.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1250.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1250.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1250.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1275.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1275.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1250.0",
+    "y": "800.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1275.0",
+    "y": "800.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1300.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1300.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "1300.0",
+    "y": "800.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tundraCenter_rounded.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tundraCenter_rounded.png"
+  },
+  {
+    "x": "450.0",
+    "y": "675.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/tallShroom_brown.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\tallShroom_brown.png"
+  },
+  {
+    "x": "350.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "550.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "600.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "1025.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "825.0",
+    "y": "675.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "825.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "1100.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "1200.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "1175.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "1275.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "1275.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "1300.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "1300.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "1175.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "1200.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "1175.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "1200.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "825.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "850.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "850.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "850.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "575.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "450.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "450.0",
+    "y": "775.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "350.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "325.0",
+    "y": "750.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "325.0",
+    "y": "725.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "325.0",
+    "y": "700.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/lollipopWhiteRed.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\lollipopWhiteRed.png"
+  },
+  {
+    "x": "1300.0",
+    "y": "150.0",
+    "w": "100.0",
+    "h": "100.0",
+    "tex": "require('../../imgs/grounds/boxEmpty.png')",
+    "tiles": {
+      "tilesX": "4.0",
+      "tilesY": "4.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxEmpty.png"
+  },
+  {
+    "x": "1350.0",
+    "y": "550.0",
+    "w": "100.0",
+    "h": "100.0",
+    "tex": "require('../../imgs/grounds/boxEmpty.png')",
+    "tiles": {
+      "tilesX": "4.0",
+      "tilesY": "4.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxEmpty.png"
+  },
+  {
+    "x": "300.0",
+    "y": "60.0",
+    "w": "125.0",
+    "h": "125.0",
+    "tex": "require('../../imgs/grounds/boxEmpty.png')",
+    "tiles": {
+      "tilesX": "5.0",
+      "tilesY": "5.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxEmpty.png"
+  },
+  {
+    "x": "125.0",
+    "y": "425.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/bitcoin-out.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\bitcoin-out.png",
     "colectionLabel": "collectItemPoint",
     "points": 10
+  },
+  {
+    "x": "200.0",
+    "y": "375.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "225.0",
+    "y": "400.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "250.0",
+    "y": "425.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "1500.0",
+    "y": "500.0",
+    "w": "100.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "4.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "300.0",
+    "y": "850.0",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "200.0",
+    "y": "875.0",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "500.0",
+    "y": "875.0",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "650.0",
+    "y": "850.0",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "800.0",
+    "y": "875.0",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
   }
 ]

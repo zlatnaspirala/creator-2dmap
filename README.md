@@ -14,6 +14,8 @@
      npm run rtc
    ```
 
+![visualTSTools](https://github.com/zlatnaspirala/creator-2dmap/blob/master/creator-2d-map.image.png)
+
 ### Help : ###
 
  Much more easyest is creator-2dmap python script.
