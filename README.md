@@ -46,28 +46,54 @@ Realtive paths no need to change - Only if you use your own project modification
 
 Project based on Python3 and Tk library.
 
+
+Last version :
+
+<pre>
+
+  <b>Version: 0.3</b>
+  - Types of game object : [ground, collectItem]
+  - Show/Hide grids
+  - Sticklers enable disable
+  - defaults.py - general config
+  - Save Load direct (template map) it is : map2d.creator file in the root of
+     project. If you have already manualy added and than load default map it will
+     be append together in current map.
+    Save/Load dialog for custom maps. Default folder `saved-maps/`
+   Clear map - Force clear without warning
+   Reset input - for reset left box input values to the minimum.
+  - Relocate last added game object
+
+</pre>
+
 Licence :
   GNU LESSER GENERAL PUBLIC LICENSE Version 3
   maximumroulette.com 2020
 
   About licence:
 
-```
-  If you use this code you need to provide your modification in some way.
+```python
+  If you use this code you need to provide your modification like open source
+   with same licence GPL v3.
+   You can use it in commercial or noncommercial projects
+   if you provide origin licence.
 ```
 
 ### Export structure : ###
 
-`
-let generatedMap = [{"x": 400.0,
-  "y": 400.0,
-  "w": 800.0,
-  "h": 80.0,
-  "tex": "imgs/texx.png",
-  "tiles": {"tilesX": 10.0,
-  "tilesY": 1.0}}]
-`
+```javascript
+let generatedMap = [
+  {
+    "x": 400.0,
+    "y": 400.0,
+    "w": 800.0,
+    "h": 80.0,
+    "tex": "imgs/texx.png",
+    "tiles": {
+      "tilesX": 10.0,
+      "tilesY": 1.0
+    }
+  }
+]
+```
 
- ```
-  UNDERCONSTRUCT
- ```
