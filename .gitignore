@@ -9,3 +9,6 @@ __pycache__/defaults.cpython-38.pyc
 *.pyc
 *.pyc
 saved-maps/ttttt.creator
+*.pyc
+__pycache__/defaults.cpython-38.pyc
+__pycache__/map.cpython-38.pyc

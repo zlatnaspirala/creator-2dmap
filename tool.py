@@ -1,10 +1,25 @@
 #!/usr/bin/python3
+
 #################################################################################
 #  creator2dmap is python3 application for creating visuat-ts game engine 2d maps
 #  LICENCE: GNU LESSER GENERAL PUBLIC LICENSE Version 3
 #  https://github.com/zlatnaspirala/creator-2dmap
 #  Code style ~camel
-#  Version: 0.2
+#  Version: 0.3
+#  - Types of game object : [ground, collectItem]
+#  - Show/Hide grids
+#  - Sticklers enable disable
+#  - defaults.py - general config
+#  - Save Load direct (template map) it is : map2d.creator file in the root of
+#     project. If you have already manualy added and than load default map it will
+#     be append together in current map.
+#    Save/Load dialog for custom maps. Default folder `saved-maps/`
+#   Clear map - Force clear without warning
+#   Reset input - for reset left box input values to the minimum.
+#  - Relocate last added game object
+#################################################################################
+
+#################################################################################
 #  Imports
 #################################################################################
 
@@ -66,7 +81,6 @@ resourcePreview = tkinter.Frame(window,
                          background=initValues.resourcePreviewFrameBColor,
                          height=100,
                          width=100)
-
 resourcePreview.place(x=1, y=500, in_=topFrame)
 
 ###############################################################################
@@ -75,9 +89,9 @@ resourcePreview.place(x=1, y=500, in_=topFrame)
 
 # Width & Height
 varLabelTextW = StringVar()
-varLabelTextW.set("width:20")
+varLabelTextW.set("width:25")
 varLabelTextH = StringVar()
-varLabelTextH.set("height:20")
+varLabelTextH.set("height:25")
 
 # View UI tool setup width
 def wplus():
@@ -86,19 +100,17 @@ def wplus():
   if initValues.autoTile == 1:
     tileXplus()
 
-widthPlus = tkinter.Button(
-    window, text="+", command=wplus)
+widthPlus = tkinter.Button(window, text="+", command=wplus)
 widthPlus.place(x=0, y=20, height=25, width=50, in_=topFrame)
 
 def wminus():
-  if initValues.ELEMENT_WIDTH > 20:
+  if initValues.ELEMENT_WIDTH > initValues.baseElementValue:
     initValues.ELEMENT_WIDTH = initValues.ELEMENT_WIDTH - initValues.incDecWidth
     varLabelTextW.set("Width:" + str(initValues.ELEMENT_WIDTH))
     if initValues.autoTile == 1:
       tileXminus()
 
-widthMinus = tkinter.Button(
-    window, text="-", command=wminus)
+widthMinus = tkinter.Button(window, text="-", command=wminus)
 widthMinus.place(x=50, y=20, height=25, width=50, in_=topFrame)
 
 labelWidth = tkinter.Label(window, textvariable=varLabelTextW)
@@ -119,7 +131,7 @@ heightPlus = tkinter.Button(
 heightPlus.place(x=0, y=63, height=25, width=50, in_=topFrame)
 
 def hminus():
-  if initValues.ELEMENT_HEIGHT > 20:
+  if initValues.ELEMENT_HEIGHT > initValues.baseElementValue:
     initValues.ELEMENT_HEIGHT = initValues.ELEMENT_HEIGHT - initValues.incDecHeight
     varLabelTextH.set("Height:" + str(initValues.ELEMENT_HEIGHT))
     if initValues.autoTile == 1:
@@ -134,7 +146,6 @@ heightMinus.place(x=50, y=63, height=25, width=50, in_=topFrame)
 
 varLabelTextTileX = StringVar()
 varLabelTextTileX.set("tileX:" + str(initValues.tilesX))
-
 varLabelTextTileY = StringVar()
 varLabelTextTileY.set("tileY:" + str(initValues.tilesY))
 
@@ -229,8 +240,69 @@ rotatedValuesControl.place(x=0, y=207, height=25, width=100, in_=topFrame)
 varSelLabelTex = StringVar()
 varSelLabelTex.set("Selected texture filename")
 selectedTexLabel = tkinter.Label(window, textvariable=varSelLabelTex, font=("Helvetica", 10))
-# appCoordinate.configure(background="#000000")
 selectedTexLabel.place(x=110, y=0, height=20, width=850)
+
+######################################################
+# Resource list - Texture staff
+######################################################
+
+def selectedImageChanged(what):
+  localw = what.widget
+  index = int(localw.curselection()[0])
+  value = localw.get(index)
+  global varSelLabelTex
+  varSelLabelTex.set(value)
+  localImgItems = Image.open(value).resize((100,100), Image.ANTIALIAS)
+  defaultTextureItems = ImageTk.PhotoImage(localImgItems)
+  global selectedTex
+  selectedTex = value
+  previewImg = tkinter.Label(resourcePreview, image=defaultTextureItems)
+  previewImg.image = defaultTextureItems
+  previewImg.place(x=0, y=0)
+
+labelRes = tkinter.Label(topFrame, text="Textures list:")
+labelRes.place(x=0, y=340, height=25, width=100, in_=topFrame)
+
+resListbox = tkinter.Listbox(window)
+resListbox.place(x=0, y=345, height=150, width=100, in_=topFrame)
+resListbox.bind('<<ListboxSelect>>', selectedImageChanged)
+
+scrollbar = tkinter.Scrollbar(resListbox, orient="vertical")
+scrollbar.config(command=resListbox.yview)
+scrollbar.pack(side=tkinter.RIGHT, fill = tkinter.Y)
+
+resListbox.config(yscrollcommand=scrollbar.set)
+
+def setCurTexture():
+  index = 0
+  value = resListbox.get(index)
+  global varSelLabelTex
+  varSelLabelTex.set(value)
+  localImgItems = Image.open(value).resize((100,100), Image.ANTIALIAS)
+  defaultTextureItems = ImageTk.PhotoImage(localImgItems)
+  global selectedTex
+  selectedTex = value
+  previewImg = tkinter.Label(resourcePreview, image=defaultTextureItems)
+  previewImg.image = defaultTextureItems
+  previewImg.place(x=0, y=0)
+
+def getImagesFrom(subPath):
+  resourceTexPath = initValues.absolutePacksPath + initValues.relativeTexturesPath + subPath
+  for entry in os.scandir(resourceTexPath):
+    if entry.is_file():
+      # collect all imgs data
+      localFullPath = resourceTexPath + entry.name
+      RESOURCE_INDENTITY.insert(len(RESOURCE_INDENTITY), localFullPath)
+      resListbox.insert(len(RESOURCE_INDENTITY), localFullPath)
+      localImgItems = Image.open(localFullPath).resize((initValues.ELEMENT_WIDTH, initValues.ELEMENT_HEIGHT), Image.ANTIALIAS)
+      cTextureItems = ImageTk.PhotoImage(localImgItems)
+      RESOURCE_IMAGES_OBJ.insert(len(RESOURCE_INDENTITY), cTextureItems)
+      global PREVENT_ADDING
+      if PREVENT_ADDING == 0:
+        RESOURCE_INDENTITY_READONLY.insert(len(RESOURCE_INDENTITY), localFullPath)
+        # print("Res READ ONLY.") need to check for improve
+  # print("Res list refreshed make first item selected...")
+  setCurTexture()
 
 def on_field_change(index, value, op):
   # print("combobox updated to ", varLabelInsertBox.get())
@@ -240,13 +312,13 @@ def on_field_change(index, value, op):
     resListbox.delete(0,tkinter.END)
     RESOURCE_INDENTITY.clear()
     # RESOURCE_IMAGES_OBJ.clear()
-    #refresrList()
+    # refresrList()
     getImagesFrom(initValues.relativeTexCollectItemsPath)
   elif (varLabelInsertBox.get() == "ground"):
     resListbox.delete(0,tkinter.END)
     RESOURCE_INDENTITY.clear()
     # RESOURCE_IMAGES_OBJ.clear()
-    #refresrList()
+    # refresrList()
     getImagesFrom(initValues.relativeTexGroundsPath)
 
 
@@ -259,10 +331,8 @@ insertBox = ttk.Combobox(window,
                          textvariable=varLabelInsertBox,
                          values=["ground", "collectItem"])
 
-# insertBox['values'] = [x for x in ["ground", "collectItem"]]
 insertBox.current(0)
 insertBox.place(x=0, y=290, height=25, width=100, in_=topFrame)
-# print(insertBox.get())
 
 #######################################################################
 # autoTiles CheckBox
@@ -270,7 +340,6 @@ insertBox.place(x=0, y=290, height=25, width=100, in_=topFrame)
 
 varAutoTile = tkinter.IntVar(value=1)
 def autoTileChanged():
-  # print(" >>>>>>>>>>>>" + str( varAutoTile.get() ) )
   initValues.autoTile = varAutoTile.get()
 
 autoTiles = tkinter.Checkbutton(window, text="Autotiles", variable=varAutoTile, command=autoTileChanged)
@@ -280,9 +349,9 @@ autoTiles.place(x=0, y=180, height=25, width=100, in_=topFrame)
 # left box subPuth - Show all
 ######################################################
 
-varAutoSubPath = tkinter.IntVar(value=1)
+varAutoSubPath = tkinter.IntVar(value=0)
 def autoSubPathChanged():
-  # print(" Show all images " + str( varAutoSubPath.get() ) )
+  print(" Show all images " + str( varAutoSubPath.get() ) )
   initValues.includeAllImages = varAutoSubPath.get()
   resListbox.delete(0,tkinter.END)
   RESOURCE_INDENTITY.clear()
@@ -307,62 +376,10 @@ previewImg = tkinter.Label(resourcePreview, image=defaultTextureItems)
 previewImg.image = defaultTextureItems
 
 # GLOBAL
-selectedTex = "" # initValues.absolutePacksPath + initValues.relativeTexturesPath + initValues.relativeTexGroundsPath + 'choco.png'
-
-def setCurTexture():
-  index = 0
-  value = resListbox.get(index)
-  global varSelLabelTex
-  varSelLabelTex.set(value)
-  # print("DEFAULT DATA: ", RESOURCE_INDENTITY[index])
-  localImgItems = Image.open(value).resize((100,100), Image.ANTIALIAS)
-  defaultTextureItems = ImageTk.PhotoImage(localImgItems)
-  global selectedTex
-  selectedTex = value
-  previewImg = tkinter.Label(resourcePreview, image=defaultTextureItems)
-  # config
-  previewImg.image = defaultTextureItems
-  previewImg.place(x=0, y=0)
-
-
-def selectedImageChanged(what):
-  localw = what.widget
-  index = int(localw.curselection()[0])
-  value = localw.get(index)
-  global varSelLabelTex
-  varSelLabelTex.set(value)
-  # selection=widget.curselection()
-  #value = widget.get(selection[0])
-  # print("GET V: ", RESOURCE_INDENTITY.index(value))
-  # print("GET DATA : ", RESOURCE_INDENTITY[index])
-  localImgItems = Image.open(value).resize((100,100), Image.ANTIALIAS)
-  defaultTextureItems = ImageTk.PhotoImage(localImgItems)
-  global selectedTex
-  selectedTex = value
-  previewImg = tkinter.Label(resourcePreview, image=defaultTextureItems)
-  previewImg.image = defaultTextureItems
-  previewImg.place(x=0, y=0)
+selectedTex = ""
 
 def hideResPreview():
   resourcePreview.place_forget()
-
-# resourcePreview.place_forget()
-
-labelRes = tkinter.Label(topFrame, text="Textures list:")
-labelRes.place(x=0, y=340, height=25, width=100, in_=topFrame)
-
-resListbox = tkinter.Listbox(window)
-resListbox.place(x=0, y=345, height=150, width=100, in_=topFrame)
-resListbox.bind('<<ListboxSelect>>', selectedImageChanged)
-
-scrollbar = tkinter.Scrollbar(resListbox, orient="vertical")
-scrollbar.config(command=resListbox.yview)
-# scrollbar.place(in_=resListbox, x=80)
-scrollbar.pack(side=tkinter.RIGHT, fill = tkinter.Y)
-
-resListbox.config(yscrollcommand=scrollbar.set)
-
-# src\examples\platformer\imgs\collect-items
 
 # Res path
 def getImagesFromImgsRoot():
@@ -375,27 +392,6 @@ def getImagesFromImgsRoot():
       resListbox.insert(len(RESOURCE_INDENTITY), entry.name)
       localC = localC + 1
       # print(entry.name)
-
-
-
-def getImagesFrom(subPath):
-  resourceTexPath = initValues.absolutePacksPath + initValues.relativeTexturesPath + subPath
-  for entry in os.scandir(resourceTexPath):
-    if entry.is_file():
-      # collect all imgs data
-      localFullPath = resourceTexPath + entry.name
-      RESOURCE_INDENTITY.insert(len(RESOURCE_INDENTITY), localFullPath)
-      resListbox.insert(len(RESOURCE_INDENTITY), localFullPath)
-      localImgItems = Image.open(localFullPath).resize((initValues.ELEMENT_WIDTH, initValues.ELEMENT_HEIGHT), Image.ANTIALIAS)
-      cTextureItems = ImageTk.PhotoImage(localImgItems)
-      RESOURCE_IMAGES_OBJ.insert(len(RESOURCE_INDENTITY), cTextureItems)
-      global PREVENT_ADDING
-      if PREVENT_ADDING == 0:
-        RESOURCE_INDENTITY_READONLY.insert(len(RESOURCE_INDENTITY), localFullPath)
-        # print("Res READ ONLY.") need to check for improve
-  # print("Res list refreshed make first item selected...")
-  setCurTexture()
-
 
 def refresrList():
   if initValues.includeAllImages == 1:
@@ -419,15 +415,14 @@ refresrList()
 #    label = tk.Label(root, image=photo)
 
 #######################################################################
-# Reset to minimum Minimum predefinited value (harccode) is 20 for
-# w and h and 1 for tiles.
+# Reset to minimum input values
 #######################################################################
 
 def resetInputValuesToMin():
-  initValues.ELEMENT_WIDTH = 20
-  varLabelTextW.set("Width:" + str(20))
-  initValues.ELEMENT_HEIGHT = 20
-  varLabelTextH.set("Height:" + str(20))
+  initValues.ELEMENT_WIDTH = initValues.baseElementValue
+  varLabelTextW.set("Width:" + str(initValues.baseElementValue))
+  initValues.ELEMENT_HEIGHT = initValues.baseElementValue
+  varLabelTextH.set("Height:" + str(initValues.baseElementValue))
   initValues.tilesX = 1
   varLabelTextTileX.set("tileX:" + str(1))
   initValues.tilesY = 1
@@ -507,6 +502,7 @@ window.config(menu=root_menu)
 def myEvent():
   print("Menu tab pressed...")
 
+# NOT IN USE
 def undoRemoveLast():
   MyDefaultMap.removeLast()
   canvas.delete("all")
@@ -527,7 +523,6 @@ def menuEventClearMapForce():
   print("Clear map")
 
 def menuEventSaveMap():
-  # print(MyDefaultMap.map)
   MyDefaultMap.prepareForSave()
   json_string = json.dumps(MyDefaultMap.exportMap)
   # print(os.getcwd(), os.path.abspath(__file__))
@@ -601,6 +596,7 @@ def showAbout():
     LICENCE:                                        \n
     GNU LESSER GENERAL PUBLIC LICENSE Version 3     \n
     https://github.com/zlatnaspirala/creator-2dmap  \n
+    maximumroulette.com 2020 \n
   """)
 
 def showGrid():
@@ -683,12 +679,10 @@ about_menu.add_command(label="creator-map2d", command=showAbout)
 
 # GUI Labels
 appCoordinate = tkinter.Label(window, text="Coordinator")
-# appCoordinate.configure(background="#000000")
 appCoordinate.place(x=screen_width-150, y=0, height=30, width=150)
-# appCoordinate.pack()
 
 ################################################################################
-# Canvas element
+# Canvas element - Visual draw
 ################################################################################
 
 canvas = tkinter.Canvas(
@@ -720,7 +714,6 @@ defaultTexture_ = []
 canvasImgElement = []
 
 def drawMap():
-  print("Clear canvas.")
   canvas.delete("all")
   if initValues.canvasGridVisible == True:
     print("Draw Map Grid.")
@@ -729,28 +722,27 @@ def drawMap():
       line2 = canvas.create_line(x, 0, x, screen_width, fill="red")
 
   for (element, texpath) in zip(MyDefaultMap.map, MyDefaultMap.pythonImageObjectMemory):
-    #if texpath == "":
-    #  print("CATCH")
-    #  global defaultTextureItems
-    #  dTex = defaultTextureItems
-    # else:
     test2 = RESOURCE_INDENTITY_READONLY.index(texpath)
-    # test2 = RESOURCE_INDENTITY.index(texpath)
     dTex = RESOURCE_IMAGES_OBJ[test2]
     canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="blue")
-    # error on 'infly img creation with resize' ?!
-    # Fixed with preload buffered all tex images.
-    # Best for now
-    # print(texpath + "<<<<<")
 
     if element.tilesX == 0:
       draws = canvas.create_image(element.x, element.y, anchor="nw", image=dTex)
       canvasImgElement.append(draws)
     for i in range(int(element.tilesX)):
-      draws = canvas.create_image(element.x + i * 20 , element.y, anchor="nw", image=dTex)
+      draws = canvas.create_image(
+        element.x + i * initValues.baseElementValue,
+        element.y,
+        anchor="nw",
+        image=dTex)
       canvasImgElement.append(draws)
       for y in range(int(element.tilesY)):
-        canvasImgElement.append(canvas.create_image(element.x  + i * 20, element.y + y * 20, anchor="nw", image=dTex))
+        canvasImgElement.append(canvas.create_image(
+          element.x  + i * initValues.baseElementValue,
+          element.y + y * initValues.baseElementValue,
+          anchor="nw",
+          image=dTex)
+        )
     if hasattr(element, 'colectionLabel'):
       canvasImgElement.append(canvas.create_image(element.x, element.y, anchor="nw", image=dTex))
       # print("Draw collection item.")
@@ -772,6 +764,12 @@ drawMap()
 # Fix layout
 resourcePreview.lift()
 
+# fix show all to nor show all
+varAutoSubPath.set(value=0)
+initValues.includeAllImages = varAutoSubPath.get()
+resListbox.delete(0,tkinter.END)
+RESOURCE_INDENTITY.clear()
+refresrList()
 
 # Running
 window.mainloop()
