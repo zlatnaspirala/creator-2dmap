@@ -294,7 +294,15 @@ def getImagesFrom(subPath):
       localFullPath = resourceTexPath + entry.name
       RESOURCE_INDENTITY.insert(len(RESOURCE_INDENTITY), localFullPath)
       resListbox.insert(len(RESOURCE_INDENTITY), localFullPath)
-      localImgItems = Image.open(localFullPath).resize((initValues.ELEMENT_WIDTH, initValues.ELEMENT_HEIGHT), Image.ANTIALIAS)
+
+      localImgItems = Image.open(localFullPath).resize(
+        (initValues.baseElementValue,
+         initValues.baseElementValue), Image.ANTIALIAS)
+
+      # localImgItems = Image.open(localFullPath).resize(
+      #   (initValues.ELEMENT_WIDTH,
+      #    initValues.ELEMENT_HEIGHT), Image.ANTIALIAS)
+
       cTextureItems = ImageTk.PhotoImage(localImgItems)
       RESOURCE_IMAGES_OBJ.insert(len(RESOURCE_INDENTITY), cTextureItems)
       global PREVENT_ADDING
