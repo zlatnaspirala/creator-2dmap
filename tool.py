@@ -510,9 +510,15 @@ window.config(menu=root_menu)
 def myEvent():
   print("Menu tab pressed...")
 
-# NOT IN USE
 def undoRemoveLast():
   MyDefaultMap.removeLast()
+  canvas.delete("all")
+  drawMap()
+  # print("undo")
+
+def relocateLast():
+  MyDefaultMap.removeLast()
+  time.sleep(0.1)
   canvas.delete("all")
   drawMap()
   # print("undo")
@@ -644,7 +650,8 @@ file_menu.add_command(label="Force clear map", command=menuEventClearMapForce)
 # sub menu EDIT
 edit_menu = tkinter.Menu(root_menu)
 root_menu.add_cascade(label="Edit", menu=edit_menu)
-edit_menu.add_command(label="Relocate last added item", command=undoRemoveLast)
+edit_menu.add_command(label="Relocate last added item", command=relocateLast)
+edit_menu.add_command(label="Remove last", command=undoRemoveLast)
 # edit_menu.add_command(label="Redo last added", command=myEvent) # NOT DONE !
 file_menu.add_separator()
 edit_menu.add_command(label="Reset input", command=resetInputValuesToMin)
