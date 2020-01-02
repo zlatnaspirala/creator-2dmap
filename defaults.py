@@ -7,6 +7,7 @@ class InitialData:
     self.relativeMapPath = "\\src\\examples\\platformer\\scripts\\packs\\"
     self.relativeTexturesPath = "\\src\\examples\\platformer\\imgs\\"
     self.relativeTexGroundsPath = "grounds\\"
+    self.relativeTexEnemiesPath = "enemies\\"
     self.relativeTexCollectItemsPath = "collect-items\\"
     self.includeAllImages = 0
     self.stickler = {}

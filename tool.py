@@ -27,6 +27,7 @@ import os
 from map import myMap
 from models.ground import StaticGrounds
 from models.collectitems import CollectingItems
+from models.enemies import Enemies
 from defaults import InitialData
 import tkinter
 import json
@@ -46,7 +47,7 @@ from tkinter import filedialog
 window = tkinter.Tk()
 window.title("GUI tool creator-2dmap for visual-ts game engine")
 
-# Global currentInsertType = "grounds" | "collectItems"
+# Global currentInsertType = "grounds" | "collectItems" | "enemies"
 INSERT_TYPE = "grounds"
 RESOURCE_INDENTITY = []
 RESOURCE_INDENTITY_READONLY = []
@@ -299,10 +300,6 @@ def getImagesFrom(subPath):
         (initValues.baseElementValue,
          initValues.baseElementValue), Image.ANTIALIAS)
 
-      # localImgItems = Image.open(localFullPath).resize(
-      #   (initValues.ELEMENT_WIDTH,
-      #    initValues.ELEMENT_HEIGHT), Image.ANTIALIAS)
-
       cTextureItems = ImageTk.PhotoImage(localImgItems)
       RESOURCE_IMAGES_OBJ.insert(len(RESOURCE_INDENTITY), cTextureItems)
       global PREVENT_ADDING
@@ -328,6 +325,12 @@ def on_field_change(index, value, op):
     # RESOURCE_IMAGES_OBJ.clear()
     # refresrList()
     getImagesFrom(initValues.relativeTexGroundsPath)
+  elif (varLabelInsertBox.get() == "enemies"):
+    resListbox.delete(0,tkinter.END)
+    RESOURCE_INDENTITY.clear()
+    # RESOURCE_IMAGES_OBJ.clear()
+    # refresrList()
+    getImagesFrom(initValues.relativeTexEnemiesPath)
 
 
 varLabelInsertBox = StringVar()
@@ -337,7 +340,9 @@ insertBox = ttk.Combobox(window,
                          font="none 12 bold",
                          width=100,
                          textvariable=varLabelInsertBox,
-                         values=["ground", "collectItem"])
+                         values=["ground",
+                                 "collectItem",
+                                 "enemies"])
 
 insertBox.current(0)
 insertBox.place(x=0, y=290, height=25, width=100, in_=topFrame)
@@ -405,6 +410,7 @@ def refresrList():
   if initValues.includeAllImages == 1:
     getImagesFrom(initValues.relativeTexGroundsPath)
     getImagesFrom(initValues.relativeTexCollectItemsPath)
+    getImagesFrom(initValues.relativeTexEnemiesPath)
 
   else:
     print(insertBox.get())
@@ -412,6 +418,8 @@ def refresrList():
       getImagesFrom(initValues.relativeTexGroundsPath)
     elif insertBox.get() == "collectItem":
       getImagesFrom(initValues.relativeTexCollectItemsPath)
+    elif insertBox.get() == "enemies":
+      getImagesFrom(initValues.relativeTexEnemiesPath)
   global selectedTex
   selectedTex = RESOURCE_INDENTITY[0]
 
@@ -495,6 +503,21 @@ def collectMouseEventData(event):
                                 initValues.tilesY,
                                 "collectItemPoint",
                                 10)
+    # Enemies
+    elif insertBox.get() == "enemies":
+      # Hardcoded for now: increment Dimension
+      localName =  filename[len(filename) -1]
+      localName = localName.replace(".png", "");
+      localModel = Enemies(
+                            x,
+                            y,
+                            initValues.ELEMENT_WIDTH * 2,
+                            initValues.ELEMENT_HEIGHT * 2,
+                            filenameStr,
+                            initValues.tilesX,
+                            initValues.tilesY,
+                            localName,
+                            10)
     MyDefaultMap.add(localModel, selectedTex)
     drawMap()
 
@@ -740,6 +763,8 @@ def drawMap():
     test2 = RESOURCE_INDENTITY_READONLY.index(texpath)
     dTex = RESOURCE_IMAGES_OBJ[test2]
     canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="blue")
+
+    # TEST
 
     if element.tilesX == 0:
       draws = canvas.create_image(element.x, element.y, anchor="nw", image=dTex)
