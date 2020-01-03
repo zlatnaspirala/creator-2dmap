@@ -1,4 +1,5 @@
 # creator-2dmap #
+## 2d Map Generator for platformer (visual-ts game engine) ##
 
  - This is tool for creating map objects for platformer game template
    in <b>visual-typescript game engine</b> project.
