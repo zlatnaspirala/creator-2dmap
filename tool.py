@@ -37,6 +37,7 @@ import subprocess
 import PIL
 from PIL import ImageTk, Image
 from common.stickler import Stickler
+from common.sprites import Sprite
 import time
 from tkinter import filedialog
 
@@ -45,7 +46,7 @@ from tkinter import filedialog
 ###############################################################################
 
 window = tkinter.Tk()
-window.title("GUI tool creator-2dmap for visual-ts game engine")
+window.title("GUI tool creator-2dmap for visual-ts game engine FREEWARE")
 
 # Global currentInsertType = "grounds" | "collectItems" | "enemies"
 INSERT_TYPE = "grounds"
@@ -292,13 +293,26 @@ def getImagesFrom(subPath):
   for entry in os.scandir(resourceTexPath):
     if entry.is_file():
       # collect all imgs data
+
       localFullPath = resourceTexPath + entry.name
       RESOURCE_INDENTITY.insert(len(RESOURCE_INDENTITY), localFullPath)
       resListbox.insert(len(RESOURCE_INDENTITY), localFullPath)
 
+      # Origin value is enemies\  \\ is escape...
+      if subPath == "enemies\\":
+        pass
+        # print(" ", entry.name)
+        # test = Sprite(localFullPath)
+
+      # if subPath == "enemies\\":
+        # print("COOLLL images[] ", test.images[0])
+        # localImgItems = Image.open(localFullPath)
+        #cTextureItems = test.images[0]
+
       localImgItems = Image.open(localFullPath).resize(
-        (initValues.baseElementValue,
-         initValues.baseElementValue), Image.ANTIALIAS)
+      (initValues.baseElementValue,
+      initValues.baseElementValue), Image.ANTIALIAS)
+      cTextureItems = ImageTk.PhotoImage(localImgItems)
 
       cTextureItems = ImageTk.PhotoImage(localImgItems)
       RESOURCE_IMAGES_OBJ.insert(len(RESOURCE_INDENTITY), cTextureItems)
@@ -760,6 +774,7 @@ def drawMap():
       line2 = canvas.create_line(x, 0, x, screen_width, fill="red")
 
   for (element, texpath) in zip(MyDefaultMap.map, MyDefaultMap.pythonImageObjectMemory):
+
     test2 = RESOURCE_INDENTITY_READONLY.index(texpath)
     dTex = RESOURCE_IMAGES_OBJ[test2]
     canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="blue")

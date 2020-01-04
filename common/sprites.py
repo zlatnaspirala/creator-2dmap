@@ -1,14 +1,15 @@
-import Tkinter as tk
 
-class Sprite(pathForSprite, tx, ty):
-    def __init__(self):
+import tkinter as tk
+
+class Sprite():
+    def __init__(self, pathForSprite):
         self.spritesheet = tk.PhotoImage(file=pathForSprite)
-        self.num_sprintes = 7
+        self.num_sprintes = 1
         self.images = [self.subimage(32*i, 0, 32*(i+1), 48) for i in range(self.num_sprintes)]
         self.updateimage(0)
 
     def subimage(self, l, t, r, b):
-        print(l,t,r,b)
+        print("VALUES A>>>>>" , l,t,r,b)
         dst = tk.PhotoImage()
         dst.tk.call(dst, 'copy', self.spritesheet, '-from', l, t, r, b, '-to', 0, 0)
         return dst
