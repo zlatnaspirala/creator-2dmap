@@ -314,7 +314,7 @@ def getImagesFrom(subPath):
       initValues.baseElementValue), Image.ANTIALIAS)
       cTextureItems = ImageTk.PhotoImage(localImgItems)
 
-      cTextureItems = ImageTk.PhotoImage(localImgItems)
+      # cTextureItems = ImageTk.PhotoImage(localImgItems)
       RESOURCE_IMAGES_OBJ.insert(len(RESOURCE_INDENTITY), cTextureItems)
       global PREVENT_ADDING
       if PREVENT_ADDING == 0:
@@ -525,8 +525,8 @@ def collectMouseEventData(event):
       localModel = Enemies(
                             x,
                             y,
-                            initValues.ELEMENT_WIDTH * 2,
-                            initValues.ELEMENT_HEIGHT * 2,
+                            initValues.ELEMENT_WIDTH * 1.5,
+                            initValues.ELEMENT_HEIGHT * 1.5,
                             filenameStr,
                             initValues.tilesX,
                             initValues.tilesY,
@@ -777,7 +777,11 @@ def drawMap():
 
     test2 = RESOURCE_INDENTITY_READONLY.index(texpath)
     dTex = RESOURCE_IMAGES_OBJ[test2]
-    canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="blue")
+
+    if "enemies" in texpath:
+      canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="red")
+    else:
+      canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="blue")
 
     # TEST
 
