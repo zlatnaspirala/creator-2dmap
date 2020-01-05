@@ -66,11 +66,11 @@ class Stickler:
       lookAT = localSample.index(res_min)
       print("min ", res_min)
       if LocalSampleValue[lookAT] - x > 0:
-        fixPoint = LocalSampleValue[lookAT] # - self.initValue.ELEMENT_HEIGHT
+        fixPoint = LocalSampleValue[lookAT] - self.initValue.ELEMENT_HEIGHT / 2
         x = fixPoint
         print("top")
       else:
-        fixPoint = LocalSampleValue[lookAT]
+        fixPoint = LocalSampleValue[lookAT] - self.initValue.ELEMENT_HEIGHT /2
         print("fpoint:", fixPoint)
         x = fixPoint
     print("outcall y", x)
