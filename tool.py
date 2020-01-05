@@ -298,21 +298,16 @@ def getImagesFrom(subPath):
       RESOURCE_INDENTITY.insert(len(RESOURCE_INDENTITY), localFullPath)
       resListbox.insert(len(RESOURCE_INDENTITY), localFullPath)
 
-      # Origin value is enemies\  \\ is escape...
-      if subPath == "enemies\\":
-        pass
-        # print(" ", entry.name)
-        # test = Sprite(localFullPath)
-
-      # if subPath == "enemies\\":
-        # print("COOLLL images[] ", test.images[0])
-        # localImgItems = Image.open(localFullPath)
-        #cTextureItems = test.images[0]
-
       localImgItems = Image.open(localFullPath).resize(
       (initValues.baseElementValue,
       initValues.baseElementValue), Image.ANTIALIAS)
       cTextureItems = ImageTk.PhotoImage(localImgItems)
+
+      # Origin value is enemies\  \\ is escape...
+      if subPath == "enemies\\":
+        test = Sprite(localFullPath)
+        cTextureItems = test.images[0]
+        print("sprites test")
 
       # cTextureItems = ImageTk.PhotoImage(localImgItems)
       RESOURCE_IMAGES_OBJ.insert(len(RESOURCE_INDENTITY), cTextureItems)
@@ -324,6 +319,7 @@ def getImagesFrom(subPath):
   setCurTexture()
 
 def on_field_change(index, value, op):
+  global PREVENT_ADDING
   # print("combobox updated to ", varLabelInsertBox.get())
   if varLabelInsertBox.get() == "collectItem":
     # print("Setup input vars fot item strict.")
@@ -425,7 +421,8 @@ def refresrList():
     getImagesFrom(initValues.relativeTexGroundsPath)
     getImagesFrom(initValues.relativeTexCollectItemsPath)
     getImagesFrom(initValues.relativeTexEnemiesPath)
-
+    #PREVENT_ADDING = 1
+    initValues.includeAllImages = 0
   else:
     print(insertBox.get())
     if insertBox.get() == "ground":
@@ -781,24 +778,35 @@ def drawMap():
     if "enemies" in texpath:
       canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="red")
     else:
-      canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="blue")
+      pass
+      # canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="blue")
 
     # TEST
 
     if element.tilesX == 0:
       draws = canvas.create_image(element.x, element.y, anchor="nw", image=dTex)
       canvasImgElement.append(draws)
+
     for i in range(int(element.tilesX)):
+
+      correctDelta = int(element.tilesX)
+      X = element.x + i * initValues.baseElementValue
+      X = X - correctDelta * initValues.baseElementValue / 2
       draws = canvas.create_image(
-        element.x + i * initValues.baseElementValue,
+        X,
         element.y,
         anchor="nw",
         image=dTex)
       canvasImgElement.append(draws)
       for y in range(int(element.tilesY)):
+
+        correctDelta = int(element.tilesY - 1)
+        Y = element.y + y * initValues.baseElementValue
+        Y = Y - correctDelta * initValues.baseElementValue / 2
+
         canvasImgElement.append(canvas.create_image(
-          element.x  + i * initValues.baseElementValue,
-          element.y + y * initValues.baseElementValue,
+          X,
+          Y,
           anchor="nw",
           image=dTex)
         )

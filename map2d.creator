@@ -1,60 +1,48 @@
 [
   {
-    "x": "225.0",
-    "y": "300.0",
-    "w": "25.0",
-    "h": "25.0",
+    "x": "250.0",
+    "y": "150.0",
+    "w": "125.0",
+    "h": "50.0",
     "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
+      "tilesX": "5.0",
+      "tilesY": "2.0"
     },
     "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
   },
   {
-    "x": "450.0",
-    "y": "200.0",
+    "x": "250.0",
+    "y": "250.0",
     "w": "25.0",
-    "h": "25.0",
+    "h": "50.0",
     "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
       "tilesX": "1.0",
-      "tilesY": "1.0"
+      "tilesY": "2.0"
     },
     "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
   },
   {
-    "x": "300.0",
-    "y": "175.0",
+    "x": "200.0",
+    "y": "250.0",
     "w": "25.0",
-    "h": "25.0",
+    "h": "50.0",
     "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
       "tilesX": "1.0",
-      "tilesY": "1.0"
+      "tilesY": "2.0"
     },
     "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
   },
   {
-    "x": "150.0",
-    "y": "200.0",
-    "w": "25.0",
+    "x": "350.0",
+    "y": "150.0",
+    "w": "50.0",
     "h": "25.0",
     "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
-  },
-  {
-    "x": "75.0",
-    "y": "275.0",
-    "w": "25.0",
-    "h": "25.0",
-    "tex": "require('../../imgs/grounds/boxAlt.png')",
-    "tiles": {
-      "tilesX": "1.0",
+      "tilesX": "2.0",
       "tilesY": "1.0"
     },
     "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
@@ -62,61 +50,85 @@
   {
     "x": "150.0",
     "y": "150.0",
-    "w": "25.0",
+    "w": "50.0",
     "h": "25.0",
-    "tex": "require('../../imgs/enemies/chopper.png')",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
-      "tilesX": "1.0",
+      "tilesX": "2.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\chopper.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
   },
   {
-    "x": "225.0",
+    "x": "250.0",
     "y": "100.0",
-    "w": "25.0",
+    "w": "50.0",
     "h": "25.0",
-    "tex": "require('../../imgs/enemies/chopper.png')",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
-      "tilesX": "1.0",
+      "tilesX": "2.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\chopper.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "250.0",
+    "y": "200.0",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
   },
   {
     "x": "300.0",
-    "y": "69.0",
+    "y": "250.0",
     "w": "25.0",
-    "h": "25.0",
-    "tex": "require('../../imgs/enemies/chopper.png')",
+    "h": "75.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
       "tilesX": "1.0",
-      "tilesY": "1.0"
+      "tilesY": "3.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\chopper.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
   },
   {
-    "x": "300.0",
-    "y": "125.0",
+    "x": "250.0",
+    "y": "350.0",
     "w": "25.0",
-    "h": "25.0",
-    "tex": "require('../../imgs/enemies/chopper.png')",
+    "h": "75.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
       "tilesX": "1.0",
-      "tilesY": "1.0"
+      "tilesY": "3.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\chopper.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
   },
   {
-    "x": "150.0",
-    "y": "64.0",
+    "x": "250.0",
+    "y": "450.0",
     "w": "25.0",
-    "h": "25.0",
-    "tex": "require('../../imgs/enemies/chopper.png')",
+    "h": "75.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
     "tiles": {
       "tilesX": "1.0",
+      "tilesY": "3.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "250.0",
+    "y": "550.0",
+    "w": "75.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "3.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\chopper.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
   }
 ]

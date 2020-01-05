@@ -9,7 +9,7 @@ class InitialData:
     self.relativeTexGroundsPath = "grounds\\"
     self.relativeTexEnemiesPath = "enemies\\"
     self.relativeTexCollectItemsPath = "collect-items\\"
-    self.includeAllImages = 0
+    self.includeAllImages = 1
     self.stickler = {}
     self.stickler["enabledX"] = True
     self.stickler["enabledY"] = True
