@@ -10,13 +10,15 @@
 #  - Show/Hide grids
 #  - Sticklers enable disable
 #  - defaults.py - general config
-#  - Save Load direct (template map) it is : map2d.creator file in the root of
+#  - Save/Load direct (template map) it is : map2d.creator file in the root of
 #     project. If you have already manualy added and than load default map it will
 #     be append together in current map.
 #    Save/Load dialog for custom maps. Default folder `saved-maps/`
 #   Clear map - Force clear without warning
 #   Reset input - for reset left box input values to the minimum.
 #  - Relocate last added game object
+#  - Remove last added element
+#   Scroll vertical & horizontal canvas, help to create large maps.
 #################################################################################
 
 #################################################################################
