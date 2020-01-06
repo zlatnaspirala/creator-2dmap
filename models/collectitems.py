@@ -10,4 +10,4 @@ class CollectingItems(StaticGrounds):
     super().__init__(x, y, w, h, tex, tilesX, tilesY)
     self.colectionLabel = colectionLabel
     self.points = points
-    print("Created model for collect item", colectionLabel)
+    # print("Created model for collect item", colectionLabel)

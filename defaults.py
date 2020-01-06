@@ -25,6 +25,8 @@ class InitialData:
     self.topFrameBColor = "#010233"
     self.resourcePreviewFrameBColor = "#f10f33"
     self.canvasGridVisible = True
+    self.canvasScreenCoeficientW = 5
+    self.canvasScreenCoeficientH = 2
     self.autoTile = 1
     self.tilesX = 1
     self.tilesY = 1

@@ -14,7 +14,7 @@ class Stickler:
 
   def recalculateX(self, x):
 
-    print("recal", x)
+    # print("recal", x)
     localSample = []
     LocalSampleValue = []
 
@@ -31,23 +31,23 @@ class Stickler:
 
     if res_min < self.mod:
       lookAT = localSample.index(res_min)
-      print("min ", res_min)
+      # print("min ", res_min)
       if LocalSampleValue[lookAT] - x > 0:
         # fixPoint = LocalSampleValue[lookAT] - self.initValue.ELEMENT_WIDTH
         fixPoint = LocalSampleValue[lookAT]
         x = fixPoint
-        print("LEFT")
+        # print("LEFT")
       else:
         fixPoint = LocalSampleValue[lookAT]
-        print("FP ", fixPoint)
+        # print("FP ", fixPoint)
         x = fixPoint
-    print("outcall x", x)
+    # print("outcall x", x)
     return x
 
   # It is just called `x`
   def recalculateY(self, x):
-    print("recal y")
-    print("recal", x)
+    # print("recal y")
+    # print("recal", x)
     localSample = []
     LocalSampleValue = []
 
@@ -64,15 +64,15 @@ class Stickler:
 
     if res_min < self.mod:
       lookAT = localSample.index(res_min)
-      print("min ", res_min)
+      # print("min ", res_min)
       if LocalSampleValue[lookAT] - x > 0:
         fixPoint = LocalSampleValue[lookAT] - self.initValue.ELEMENT_HEIGHT / 2
         x = fixPoint
-        print("top")
+        # print("top")
       else:
         fixPoint = LocalSampleValue[lookAT] - self.initValue.ELEMENT_HEIGHT /2
-        print("fpoint:", fixPoint)
+        # print("fpoint:", fixPoint)
         x = fixPoint
-    print("outcall y", x)
+    # print("outcall y", x)
     return x
 

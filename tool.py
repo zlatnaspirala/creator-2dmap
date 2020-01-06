@@ -424,7 +424,7 @@ def refresrList():
     #PREVENT_ADDING = 1
     initValues.includeAllImages = 0
   else:
-    print(insertBox.get())
+    # print(insertBox.get())
     if insertBox.get() == "ground":
       getImagesFrom(initValues.relativeTexGroundsPath)
     elif insertBox.get() == "collectItem":
@@ -592,7 +592,7 @@ def menuEventSaveAsMap():
   f.close()
 
 def menuEventExportMap():
-  print(MyDefaultMap.map)
+  # print(MyDefaultMap.map)
   MyDefaultMap.prepareForExport()
   json_string = json.dumps(MyDefaultMap.exportMap2)
   print(os.getcwd(), os.path.abspath(__file__))
@@ -638,7 +638,7 @@ def menuEventLoadCustomMap():
 # About
 def showAbout():
   messagebox.showinfo("About", """
-    Original source project `creator-2dmap` ver 0.2 \n
+    Original source project `creator-2dmap` ver 0.4 \n
     2019/2020 Copyright Nikola Lukic                \n
     created by Nikola Lukic zlatnaspirala@gmail.com \n \n
     LICENCE:                                        \n
@@ -731,19 +731,41 @@ appCoordinate = tkinter.Label(window, text="Coordinator")
 appCoordinate.place(x=screen_width-150, y=0, height=30, width=150)
 
 ################################################################################
+# canvasFrame - Canvas container
 # Canvas element - Visual draw
+# Scrollbars V H for canvas
 ################################################################################
+canvasFrame = tkinter.Frame(window,
+                            width=screen_width - 110,
+                            height=screen_height - 110,
+                            background="#f3ffff")
+canvasFrame.place(x=105, y=20, width=screen_width - 115, height=screen_height - 130)
 
 canvas = tkinter.Canvas(
-    window,
-    width=screen_width - 110,
-    height=screen_height - 110,
-    background=initValues.windowBackgroundColor
+    canvasFrame,
+    width=screen_width * initValues.canvasScreenCoeficientW,
+    height=screen_height * initValues.canvasScreenCoeficientH,
+    background=initValues.windowBackgroundColor,
+    scrollregion=(0,0,
+                  screen_width * initValues.canvasScreenCoeficientW,
+                  screen_height * initValues.canvasScreenCoeficientH)
   )
-canvas.place(x=100, y=20, width=screen_width - 115, height=screen_height - 130)
-print("Screen size: ", screen_width , screen_height, sep="-")
+# canvas.place(x=0, y=0, width= 2 *screen_width - 120, height=screen_height - 130)
 
 canvas.bind("<Button-1>", collectMouseEventData)
+
+# Scroll bars for canvas
+hCanvasBar = tkinter.Scrollbar(canvasFrame,orient=tkinter.HORIZONTAL)
+hCanvasBar.pack(side=tkinter.BOTTOM,fill=tkinter.X)
+hCanvasBar.config(command=canvas.xview)
+vCanvasBar = tkinter.Scrollbar(canvasFrame,orient=tkinter.VERTICAL)
+vCanvasBar.pack(side=tkinter.RIGHT,fill=tkinter.Y)
+vCanvasBar.config(command=canvas.yview)
+
+canvas.config(xscrollcommand=hCanvasBar.set, yscrollcommand=vCanvasBar.set)
+
+canvas.pack(side=tkinter.LEFT,expand=True,fill=tkinter.BOTH)
+# canvas.place(x=0, y=0, width= initValues.canvasScreenCoeficientW * screen_width - 120, height=screen_height - 130)
 
 # canvas.delete(line1)
 # canvas.delete(tkinter.ALL)
@@ -753,10 +775,10 @@ canvas.bind("<Button-1>", collectMouseEventData)
 ###############################################################################
 
 # Symbolic img param
-img = Image.open("resource/floor2.png")
-defaultTextureGrounds= ImageTk.PhotoImage(img)
-imgItems = Image.open("resource/bitcoin.png").resize((20,20), Image.ANTIALIAS)
-defaultTextureItems = ImageTk.PhotoImage(imgItems)
+# img = Image.open("resource/floor2.png")
+# defaultTextureGrounds= ImageTk.PhotoImage(img)
+# imgItems = Image.open("resource/bitcoin.png").resize((20,20), Image.ANTIALIAS)
+# defaultTextureItems = ImageTk.PhotoImage(imgItems)
 
 imgs = []
 defaultTexture_ = []
@@ -766,9 +788,9 @@ def drawMap():
   canvas.delete("all")
   if initValues.canvasGridVisible == True:
     print("Draw Map Grid.")
-    for x in range(100, screen_width, initValues.gridWidth):
-      line1 = canvas.create_line(0, x, screen_width, x, fill="orange")
-      line2 = canvas.create_line(x, 0, x, screen_width, fill="red")
+    for x in range(100, screen_width * initValues.canvasScreenCoeficientW, initValues.gridWidth):
+      line1 = canvas.create_line(0, x, screen_width* initValues.canvasScreenCoeficientW, x, fill="orange")
+      line2 = canvas.create_line(x, 0, x, screen_width* initValues.canvasScreenCoeficientW, fill="red")
 
   for (element, texpath) in zip(MyDefaultMap.map, MyDefaultMap.pythonImageObjectMemory):
 

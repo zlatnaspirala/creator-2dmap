@@ -13,8 +13,6 @@ class Sprite():
         # self.updateimage(0)
 
     def subimage(self, l, t, r, b):
-        print("VALUES A>>>>>" , l,t,r,b)
-        print(self.spritesheet)
         dst = tk.PhotoImage()
         dst.tk.call(dst, 'copy', self.spritesheet, '-from', l, t, r, b, '-to', 0, 0)
         return dst
