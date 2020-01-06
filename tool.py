@@ -5,7 +5,7 @@
 #  LICENCE: GNU LESSER GENERAL PUBLIC LICENSE Version 3
 #  https://github.com/zlatnaspirala/creator-2dmap
 #  Code style ~camel
-#  Version: 0.3
+#  Version: 0.4
 #  - Types of game object : [ground, collectItem]
 #  - Show/Hide grids
 #  - Sticklers enable disable
