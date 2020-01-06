@@ -54,7 +54,7 @@ Last version :
 
 <pre>
 
-  <b>Version: 0.3</b>
+  <b>Version: 0.4</b>
   - Types of game object : [ground, collectItem]
   - Show/Hide grids
   - Sticklers enable disable
@@ -66,6 +66,10 @@ Last version :
    Clear map - Force clear without warning
    Reset input - for reset left box input values to the minimum.
   - Relocate last added game object
+  - Canvas scroolbar ver & hor added. defaults.py props:
+   `self.canvasScreenCoeficientW & self.canvasScreenCoeficientH`
+    for controling map size.
+
 
 </pre>
 
@@ -75,7 +79,7 @@ Licence :
 
   About licence:
 
-```python
+```
   If you use this code you need to provide your modification like open source
    with same licence GPL v3.
    You can use it in commercial or noncommercial projects
