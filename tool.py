@@ -473,12 +473,18 @@ def addNewElements(loadedMap):
     MyDefaultMap.add(localModel, element['pythonImgPath'])
   drawMap()
 
+###########################################################################
 # Collect mouse & other data [x,y,w,h,tex]
+###########################################################################
+
 def collectMouseEventData(event):
+
+  localcanvas = event.widget
+
   if event.y > 0 and event.x > 50:
     # print("clicked at", event.x, event.y)
-    x = event.x
-    y = event.y
+    x = canvas.canvasx(event.x)
+    y = canvas.canvasy(event.y)
     local = "x:" + str(event.x) + ", y:" + str(event.y)
     appCoordinate.configure(text=local)
 
@@ -752,10 +758,15 @@ canvas = tkinter.Canvas(
   )
 # canvas.place(x=0, y=0, width= 2 *screen_width - 120, height=screen_height - 130)
 
+canvas.configure(scrollregion=canvas.bbox("all"))
+
 canvas.bind("<Button-1>", collectMouseEventData)
 
+def testHorScrollEvent(*args):
+  print("GOOOOOOD")
+
 # Scroll bars for canvas
-hCanvasBar = tkinter.Scrollbar(canvasFrame,orient=tkinter.HORIZONTAL)
+hCanvasBar = tkinter.Scrollbar(canvasFrame,orient=tkinter.HORIZONTAL, command=testHorScrollEvent)
 hCanvasBar.pack(side=tkinter.BOTTOM,fill=tkinter.X)
 hCanvasBar.config(command=canvas.xview)
 vCanvasBar = tkinter.Scrollbar(canvasFrame,orient=tkinter.VERTICAL)
@@ -769,6 +780,13 @@ canvas.pack(side=tkinter.LEFT,expand=True,fill=tkinter.BOTH)
 
 # canvas.delete(line1)
 # canvas.delete(tkinter.ALL)
+
+
+# Scroll fix
+
+def ScrolledCanvas(master, _mode='xy', **options):
+    return Scrolled(Canvas, master, _mode, **options)
+
 
 ###############################################################################
 # Re Draw map element's

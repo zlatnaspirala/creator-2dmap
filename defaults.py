@@ -4,7 +4,8 @@ class InitialData:
     self.exportInOneLine = False
     self.absolutePacksPathEnabled = True
     self.absolutePacksPath = "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts"
-    self.relativeMapPath = "\\src\\examples\\platformer\\scripts\\packs\\"
+    self.relativeMapPath = "\\src\\examples\\platformer-single-player\\scripts\\packs\\"
+    # self.relativeMapPath = "\\src\\examples\\platformer\\scripts\\packs\\"
     self.relativeTexturesPath = "\\src\\examples\\platformer\\imgs\\"
     self.relativeTexGroundsPath = "grounds\\"
     self.relativeTexEnemiesPath = "enemies\\"
