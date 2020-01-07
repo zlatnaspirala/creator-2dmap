@@ -35,8 +35,8 @@ class myMap:
         myObject["points"] = element.points
         print("It is a collection item ...")
       if hasattr(element, 'enemyLabel'):
-        myObject["enemyLabel"] = element.colectionLabel
-        myObject["enemyOptions"] = element.points
+        myObject["enemyLabel"] = element.enemyLabel
+        myObject["enemyOptions"] = element.enemyOptions
         print("It is a enemy item ...")
 
       self.exportMap.append(myObject)

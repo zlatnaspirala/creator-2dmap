@@ -483,7 +483,7 @@ def collectMouseEventData(event):
 
   localcanvas = event.widget
 
-  if event.y > 0 and event.x > 50:
+  if event.y > 0 and event.x > 0:
     # print("clicked at", event.x, event.y)
     x = canvas.canvasx(event.x)
     y = canvas.canvasy(event.y)

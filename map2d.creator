@@ -1,134 +1,50 @@
 [
   {
-    "x": "300.0",
-    "y": "287.5",
-    "w": "400.0",
+    "x": "59.0",
+    "y": "87.5",
+    "w": "25.0",
     "h": "25.0",
-    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tex": "require('../../imgs/grounds/boxEmpty.png')",
     "tiles": {
-      "tilesX": "16.0",
+      "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxEmpty.png"
   },
   {
-    "x": "700.0",
-    "y": "287.5",
-    "w": "400.0",
+    "x": "200.0",
+    "y": "237.5",
+    "w": "25.0",
     "h": "25.0",
-    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tex": "require('../../imgs/grounds/boxEmpty.png')",
     "tiles": {
-      "tilesX": "16.0",
+      "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxEmpty.png"
   },
   {
-    "x": "1200.0",
-    "y": "287.5",
-    "w": "400.0",
-    "h": "25.0",
-    "tex": "require('../../imgs/grounds/boxAlt.png')",
-    "tiles": {
-      "tilesX": "16.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
-  },
-  {
-    "x": "950.0",
-    "y": "387.5",
-    "w": "400.0",
-    "h": "25.0",
-    "tex": "require('../../imgs/grounds/boxAlt.png')",
-    "tiles": {
-      "tilesX": "16.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
-  },
-  {
-    "x": "1500.0",
-    "y": "387.5",
-    "w": "400.0",
-    "h": "25.0",
-    "tex": "require('../../imgs/grounds/boxAlt.png')",
-    "tiles": {
-      "tilesX": "16.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
-  },
-  {
-    "x": "1650.0",
-    "y": "187.5",
-    "w": "400.0",
-    "h": "25.0",
-    "tex": "require('../../imgs/grounds/boxAlt.png')",
-    "tiles": {
-      "tilesX": "16.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
-  },
-  {
-    "x": "2029.0",
+    "x": "400.0",
     "y": "337.5",
-    "w": "400.0",
+    "w": "25.0",
     "h": "25.0",
-    "tex": "require('../../imgs/grounds/castle.png')",
+    "tex": "require('../../imgs/grounds/boxEmpty.png')",
     "tiles": {
-      "tilesX": "16.0",
+      "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castle.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxEmpty.png"
   },
   {
-    "x": "2069.0",
-    "y": "537.5",
-    "w": "400.0",
+    "x": "400.0",
+    "y": "137.5",
+    "w": "25.0",
     "h": "25.0",
-    "tex": "require('../../imgs/grounds/castle.png')",
+    "tex": "require('../../imgs/grounds/boxEmpty.png')",
     "tiles": {
-      "tilesX": "16.0",
+      "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castle.png"
-  },
-  {
-    "x": "2105.0",
-    "y": "737.5",
-    "w": "400.0",
-    "h": "25.0",
-    "tex": "require('../../imgs/grounds/castle.png')",
-    "tiles": {
-      "tilesX": "16.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castle.png"
-  },
-  {
-    "x": "2587.0",
-    "y": "487.5",
-    "w": "400.0",
-    "h": "25.0",
-    "tex": "require('../../imgs/grounds/castle.png')",
-    "tiles": {
-      "tilesX": "16.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castle.png"
-  },
-  {
-    "x": "2435.0",
-    "y": "837.5",
-    "w": "400.0",
-    "h": "25.0",
-    "tex": "require('../../imgs/grounds/castle.png')",
-    "tiles": {
-      "tilesX": "16.0",
-      "tilesY": "1.0"
-    },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\castle.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxEmpty.png"
   }
 ]
