@@ -1,50 +1,2936 @@
 [
   {
-    "x": "59.0",
-    "y": "87.5",
-    "w": "25.0",
-    "h": "25.0",
-    "tex": "require('../../imgs/grounds/boxEmpty.png')",
+    "x": "350.0",
+    "y": "325.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
     "tiles": {
-      "tilesX": "1.0",
-      "tilesY": "1.0"
+      "tilesX": "16.0",
+      "tilesY": "2.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxEmpty.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
   },
   {
-    "x": "200.0",
+    "x": "750.0",
+    "y": "325.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "1150.0",
+    "y": "325.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "1550.0",
+    "y": "325.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "1950.0",
+    "y": "275.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "2354.0",
+    "y": "275.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "2799.0",
+    "y": "175.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "2797.0",
+    "y": "375.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3208.0",
+    "y": "175.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3208.0",
+    "y": "375.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3656.0",
+    "y": "287.5",
+    "w": "400.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "4052.0",
+    "y": "287.5",
+    "w": "400.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "4557.0",
+    "y": "337.5",
+    "w": "400.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "5051.0",
+    "y": "337.5",
+    "w": "400.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "5555.0",
+    "y": "337.5",
+    "w": "400.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "5952.0",
+    "y": "337.5",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "6200.0",
+    "y": "287.5",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "6448.0",
     "y": "237.5",
-    "w": "25.0",
+    "w": "200.0",
     "h": "25.0",
-    "tex": "require('../../imgs/grounds/boxEmpty.png')",
+    "tex": "require('../../imgs/grounds/choco.png')",
     "tiles": {
-      "tilesX": "1.0",
+      "tilesX": "8.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxEmpty.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
   },
   {
-    "x": "400.0",
+    "x": "6656.0",
+    "y": "187.5",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "6950.0",
+    "y": "287.5",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7149.0",
+    "y": "337.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7253.0",
+    "y": "287.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7349.0",
+    "y": "237.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7437.0",
+    "y": "187.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7547.0",
+    "y": "137.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7659.0",
+    "y": "187.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7761.0",
+    "y": "237.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7994.0",
+    "y": "387.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7614.0",
+    "y": "937.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "8104.0",
+    "y": "387.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "8248.0",
+    "y": "387.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "8401.0",
+    "y": "387.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "8498.0",
+    "y": "387.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "8806.0",
+    "y": "400.0",
+    "w": "125.0",
+    "h": "100.0",
+    "tex": "require('../../imgs/grounds/floor2.png')",
+    "tiles": {
+      "tilesX": "5.0",
+      "tilesY": "4.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\floor2.png"
+  },
+  {
+    "x": "8656.0",
+    "y": "400.0",
+    "w": "125.0",
+    "h": "100.0",
+    "tex": "require('../../imgs/grounds/floor2.png')",
+    "tiles": {
+      "tilesX": "5.0",
+      "tilesY": "4.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\floor2.png"
+  },
+  {
+    "x": "8801.0",
     "y": "337.5",
     "w": "25.0",
     "h": "25.0",
-    "tex": "require('../../imgs/grounds/boxEmpty.png')",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxEmpty.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
   },
   {
-    "x": "400.0",
+    "x": "7763.0",
     "y": "137.5",
     "w": "25.0",
     "h": "25.0",
-    "tex": "require('../../imgs/grounds/boxEmpty.png')",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
     "tiles": {
       "tilesX": "1.0",
       "tilesY": "1.0"
     },
-    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxEmpty.png"
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "7661.0",
+    "y": "87.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "7550.0",
+    "y": "87.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "8255.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "8099.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "7998.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "8402.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "8495.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "8656.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileYellow_09.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileYellow_09.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "7431.0",
+    "y": "137.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "6650.0",
+    "y": "137.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "6449.0",
+    "y": "187.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "6949.0",
+    "y": "237.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "5551.0",
+    "y": "287.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "5017.0",
+    "y": "287.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "3901.0",
+    "y": "237.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "3952.0",
+    "y": "237.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "650.0",
+    "y": "187.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "750.0",
+    "y": "187.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "1150.0",
+    "y": "187.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "1250.0",
+    "y": "187.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "2699.0",
+    "y": "87.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "2796.0",
+    "y": "87.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "2709.0",
+    "y": "287.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "2809.0",
+    "y": "287.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "400.0",
+    "y": "275.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "950.0",
+    "y": "275.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "2299.0",
+    "y": "225.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "1850.0",
+    "y": "225.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3400.0",
+    "y": "125.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3003.0",
+    "y": "125.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3000.0",
+    "y": "325.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3393.0",
+    "y": "325.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "700.0",
+    "y": "237.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "1400.0",
+    "y": "237.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "2067.0",
+    "y": "237.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "3215.0",
+    "y": "137.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "3234.0",
+    "y": "337.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "2928.0",
+    "y": "137.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "3858.0",
+    "y": "237.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "350.0",
+    "y": "325.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "750.0",
+    "y": "325.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "1150.0",
+    "y": "325.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "1550.0",
+    "y": "325.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "1950.0",
+    "y": "275.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "2354.0",
+    "y": "275.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "2799.0",
+    "y": "175.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "2797.0",
+    "y": "375.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3208.0",
+    "y": "175.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3208.0",
+    "y": "375.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3656.0",
+    "y": "287.5",
+    "w": "400.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "4052.0",
+    "y": "287.5",
+    "w": "400.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "4557.0",
+    "y": "337.5",
+    "w": "400.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "5051.0",
+    "y": "337.5",
+    "w": "400.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "5555.0",
+    "y": "337.5",
+    "w": "400.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "5952.0",
+    "y": "337.5",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "6200.0",
+    "y": "287.5",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "6448.0",
+    "y": "237.5",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "6656.0",
+    "y": "187.5",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "6950.0",
+    "y": "287.5",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7149.0",
+    "y": "337.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7253.0",
+    "y": "287.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7349.0",
+    "y": "237.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7437.0",
+    "y": "187.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7547.0",
+    "y": "137.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7659.0",
+    "y": "187.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7761.0",
+    "y": "237.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7994.0",
+    "y": "387.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7614.0",
+    "y": "937.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "8104.0",
+    "y": "387.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "8248.0",
+    "y": "387.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "8401.0",
+    "y": "387.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "8498.0",
+    "y": "387.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "8806.0",
+    "y": "400.0",
+    "w": "125.0",
+    "h": "100.0",
+    "tex": "require('../../imgs/grounds/floor2.png')",
+    "tiles": {
+      "tilesX": "5.0",
+      "tilesY": "4.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\floor2.png"
+  },
+  {
+    "x": "8656.0",
+    "y": "400.0",
+    "w": "125.0",
+    "h": "100.0",
+    "tex": "require('../../imgs/grounds/floor2.png')",
+    "tiles": {
+      "tilesX": "5.0",
+      "tilesY": "4.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\floor2.png"
+  },
+  {
+    "x": "8801.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "7763.0",
+    "y": "137.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "7661.0",
+    "y": "87.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "7550.0",
+    "y": "87.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "8255.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "8099.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "7998.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "8402.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "8495.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "8656.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileYellow_09.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileYellow_09.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "7431.0",
+    "y": "137.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "6650.0",
+    "y": "137.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "6449.0",
+    "y": "187.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "6949.0",
+    "y": "237.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "5551.0",
+    "y": "287.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "5017.0",
+    "y": "287.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "3901.0",
+    "y": "237.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "3952.0",
+    "y": "237.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "650.0",
+    "y": "187.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "750.0",
+    "y": "187.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "1150.0",
+    "y": "187.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "1250.0",
+    "y": "187.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "2699.0",
+    "y": "87.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "2796.0",
+    "y": "87.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "2709.0",
+    "y": "287.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "2809.0",
+    "y": "287.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "400.0",
+    "y": "275.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "950.0",
+    "y": "275.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "2299.0",
+    "y": "225.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "1850.0",
+    "y": "225.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3400.0",
+    "y": "125.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3003.0",
+    "y": "125.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3000.0",
+    "y": "325.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3393.0",
+    "y": "325.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "700.0",
+    "y": "237.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "1400.0",
+    "y": "237.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "2067.0",
+    "y": "237.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "3215.0",
+    "y": "137.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "3234.0",
+    "y": "337.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "2928.0",
+    "y": "137.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "3858.0",
+    "y": "237.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "350.0",
+    "y": "325.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "750.0",
+    "y": "325.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "1150.0",
+    "y": "325.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "1550.0",
+    "y": "325.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "1950.0",
+    "y": "275.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "2354.0",
+    "y": "275.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "2799.0",
+    "y": "175.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "2797.0",
+    "y": "375.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3208.0",
+    "y": "175.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3208.0",
+    "y": "375.0",
+    "w": "400.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3656.0",
+    "y": "287.5",
+    "w": "400.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "4052.0",
+    "y": "287.5",
+    "w": "400.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "4557.0",
+    "y": "337.5",
+    "w": "400.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "5051.0",
+    "y": "337.5",
+    "w": "400.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "5555.0",
+    "y": "337.5",
+    "w": "400.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "16.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "5952.0",
+    "y": "337.5",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "6200.0",
+    "y": "287.5",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "6448.0",
+    "y": "237.5",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "6656.0",
+    "y": "187.5",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "6950.0",
+    "y": "287.5",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7149.0",
+    "y": "337.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7253.0",
+    "y": "287.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7349.0",
+    "y": "237.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7437.0",
+    "y": "187.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7547.0",
+    "y": "137.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7659.0",
+    "y": "187.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7761.0",
+    "y": "237.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7994.0",
+    "y": "387.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "7614.0",
+    "y": "937.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "8104.0",
+    "y": "387.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "8248.0",
+    "y": "387.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "8401.0",
+    "y": "387.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "8498.0",
+    "y": "387.5",
+    "w": "50.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/choco.png')",
+    "tiles": {
+      "tilesX": "2.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\choco.png"
+  },
+  {
+    "x": "8806.0",
+    "y": "400.0",
+    "w": "125.0",
+    "h": "100.0",
+    "tex": "require('../../imgs/grounds/floor2.png')",
+    "tiles": {
+      "tilesX": "5.0",
+      "tilesY": "4.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\floor2.png"
+  },
+  {
+    "x": "8656.0",
+    "y": "400.0",
+    "w": "125.0",
+    "h": "100.0",
+    "tex": "require('../../imgs/grounds/floor2.png')",
+    "tiles": {
+      "tilesX": "5.0",
+      "tilesY": "4.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\floor2.png"
+  },
+  {
+    "x": "8801.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "7763.0",
+    "y": "137.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "7661.0",
+    "y": "87.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "7550.0",
+    "y": "87.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "8255.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "8099.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "7998.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "8402.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "8495.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_12.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_12.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "8656.0",
+    "y": "337.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileYellow_09.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileYellow_09.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "7431.0",
+    "y": "137.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "6650.0",
+    "y": "137.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "6449.0",
+    "y": "187.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "6949.0",
+    "y": "237.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "5551.0",
+    "y": "287.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "5017.0",
+    "y": "287.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "3901.0",
+    "y": "237.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "3952.0",
+    "y": "237.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "650.0",
+    "y": "187.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "750.0",
+    "y": "187.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "1150.0",
+    "y": "187.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "1250.0",
+    "y": "187.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "2699.0",
+    "y": "87.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "2796.0",
+    "y": "87.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "2709.0",
+    "y": "287.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "2809.0",
+    "y": "287.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/tileRed_60.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\tileRed_60.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "400.0",
+    "y": "275.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "950.0",
+    "y": "275.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "2299.0",
+    "y": "225.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "1850.0",
+    "y": "225.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3400.0",
+    "y": "125.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3003.0",
+    "y": "125.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3000.0",
+    "y": "325.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "3393.0",
+    "y": "325.0",
+    "w": "25.0",
+    "h": "50.0",
+    "tex": "require('../../imgs/grounds/brickWall.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "2.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\brickWall.png"
+  },
+  {
+    "x": "700.0",
+    "y": "237.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "1400.0",
+    "y": "237.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "2067.0",
+    "y": "237.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "3215.0",
+    "y": "137.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "3234.0",
+    "y": "337.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "2928.0",
+    "y": "137.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
+  },
+  {
+    "x": "3858.0",
+    "y": "237.5",
+    "w": "37.5",
+    "h": "37.5",
+    "tex": "require('../../imgs/enemies/crapmunch.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\enemies\\crapmunch.png",
+    "enemyLabel": "crapmunch",
+    "enemyOptions": 10
   }
 ]
