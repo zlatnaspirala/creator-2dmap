@@ -18,51 +18,75 @@ class myMap:
 
   def prepareForSave(self):
     for (element,pythonImageObjectMemo) in zip(self.map, self.pythonImageObjectMemory):
-      myObject = {  "x": str(element.x),
-                    "y": str(element.y),
-                    "w": str(element.w),
-                    "h": str(element.h),
-                    "tex": element.texture,
-                    "tiles":
-                      {
-                        "tilesX": str(element.tilesX),
-                        "tilesY": str(element.tilesY)
-                      },
-                    "pythonImgPath": pythonImageObjectMemo
-                 }
-      if hasattr(element, 'colectionLabel'):
-        myObject["colectionLabel"] = element.colectionLabel
-        myObject["points"] = element.points
-        print("It is a collection item ...")
-      if hasattr(element, 'enemyLabel'):
-        myObject["enemyLabel"] = element.enemyLabel
-        myObject["enemyOptions"] = element.enemyOptions
-        print("It is a enemy item ...")
+
+      if hasattr(element, 'text'):
+        print("DETECTED TEXT LABEL")
+        myObject = {
+                  "x": str(element.x),
+                  "y": str(element.y),
+                  "text": str(element.text),
+                  "textColor": str(element.textColor),
+                  "textSize": element.textSize,
+                  "pythonImgPath": pythonImageObjectMemo
+                }
+      else:
+        myObject = {  "x": str(element.x),
+                      "y": str(element.y),
+                      "w": str(element.w),
+                      "h": str(element.h),
+                      "tex": element.texture,
+                      "tiles":
+                        {
+                          "tilesX": str(element.tilesX),
+                          "tilesY": str(element.tilesY)
+                        },
+                      "pythonImgPath": pythonImageObjectMemo
+                  }
+        if hasattr(element, 'colectionLabel'):
+          myObject["colectionLabel"] = element.colectionLabel
+          myObject["points"] = element.points
+          print("It is a collection item ...")
+        if hasattr(element, 'enemyLabel'):
+          myObject["enemyLabel"] = element.enemyLabel
+          myObject["enemyOptions"] = element.enemyOptions
+          print("It is a enemy item ...")
 
       self.exportMap.append(myObject)
 
   def prepareForExport(self):
     self.exportMap2.clear()
     for element in self.map:
-      myObject = { "x": element.x * self.initValues.exportScale,
-                   "y": element.y * self.initValues.exportScale,
-                   "w": element.w * self.initValues.exportScale,
-                   "h": element.h * self.initValues.exportScale,
-                   "tex": element.texture,
-                   "tiles":
-                     {
-                       "tilesX": element.tilesX,
-                       "tilesY": element.tilesY
-                     }
-                  }
-      if hasattr(element, 'colectionLabel'):
-        myObject["colectionLabel"] = element.colectionLabel
-        myObject["points"] = element.points
-        print("It is a collection item ...")
-      if hasattr(element, 'enemyLabel'):
-        myObject["enemyLabel"] = element.enemyLabel
-        myObject["enemyOptions"] = element.enemyOptions
-        print("It is a enemy item ...")
+
+      if hasattr(element, 'text'):
+        print("DETECTED TEXT LABEL")
+        myObject = {
+                  "x": str(element.x),
+                  "y": str(element.y),
+                  "text": str(element.text),
+                  "textColor": str(element.textColor),
+                  "textSize": element.textSize,
+                  "pythonImgPath": pythonImageObjectMemo
+                }
+      else:
+        myObject = { "x": element.x * self.initValues.exportScale,
+                    "y": element.y * self.initValues.exportScale,
+                    "w": element.w * self.initValues.exportScale,
+                    "h": element.h * self.initValues.exportScale,
+                    "tex": element.texture,
+                    "tiles":
+                      {
+                        "tilesX": element.tilesX,
+                        "tilesY": element.tilesY
+                      }
+                    }
+        if hasattr(element, 'colectionLabel'):
+          myObject["colectionLabel"] = element.colectionLabel
+          myObject["points"] = element.points
+          print("It is a collection item ...")
+        if hasattr(element, 'enemyLabel'):
+          myObject["enemyLabel"] = element.enemyLabel
+          myObject["enemyOptions"] = element.enemyOptions
+          print("It is a enemy item ...")
       self.exportMap2.append(myObject)
 
   def clear(self):

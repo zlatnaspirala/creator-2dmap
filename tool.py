@@ -29,6 +29,7 @@ import os
 from map import myMap
 from models.ground import StaticGrounds
 from models.collectitems import CollectingItems
+from models.labels import StaticLabels
 from models.enemies import Enemies
 from defaults import InitialData
 import tkinter
@@ -40,8 +41,9 @@ import PIL
 from PIL import ImageTk, Image
 from common.stickler import Stickler
 from common.sprites import Sprite
+from common.dialogBox import DialogBox
 import time
-from tkinter import filedialog
+from tkinter import filedialog, simpledialog
 
 ###############################################################################
 # Define window object, Map instance, general screen w/h
@@ -51,6 +53,8 @@ window = tkinter.Tk()
 window.title("GUI tool creator-2dmap for visual-ts game engine FREEWARE")
 
 # Global currentInsertType = "grounds" | "collectItems" | "enemies"
+# test labels
+
 INSERT_TYPE = "grounds"
 RESOURCE_INDENTITY = []
 RESOURCE_INDENTITY_READONLY = []
@@ -343,7 +347,11 @@ def on_field_change(index, value, op):
     # RESOURCE_IMAGES_OBJ.clear()
     # refresrList()
     getImagesFrom(initValues.relativeTexEnemiesPath)
-
+  elif (varLabelInsertBox.get() == "labels"):
+    resListbox.delete(0,tkinter.END)
+    RESOURCE_INDENTITY.clear()
+    # RESOURCE_IMAGES_OBJ.clear()
+    # refresrList()
 
 varLabelInsertBox = StringVar()
 varLabelInsertBox.set(" ")
@@ -354,7 +362,8 @@ insertBox = ttk.Combobox(window,
                          textvariable=varLabelInsertBox,
                          values=["ground",
                                  "collectItem",
-                                 "enemies"])
+                                 "enemies",
+                                 "labels"])
 
 insertBox.current(0)
 insertBox.place(x=0, y=290, height=25, width=100, in_=topFrame)
@@ -464,15 +473,25 @@ def resetInputValuesToMin():
 
 def addNewElements(loadedMap):
   for element in loadedMap:
-    localModel = StaticGrounds(element['x'],
-                               element['y'],
-                               element['w'],
-                               element['h'],
-                               element['tex'],
-                               element['tiles']['tilesX'],
-                               element['tiles']['tilesY'])
+    if "text" in element:
+      #
+      localModel = StaticLabels(element['x'],
+                                element['y'],
+                                element['text'],
+                                element['textColor'],
+                                element['textSize'])
+    else:
+      localModel = StaticGrounds(element['x'],
+                                element['y'],
+                                element['w'],
+                                element['h'],
+                                element['tex'],
+                                element['tiles']['tilesX'],
+                                element['tiles']['tilesY'])
+
     print(element['pythonImgPath'])
     MyDefaultMap.add(localModel, element['pythonImgPath'])
+
   drawMap()
 
 ###########################################################################
@@ -480,6 +499,11 @@ def addNewElements(loadedMap):
 ###########################################################################
 
 def collectMouseEventData(event):
+
+  if insertBox.get() == "labels":
+    # simpledialog.askstring(title="Enter text labels", prompt="Entire Start Date", initialvalue="whateveryouwant")
+    textComponent = DialogBox(window)
+    print(textComponent.result)
 
   localcanvas = event.widget
 
@@ -537,6 +561,17 @@ def collectMouseEventData(event):
                             initValues.tilesY,
                             localName,
                             10)
+    # Labels
+    elif insertBox.get() == "labels":
+      # Hardcoded
+      localModel = StaticLabels(
+                            x,
+                            y,
+                            textComponent.result[0],
+                            textComponent.result[1],
+                            textComponent.result[2]
+                            )
+
     MyDefaultMap.add(localModel, selectedTex)
     drawMap()
 
@@ -814,47 +849,58 @@ def drawMap():
 
   for (element, texpath) in zip(MyDefaultMap.map, MyDefaultMap.pythonImageObjectMemory):
 
-    test2 = RESOURCE_INDENTITY_READONLY.index(texpath)
-    dTex = RESOURCE_IMAGES_OBJ[test2]
+    # StaticLabel Model Drawing
+    if hasattr(element, 'text'):
+      print("draw text")
+      canvas.create_text(
+             element.x,
+             element.y,
+             fill=element.textColor,
+             font="Times 20 italic bold",
+             text=element.text)
 
-    if "enemies" in texpath:
-      canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="red")
     else:
-      pass
-      # canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="blue")
 
-    # TEST
+      test2 = RESOURCE_INDENTITY_READONLY.index(texpath)
+      dTex = RESOURCE_IMAGES_OBJ[test2]
 
-    if element.tilesX == 0:
-      draws = canvas.create_image(element.x, element.y, anchor="nw", image=dTex)
-      canvasImgElement.append(draws)
+      if "enemies" in texpath:
+        canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="red")
+      else:
+        pass
+        # canvas.create_rectangle(element.x, element.y, element.x2, element.y2, fill="blue")
 
-    for i in range(int(element.tilesX)):
+      # StaticGround Model Drawing
+      if element.tilesX == 0:
+        draws = canvas.create_image(element.x, element.y, anchor="nw", image=dTex)
+        canvasImgElement.append(draws)
 
-      correctDelta = int(element.tilesX)
-      X = element.x + i * initValues.baseElementValue
-      X = X - correctDelta * initValues.baseElementValue / 2
-      draws = canvas.create_image(
-        X,
-        element.y,
-        anchor="nw",
-        image=dTex)
-      canvasImgElement.append(draws)
-      for y in range(int(element.tilesY)):
+      for i in range(int(element.tilesX)):
 
-        correctDelta = int(element.tilesY - 1)
-        Y = element.y + y * initValues.baseElementValue
-        Y = Y - correctDelta * initValues.baseElementValue / 2
-
-        canvasImgElement.append(canvas.create_image(
+        correctDelta = int(element.tilesX)
+        X = element.x + i * initValues.baseElementValue
+        X = X - correctDelta * initValues.baseElementValue / 2
+        draws = canvas.create_image(
           X,
-          Y,
+          element.y,
           anchor="nw",
           image=dTex)
-        )
-    if hasattr(element, 'colectionLabel'):
-      canvasImgElement.append(canvas.create_image(element.x, element.y, anchor="nw", image=dTex))
-      # print("Draw collection item.")
+        canvasImgElement.append(draws)
+        for y in range(int(element.tilesY)):
+
+          correctDelta = int(element.tilesY - 1)
+          Y = element.y + y * initValues.baseElementValue
+          Y = Y - correctDelta * initValues.baseElementValue / 2
+
+          canvasImgElement.append(canvas.create_image(
+            X,
+            Y,
+            anchor="nw",
+            image=dTex)
+          )
+      if hasattr(element, 'colectionLabel'):
+        canvasImgElement.append(canvas.create_image(element.x, element.y, anchor="nw", image=dTex))
+        # print("Draw collection item.")
 
 ###############################################################################
 # initial draw
