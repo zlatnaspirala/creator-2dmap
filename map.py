@@ -20,7 +20,7 @@ class myMap:
     for (element,pythonImageObjectMemo) in zip(self.map, self.pythonImageObjectMemory):
 
       if hasattr(element, 'text'):
-        print("DETECTED TEXT LABEL")
+        # print("DETECTED TEXT LABEL")
         myObject = {
                   "x": str(element.x),
                   "y": str(element.y),
@@ -45,11 +45,11 @@ class myMap:
         if hasattr(element, 'colectionLabel'):
           myObject["colectionLabel"] = element.colectionLabel
           myObject["points"] = element.points
-          print("It is a collection item ...")
+          # print("It is a collection item ...")
         if hasattr(element, 'enemyLabel'):
           myObject["enemyLabel"] = element.enemyLabel
           myObject["enemyOptions"] = element.enemyOptions
-          print("It is a enemy item ...")
+          # print("It is a enemy item ...")
 
       self.exportMap.append(myObject)
 
@@ -58,14 +58,13 @@ class myMap:
     for element in self.map:
 
       if hasattr(element, 'text'):
-        print("DETECTED TEXT LABEL")
+        # print("DETECTED TEXT LABEL")
         myObject = {
                   "x": str(element.x),
                   "y": str(element.y),
                   "text": str(element.text),
                   "textColor": str(element.textColor),
-                  "textSize": element.textSize,
-                  "pythonImgPath": pythonImageObjectMemo
+                  "textSize": element.textSize
                 }
       else:
         myObject = { "x": element.x * self.initValues.exportScale,

@@ -5,8 +5,8 @@
 #  LICENCE: GNU LESSER GENERAL PUBLIC LICENSE Version 3
 #  https://github.com/zlatnaspirala/creator-2dmap
 #  Code style ~camel
-#  Version: 0.4
-#  - Types of game object : [ground, collectItem]
+#  Version: 0.4.1
+#  - Types of game object : [ground, collectItem, enemies, labels]
 #  - Show/Hide grids
 #  - Sticklers enable disable
 #  - defaults.py - general config
@@ -19,6 +19,8 @@
 #  - Relocate last added game object
 #  - Remove last added element
 #   Scroll vertical & horizontal canvas, help to create large maps.
+#   Adding basic Text component (args: text , color)
+#   Change canvas background
 #################################################################################
 
 #################################################################################
@@ -33,8 +35,10 @@ from models.labels import StaticLabels
 from models.enemies import Enemies
 from defaults import InitialData
 import tkinter
-import json
+from tkinter import filedialog, simpledialog
 from tkinter import BOTH, StringVar, messagebox, ttk
+from tkinter import colorchooser
+import json
 from functools import partial
 import subprocess
 import PIL
@@ -43,7 +47,6 @@ from common.stickler import Stickler
 from common.sprites import Sprite
 from common.dialogBox import DialogBox
 import time
-from tkinter import filedialog, simpledialog
 
 ###############################################################################
 # Define window object, Map instance, general screen w/h
@@ -52,7 +55,7 @@ from tkinter import filedialog, simpledialog
 window = tkinter.Tk()
 window.title("GUI tool creator-2dmap for visual-ts game engine FREEWARE")
 
-# Global currentInsertType = "grounds" | "collectItems" | "enemies"
+# Global currentInsertType = "grounds" | "collectItems" | "enemies | labels"
 # test labels
 
 INSERT_TYPE = "grounds"
@@ -415,18 +418,6 @@ selectedTex = ""
 def hideResPreview():
   resourcePreview.place_forget()
 
-# Res path
-def getImagesFromImgsRoot():
-  resourceTexPath = initValues.absolutePacksPath + initValues.relativeTexturesPath
-  for entry in os.scandir(resourceTexPath):
-    localC = 1
-    if entry.is_file():
-      localFullPath = resourceTexPath + entry.name
-      RESOURCE_INDENTITY.insert(len(RESOURCE_INDENTITY) + 1, localFullPath)
-      resListbox.insert(len(RESOURCE_INDENTITY), entry.name)
-      localC = localC + 1
-      # print(entry.name)
-
 def refresrList():
   if initValues.includeAllImages == 1:
     getImagesFrom(initValues.relativeTexGroundsPath)
@@ -446,11 +437,6 @@ def refresrList():
   selectedTex = RESOURCE_INDENTITY[0]
 
 refresrList()
-
-#    im = Image.open(jpeg)
-#    im.thumbnail((96, 170), Image.ANTIALIAS)
-#    photo = ImageTk.PhotoImage(im)
-#    label = tk.Label(root, image=photo)
 
 #######################################################################
 # Reset to minimum input values
@@ -501,7 +487,6 @@ def addNewElements(loadedMap):
 def collectMouseEventData(event):
 
   if insertBox.get() == "labels":
-    # simpledialog.askstring(title="Enter text labels", prompt="Entire Start Date", initialvalue="whateveryouwant")
     textComponent = DialogBox(window)
     print(textComponent.result)
 
@@ -523,7 +508,7 @@ def collectMouseEventData(event):
       # print(" Y ")
 
     localModel = 0
-    #RESOURCE_INDENTITY
+    # RESOURCE_INDENTITY
     filename = selectedTex.split('\\')
     filenameStr = "require('../../imgs/" + filename[len(filename) -2] + "/" +  filename[len(filename) -1] + "')"
     if insertBox.get() == "ground":
@@ -586,6 +571,8 @@ window.config(menu=root_menu)
 
 def myEvent():
   print("Menu tab pressed...")
+  rgb, color = colorchooser.askcolor()
+  canvas.configure(background=color)
 
 def undoRemoveLast():
   MyDefaultMap.removeLast()
@@ -681,7 +668,7 @@ def menuEventLoadCustomMap():
 # About
 def showAbout():
   messagebox.showinfo("About", """
-    Original source project `creator-2dmap` ver 0.4 \n
+    Original source project `creator-2dmap` ver 0.4.1\n
     2019/2020 Copyright Nikola Lukic                \n
     created by Nikola Lukic zlatnaspirala@gmail.com \n \n
     LICENCE:                                        \n
@@ -691,7 +678,7 @@ def showAbout():
   """)
 
 def showGrid():
-  print("showGrid")
+
   if initValues.canvasGridVisible == True:
     initValues.canvasGridVisible = not initValues.canvasGridVisible
     options_menu.entryconfigure(1, label="Show Grid's")
@@ -729,7 +716,7 @@ edit_menu = tkinter.Menu(root_menu)
 root_menu.add_cascade(label="Edit", menu=edit_menu)
 edit_menu.add_command(label="Relocate last added item", command=relocateLast)
 edit_menu.add_command(label="Remove last", command=undoRemoveLast)
-# edit_menu.add_command(label="Redo last added", command=myEvent) # NOT DONE !
+
 file_menu.add_separator()
 edit_menu.add_command(label="Reset input", command=resetInputValuesToMin)
 # Options menu
@@ -758,6 +745,7 @@ def DSticklerY():
 
 options_menu = tkinter.Menu(root_menu)
 root_menu.add_cascade(label="Options", menu=options_menu)
+options_menu.add_command(label="Canvas background", command=myEvent) # NOT DONE !
 options_menu.add_command(label=options_names["showGrid"], command=showGrid)
 stickler_menu = tkinter.Menu(options_menu)
 options_menu.add_cascade(label="Sticklers", menu=stickler_menu)
@@ -793,10 +781,9 @@ canvas = tkinter.Canvas(
                   screen_width * initValues.canvasScreenCoeficientW,
                   screen_height * initValues.canvasScreenCoeficientH)
   )
+
 # canvas.place(x=0, y=0, width= 2 *screen_width - 120, height=screen_height - 130)
-
 canvas.configure(scrollregion=canvas.bbox("all"))
-
 canvas.bind("<Button-1>", collectMouseEventData)
 
 def testHorScrollEvent(*args):
@@ -811,32 +798,20 @@ vCanvasBar.pack(side=tkinter.RIGHT,fill=tkinter.Y)
 vCanvasBar.config(command=canvas.yview)
 
 canvas.config(xscrollcommand=hCanvasBar.set, yscrollcommand=vCanvasBar.set)
-
 canvas.pack(side=tkinter.LEFT,expand=True,fill=tkinter.BOTH)
-# canvas.place(x=0, y=0, width= initValues.canvasScreenCoeficientW * screen_width - 120, height=screen_height - 130)
 
+# canvas.place(x=0, y=0, width= initValues.canvasScreenCoeficientW * screen_width - 120, height=screen_height - 130)
 # canvas.delete(line1)
 # canvas.delete(tkinter.ALL)
 
-
 # Scroll fix
-
 def ScrolledCanvas(master, _mode='xy', **options):
     return Scrolled(Canvas, master, _mode, **options)
-
 
 ###############################################################################
 # Re Draw map element's
 ###############################################################################
 
-# Symbolic img param
-# img = Image.open("resource/floor2.png")
-# defaultTextureGrounds= ImageTk.PhotoImage(img)
-# imgItems = Image.open("resource/bitcoin.png").resize((20,20), Image.ANTIALIAS)
-# defaultTextureItems = ImageTk.PhotoImage(imgItems)
-
-imgs = []
-defaultTexture_ = []
 canvasImgElement = []
 
 def drawMap():
