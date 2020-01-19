@@ -5,7 +5,7 @@
 #  LICENCE: GNU LESSER GENERAL PUBLIC LICENSE Version 3
 #  https://github.com/zlatnaspirala/creator-2dmap
 #  Code style ~camel
-#  Version: 0.4.1
+#  Version: 0.4.4
 #  - Types of game object : [ground, collectItem, enemies, labels]
 #  - Show/Hide grids
 #  - Sticklers enable disable
@@ -21,6 +21,10 @@
 #   Scroll vertical & horizontal canvas, help to create large maps.
 #   Adding basic Text component (args: text , color)
 #   Change canvas background
+#   nextLevel item collection model. Item will teleport player to the next level/map
+#   Export As - Feature Export and give a map name (without `.ts`)
+#
+#   Fix : load map
 #################################################################################
 
 #################################################################################
@@ -33,6 +37,7 @@ from models.ground import StaticGrounds
 from models.collectitems import CollectingItems
 from models.labels import StaticLabels
 from models.enemies import Enemies
+from models.nextlevel import NextLevel
 from defaults import InitialData
 import tkinter
 from tkinter import filedialog, simpledialog
@@ -45,7 +50,7 @@ import PIL
 from PIL import ImageTk, Image
 from common.stickler import Stickler
 from common.sprites import Sprite
-from common.dialogBox import DialogBox
+from common.dialogBox import DialogLabelsBox, DialogNextLevelBox, DialogExportAsBox
 import time
 
 ###############################################################################
@@ -55,7 +60,8 @@ import time
 window = tkinter.Tk()
 window.title("GUI tool creator-2dmap for visual-ts game engine FREEWARE")
 
-# Global currentInsertType = "grounds" | "collectItems" | "enemies | labels"
+# `nextLevel` it is a alias for teleport to the other map
+# Global currentInsertType = "grounds" | "collectItems" | "enemies | labels | nextLevel"
 # test labels
 
 INSERT_TYPE = "grounds"
@@ -330,7 +336,7 @@ def getImagesFrom(subPath):
 def on_field_change(index, value, op):
   global PREVENT_ADDING
   # print("combobox updated to ", varLabelInsertBox.get())
-  if varLabelInsertBox.get() == "collectItem":
+  if varLabelInsertBox.get() == "collectItem" or varLabelInsertBox.get() == "nextLevel":
     # print("Setup input vars fot item strict.")
     resetInputValuesToMin()
     resListbox.delete(0,tkinter.END)
@@ -366,7 +372,8 @@ insertBox = ttk.Combobox(window,
                          values=["ground",
                                  "collectItem",
                                  "enemies",
-                                 "labels"])
+                                 "labels",
+                                 "nextLevel"])
 
 insertBox.current(0)
 insertBox.place(x=0, y=290, height=25, width=100, in_=topFrame)
@@ -429,7 +436,7 @@ def refresrList():
     # print(insertBox.get())
     if insertBox.get() == "ground":
       getImagesFrom(initValues.relativeTexGroundsPath)
-    elif insertBox.get() == "collectItem":
+    elif insertBox.get() == "collectItem" or insertBox.get() == "nextLevel":
       getImagesFrom(initValues.relativeTexCollectItemsPath)
     elif insertBox.get() == "enemies":
       getImagesFrom(initValues.relativeTexEnemiesPath)
@@ -466,6 +473,28 @@ def addNewElements(loadedMap):
                                 element['text'],
                                 element['textColor'],
                                 element['textSize'])
+    elif "colectionLabel" in element:
+      localModel = CollectingItems(element['x'],
+                                element['y'],
+                                element['w'],
+                                element['h'],
+                                element['tex'],
+                                element['tiles']['tilesX'],
+                                element['tiles']['tilesY'],
+                                element['colectionLabel'],
+                                element['points']
+                                )
+    elif "colectionLabel" in element and element['colectionLabel'] == "nextLevel":
+      localModel = NextLevel(element['x'],
+                                element['y'],
+                                element['w'],
+                                element['h'],
+                                element['tex'],
+                                element['tiles']['tilesX'],
+                                element['tiles']['tilesY'],
+                                element['colectionLabel'],
+                                element['points']
+                                )
     else:
       localModel = StaticGrounds(element['x'],
                                 element['y'],
@@ -487,7 +516,7 @@ def addNewElements(loadedMap):
 def collectMouseEventData(event):
 
   if insertBox.get() == "labels":
-    textComponent = DialogBox(window)
+    textComponent = DialogLabelsBox(window)
     print(textComponent.result)
 
   localcanvas = event.widget
@@ -531,6 +560,19 @@ def collectMouseEventData(event):
                                 initValues.tilesY,
                                 "collectItemPoint",
                                 10)
+    elif insertBox.get() == "nextLevel":
+      # Hardcoded for now: collectItemPoint
+      nextLevelComponent = DialogNextLevelBox(window)
+      localModel = NextLevel(
+                          x,
+                          y,
+                          initValues.ELEMENT_WIDTH,
+                          initValues.ELEMENT_HEIGHT,
+                          filenameStr,
+                          initValues.tilesX,
+                          initValues.tilesY,
+                          nextLevelComponent.result,
+                          10)
     # Enemies
     elif insertBox.get() == "enemies":
       # Hardcoded for now: increment Dimension
@@ -622,7 +664,6 @@ def menuEventSaveAsMap():
   f.close()
 
 def menuEventExportMap():
-  # print(MyDefaultMap.map)
   MyDefaultMap.prepareForExport()
   json_string = json.dumps(MyDefaultMap.exportMap2)
   print(os.getcwd(), os.path.abspath(__file__))
@@ -640,7 +681,30 @@ def menuEventExportMap():
     if initValues.exportInOneLine == False:
       json_string = json_string.replace("," , ", \n ")
     write_file.write(json_string)
-    print("Map saved.")
+    print("Map exported.")
+
+def menuEventExportAsMap():
+  # print(MyDefaultMap.map)
+  askForName = DialogExportAsBox(window)
+  MyDefaultMap.prepareForExport()
+  json_string = json.dumps(MyDefaultMap.exportMap2)
+  print(os.getcwd(), os.path.abspath(__file__))
+  exportPathName = askForName.result + ".ts"
+  # absolutePacksPath
+  if initValues.absolutePacksPathEnabled == True:
+    exportPathName = initValues.absolutePacksPath + initValues.relativeMapPath + exportPathName
+    print("Save export intro absolute path.")
+  with open(str(exportPathName), "w", newline='\r\n', ) as write_file:
+    literalRoot  = "let " + askForName.result + " = ["
+    json_string = json_string.replace("[", literalRoot)
+    json_string = json_string.replace("]", "]; export default " + askForName.result + ";")
+    json_string = json_string.replace('"require', 'require')
+    json_string = json_string.replace(')"', ')')
+
+    if initValues.exportInOneLine == False:
+      json_string = json_string.replace("," , ", \n ")
+    write_file.write(json_string)
+    print("Map exported.")
 
 def menuEventLoadMap():
   with open('map2d.creator', 'r') as loadedMap:
@@ -703,7 +767,8 @@ file_menu.add_separator()
 file_menu.add_command(label="Load custom map", command=menuEventLoadCustomMap)
 file_menu.add_command(label="Save as", command=menuEventSaveAsMap)
 file_menu.add_separator()
-file_menu.add_command(label="Export map", command=menuEventExportMap)
+file_menu.add_command(label="Export map (map2d.ts)", command=menuEventExportMap)
+file_menu.add_command(label="Export map as", command=menuEventExportAsMap)
 file_menu.add_separator()
 file_menu.add_command(label="Clear map", command=menuEventClearMap)
 file_menu.add_separator()

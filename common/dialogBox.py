@@ -2,7 +2,11 @@ import tkinter
 from tkinter import simpledialog
 from tkinter import Entry
 
-class DialogBox(simpledialog.Dialog):
+#########################################################
+# Dialog for Labels text component
+#########################################################
+
+class DialogLabelsBox(simpledialog.Dialog):
 
   def body(self, master):
 
@@ -33,3 +37,39 @@ class DialogBox(simpledialog.Dialog):
       "textSize": str(self.e2.get()),
     }
     return result
+
+#########################################################
+# Dialog for nextLevel itel colletions
+#########################################################
+
+class DialogNextLevelBox(simpledialog.Dialog):
+
+  def body(self, master):
+
+    tkinter.Label(master, text="Level name : ").grid(row=0)
+    self.e1 = Entry(master, text="1")
+    self.e1.grid(row=0, column=1)
+    return self.e1
+
+  def apply(self):
+    arg1 = self.e1.get()
+    self.result = arg1
+    print (arg1)
+
+#########################################################
+# Dialog for export as
+#########################################################
+
+class DialogExportAsBox(simpledialog.Dialog):
+
+  def body(self, master):
+
+    tkinter.Label(master, text="Export level name : ").grid(row=0)
+    self.e1 = Entry(master, text="1")
+    self.e1.grid(row=0, column=1)
+    return self.e1
+
+  def apply(self):
+    arg1 = self.e1.get()
+    self.result = arg1
+    print (arg1)

@@ -1,10 +1,106 @@
 [
   {
     "x": "200.0",
-    "y": "137.5",
-    "text": "LEVEL 1",
-    "textColor": "red",
-    "textSize": "12",
+    "y": "187.5",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
     "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "450.0",
+    "y": "187.5",
+    "w": "200.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "8.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "250.0",
+    "y": "137.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/coin-1.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\coin-1.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "500.0",
+    "y": "137.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/coin-1.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\coin-1.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
+  },
+  {
+    "x": "600.0",
+    "y": "187.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "650.0",
+    "y": "187.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/grounds/boxAlt.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\grounds\\boxAlt.png"
+  },
+  {
+    "x": "650.0",
+    "y": "137.5",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/hudKey_green_empty.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\hudKey_green_empty.png",
+    "colectionLabel": "Level2",
+    "points": 10
+  },
+  {
+    "x": "300.0",
+    "y": "65.0",
+    "w": "25.0",
+    "h": "25.0",
+    "tex": "require('../../imgs/collect-items/bitcoin-out.png')",
+    "tiles": {
+      "tilesX": "1.0",
+      "tilesY": "1.0"
+    },
+    "pythonImgPath": "E:\\web_server\\xampp\\htdocs\\PRIVATE_SERVER\\visual-ts\\project\\visual-ts\\src\\examples\\platformer\\imgs\\collect-items\\bitcoin-out.png",
+    "colectionLabel": "collectItemPoint",
+    "points": 10
   }
 ]
