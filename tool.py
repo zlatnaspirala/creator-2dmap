@@ -745,11 +745,11 @@ def showGrid():
 
   if initValues.canvasGridVisible == True:
     initValues.canvasGridVisible = not initValues.canvasGridVisible
-    options_menu.entryconfigure(1, label="Show Grid's")
+    options_menu.entryconfigure(2, label="Show Grid's")
     drawMap()
   else:
     initValues.canvasGridVisible = not initValues.canvasGridVisible
-    options_menu.entryconfigure(1, label="Hide Grid's")
+    options_menu.entryconfigure(2, label="Hide Grid's")
     drawMap()
 
 # Quic terminate event
