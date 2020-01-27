@@ -6,7 +6,7 @@
 #  https://github.com/zlatnaspirala/creator-2dmap
 #  Code style ~camel
 #  Version: 0.4.4
-#  - Types of game object : [ground, collectItem, enemies, labels]
+#  - Types of game object : [ground, collectItem, enemies, labels, nextLevel]
 #  - Show/Hide grids
 #  - Sticklers enable disable
 #  - defaults.py - general config
@@ -24,7 +24,6 @@
 #  - nextLevel item collection model. Item will teleport player to the next level/map
 #  - Export As - Feature Export and give a map name (without `.ts`)
 #
-#   Fix : load map
 #################################################################################
 
 #################################################################################
@@ -467,13 +466,12 @@ def resetInputValuesToMin():
 def addNewElements(loadedMap):
   for element in loadedMap:
     if "text" in element:
-      #
       localModel = StaticLabels(element['x'],
                                 element['y'],
                                 element['text'],
                                 element['textColor'],
                                 element['textSize'])
-    elif "colectionLabel" in element:
+    elif "colectionLabel" in element and element['colectionLabel'] != "nextLevel":
       localModel = CollectingItems(element['x'],
                                 element['y'],
                                 element['w'],
@@ -483,6 +481,17 @@ def addNewElements(loadedMap):
                                 element['tiles']['tilesY'],
                                 element['colectionLabel'],
                                 element['points']
+                                )
+    elif "enemyLabel" in element:
+      localModel = Enemies(element['x'],
+                                element['y'],
+                                element['w'],
+                                element['h'],
+                                element['tex'],
+                                element['tiles']['tilesX'],
+                                element['tiles']['tilesY'],
+                                element['enemyLabel'],
+                                element['enemyOptions']
                                 )
     elif "colectionLabel" in element and element['colectionLabel'] == "nextLevel":
       localModel = NextLevel(element['x'],
