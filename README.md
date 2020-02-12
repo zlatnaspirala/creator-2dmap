@@ -20,13 +20,13 @@
 ### Help : ###
 
  Much more easyest is creator-2dmap python script.
- After installation of all needed modules vie pip3 for python3 you need to run :
+ After installation of all needed modules vie pip3 for python3, you need to run:
 
 ```bash
   # Windows
-  python.exe toll.py
+  python.exe tool.py
   # Macos - linux
-  python3 ./toll.py
+  python3 ./tool.py
 ```
 
 ``` Possible bug on oldies linux os mint. Bug related with tkinter lib. ```
@@ -52,19 +52,22 @@ Realtive paths no need to change - Only if you use your own project modification
 Project based on Python3 and Tk library.
 
 
-Last version :
+Last version:
 
 <pre>
 
   <b>Version: 0.4.4</b>
-  Version: 0.4.4
+
+  Games template based on version: 0.4.4
+  https://apps.facebook.com/nidzica/ single player platformer solution.
+
 #################################################################################
 #  creator2dmap is python3 application for creating visuat-ts game engine 2d maps
 #  LICENCE: GNU LESSER GENERAL PUBLIC LICENSE Version 3
 #  https://github.com/zlatnaspirala/creator-2dmap
 #  Code style ~camel
 #  Version: 0.4.4
-#  - Types of game object : [ground, collectItem, enemies, labels]
+#  - Types of game object: [ground, collectItem, enemies, labels]
 #  - Show/Hide grids
 #  - Sticklers enable disable
 #  - defaults.py - general config
@@ -87,9 +90,11 @@ Last version :
 
 </pre>
 
-Licence :
+### Licence : ###
+<b>
   GNU LESSER GENERAL PUBLIC LICENSE Version 3
   maximumroulette.com 2020
+</b>
 
 ### About licence: ###
 
@@ -97,8 +102,8 @@ Licence :
   If you use this code you need to provide your modification like open source
    with same licence GPL v3.
    In short way explanation: You can use it in commercial or noncommercial projects
-   if you provide origin licence with software or refer your modification source code
-   if you make some improvements.
+   -if you provide origin licence with software, refer your modification source code with public link.
+    If you make some improvements then let other people to use source just like you did.
 ```
 
 ### Export structure : ###
